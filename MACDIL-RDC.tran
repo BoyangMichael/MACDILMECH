@@ -35,6 +35,21 @@ CH2OH 2 417.0 3.69 1.7 0.0 2.0
 CH2O 2 498.0 3.59 0.0 0.0 2.0
 HCO 2 498.0 3.59 0.0 0.0 0.0
 HCOH 2 498.0 3.59 0.0 0.0 1.0
+
+
+!\BOYANG !\CMNT: estimate = HCOH
+HCOH(S) 2 498.0 3.59 0.0 0.0 1.0
+!\BOYANG !\CMNT: estimate = CHOCHO
+CHCOOH(S)  1 440.2 4.01 0.0 0.0 2.0
+!\BOYANG !\CMNT: estimate = CHOCHO
+CHCOOH     1 440.2 4.01 0.0 0.0 2.0
+!\BOYANG !\REF: Christensen & Konnov. Combustion and Flame  170 (2016) 12-29. https://dx.doi.org/10.1016/j.combustflame.2016.05.007
+OCHCO   2   442.089   4.428    0.000   0.000     1.000 
+!\BOYANG !\REF: Christensen & Konnov. Combustion and Flame  170 (2016) 12-29. https://dx.doi.org/10.1016/j.combustflame.2016.05.007
+C2O     1   232.400     3.828     0.000     0.000     1.000 
+
+
+
 HO2CHO 2 436.0 3.97 0.0 0.0 2.0
 HOCH2O 2 470.6 4.41 0.0 0.0 1.5
 O2CHO 2 436.0 3.97 0.0 0.0 2.0
