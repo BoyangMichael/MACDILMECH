@@ -4013,7 +4013,45 @@ IC4H7=IC4H7-I1    1.3E55 -14.53 7.38E4
     PLOG/1.0E0 5.0E51 -1.302E1 7.33E4/
     PLOG/1.0E1 9.7E48 -1.173E1 7.37E4/
     PLOG/1.0E2 4.86E44 -9.84E0 7.34E4/
-C3H4-A+CH3=IC4H7    4.02097E4 2.5 8.8475E3
+
+
+
+!\RXN: \IC4H7=C3H4-A+CH3 !\BOYANG
+
+    !\CMNT: IC4H7       =   2-Methylallyl radical   =   *CH2-(CH3)C=CH2
+    !\CMNT: IC4H7-I1    =   vinylic radical         =   (CH3)2C=CH*
+
+    !\REF: Tranter et al. Proceedings of the Combustion Institute, 36(1) (2017) 211-218. https://dx.doi.org/10.1016/j.proci.2016.06.040
+    IC4H7=C3H4-A+CH3    1.258E+11   1.22866     56725.57743 !\CMNT: HPL
+    PLOG / 0.01     3.682E+54   -12.47531   71597.84361/ !fitting MUE = 20.88% ! T = 600-3000 K, HPL below 600 K
+    PLOG / 0.1      1.396E+55   -12.31844   74385.20095/ !fitting MUE = 16.74% ! T = 700-3000 K, HPL below 700 K
+    PLOG / 1        2.519E+55   -12.07106   77510.63637/ !fitting MUE = 11.04% ! T = 700-3000 K, HPL below 700 K
+    PLOG / 10       1.368E+55   -11.67732   81016.13976/ !fitting MUE = 7.40% ! T = 1000-3000 K, HPL below 1000 K
+    PLOG / 100      2.246E+54   -11.14216   85022.82508/ !fitting MUE = 3.82% ! T = 1200-3000 K, HPL below 1200 K
+    !PLOG / INFINITY    1.258E+11   1.22866     56725.57743/ !fitting MUE = 5.59% ! T = 300-3000 K
+
+    !\ENDRXN: \IC4H7=C3H4-A+CH3 
+
+
+
+!\RXN: \IC4H7+IC4H7=H15DE25DM !\BOYANG
+    
+    !\CMNT: IC4H7       =   2-Methylallyl radical       =   *CH2-(CH3)C=CH2
+    !\CMNT: IC4H7-I1    =   vinylic radical             =   (CH3)2C=CH
+    !\CMNT: H15DE25DM   =   2,5-dimethyl-1,5-hexadiene  =   CH2=C(CH3)CH2CH2C(CH3)=CH2
+
+    !\REF: Tranter et al. Proceedings of the Combustion Institute, 36(1) (2017) 211-218. https://dx.doi.org/10.1016/j.proci.2016.06.040
+    IC4H7+IC4H7=H15DE25DM 0.5458E+15 -0.64093 -1051.30360 !\CMNT: HPL
+    PLOG / 0.01     0.1247+139  -37.17012   63187.30738/ !fitting MUE = 12.31% ! T = 800-3000 K, HPL below 800 K
+    PLOG / 0.1      0.5632+138  -36.45884   70890.78311/ !fitting MUE = 9.53% ! T = 1000-3000 K, HPL below 1000 K
+    PLOG / 1        0.1520+133  -34.31081   75243.44050/ !fitting MUE = 9.33% ! T = 1100-3000 K, HPL below 1100 K
+    PLOG / 10       0.3693+122  -30.79885   76075.73121/ !fitting MUE = 9.70% ! T = 1200-3000 K, HPL below 1200 K
+    PLOG / 100      0.7036+114  -28.05863   81845.78146/ !fitting MUE = 3.50% ! T = 1500-3000 K, HPL below 1500 K
+    !PLOG / INFINITY    0.5458E+15  -0.64093    -1051.30360/ !fitting MUE = 5.26% ! T = 300-3000 K
+
+    !\ENDRXN: \IC4H7+IC4H7=H15DE25DM
+
+
 IC4H7+HO2=IC4H7O+OH    1.0E11 0.0 0.0E0
     PLOG/1.0E-2 1.02E13 -1.58E-1 -1.417E3/
     PLOG/1.0E-1 4.98E14 -6.42E-1 -3.491E2/
@@ -5829,10 +5867,6 @@ CH2O+CH2CHO=C3Y1-3OR    1.23E11 0.0 7.8E3
     PLOG/1.0E0 4.1E40 -9.3E0 1.247E4/
     PLOG/4.0E0 3.41E32 -6.8E0 9.18E3/
     PLOG/1.0E1 1.26E28 -5.5E0 7.41E3/
-2IC4H7=H15DE25DM    1.0E11 0.0 0.0E0
-    PLOG/3.9E-2 3.27E64 -1.5935E1 2.023E4/
-    PLOG/7.8E-2 7.5E59 -1.449E1 1.86E4/
-    PLOG/1.56E-1 1.14E55 -1.2995E1 1.67E4/
 IC4H7CHO+OH=>CH2CHO+C3H4-A+H2O    5.064E7 2.46 7.2944E2
 C6H10D24=2C3H5-S    2.5E15 0.0 9.95E4
 L-C6H4+H=C-C6H4+H    1.4E54 -11.7 3.45E4
