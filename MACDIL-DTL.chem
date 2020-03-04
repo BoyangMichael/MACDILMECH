@@ -11178,14 +11178,85 @@ PC7H14OH=PC7H14+OH    6.108E14 -0.54 2.763E4
 PO2C7H14OH=PC7H14OH+O2    2.416E21 -1.96 3.78E4
     REV/2.0E12 0.0E0 0.0E0/
 PO2C7H14OH=>NEOC5H11CHO+CH2O+OH    2.5E10 0.0 1.886E4
-IC8H18=AC8H17+H    5.748E17 -0.36 1.012E5
-IC8H18=BC8H17+H    3.299E18 -0.721 9.873E4
-IC8H18=CC8H17+H    1.146E19 -0.941 9.543E4
-IC8H18=DC8H17+H    1.919E17 -0.36 1.004E5
-CH3+YC7H15=IC8H18    1.63E13 0.0 -5.96E2
-CH3+PC7H15=IC8H18    1.93E14 -0.32 0.0E0
-TC4H9+IC4H9=IC8H18    3.59E14 -0.75 0.0E0
-NEOC5H11+IC3H7=IC8H18    3.59E14 -0.75 0.0E0
+
+
+!\RXN: \IC8H18_dissociation !\BOYANG
+
+	!\CMNT: 	Nomenclature
+	!\REF: 		Ning et al. The journal of physical chemistry A, 119(18) (2015) 4093-107. https://dx.doi.org/10.1021/acs.jpca.5b02013
+	!\CMNT: 	Code		Code in Ref.				Name 								Structure
+	!\CMNT: 	IC8H18 		iso-C8H18       			isooctane
+	!\CMNT: 	AC8H17 		1-C8H17 					2,2,4-trimethyl-1-pentyl radical 	*CH2-C(CH3)2-CH2-CH(CH3)-CH3
+	!\CMNT: 	BC8H17 		2-C8H17 					2,2,4-trimethyl-3-pentyl radical 	CH3-C(CH3)2-CH*-CH(CH3)-CH3
+	!\CMNT: 	CC8H17 		3-C8H17 					2,2,4-trimethyl-4-pentyl radical 	CH3-C(CH3)2-CH2-C*(CH3)-CH3
+	!\CMNT: 	DC8H17 		4-C8H17 					2,2,4-trimethyl-5-pentyl radical 	CH3-C(CH3)2-CH2-CH(CH3)-CH2*
+	!\CMNT: 	JC8H16 		2,4,4-trimethyl-1-pentene 	2,4,4-trimethyl-1-pentene			CH2=C(CH3)-CH2-C(CH3)2-CH3
+	!\CMNT: 	IC8H16 		2,4,4-trimethyl-2-pentene	2,4,4-trimethyl-2-pentene			CH3-C(CH3)=CH-C(CH3)2-CH3
+	!\CMNT: 	YC7H15 		1-C7H15						2,4-dimethyl-2-pentyl radical 		CH3-*C(CH3)-CH2-CH(CH3)-CH3
+	!\CMNT: 	PC7H15 		2-C7H15						2,2-dimethyl-4-pentyl radical 		CH3-C(CH3)2-CH2-*CH-CH3
+	!\CMNT: 	XC7H15		3-C7H15 					2,2-dimethyl-1-pentyl radical 		*CH2-CH(CH3)-CH2-CH(CH3)-CH3
+	!\CMNT: 	NC7H15		4-C7H15 					2,4-dimethyl-1-pentyl radical 		*CH2-C(CH3)2-CH2-CH2-CH3
+	!\CMNT: 	XC7H14		2,4-dimethyl-1-pentene 		2,4-dimethyl-1-pentene				CH2=C(CH3)-CH2-CH(CH3)-CH3
+	!\CMNT: 	YC7H14		2,4-dimethyl-2-pentene 		2,4-dimethyl-2-pentene				CH2=C(CH3)-CH2-CH(CH3)-CH3
+	!\CMNT: 	OC7H14 		4,4-dimethyl-1-pentene 		4,4-dimethyl-1-pentene 				CH2=CH-CH2-C(CH3)2-CH3
+	!\CMNT: 	PC7H14 		4,4-dimethyl-2-pentene 		4,4-dimethyl-2-pentene 				CH3-CH=CH-C(CH3)2-CH3
+	!\CMNT: 	DC6H12 		4-methyl-1-pentene 			4-methyl-1-pentene 					CH2=CH-CH2-CH(CH3)-CH3
+	!\CMNT: 	AC6H12 		2-methyl-1-pentene 			2-methyl-1-pentene 					CH2=C(CH3)-CH2-CH2-CH3
+	!\CMNT: 	NEOC5H11 	2,2-dimethyl-C3H5 			2,2-dimethyl-1-propyl radical 		*CH2-C(CH3)2-CH3
+	!\CMNT: 	TC4H9 		t-C4H9 						2-methyl-2-propyl radical 			CH3-C*(CH3)-CH3
+	!\CMNT: 	IC4H9 		i-C4H9 						2-methyl-1-propyl radical 			*CH2-CH(CH3)-CH3
+	!\CMNT: 	IC4H8 		i-C4H8 						isobutene							CH2=C(CH3)-CH3
+	!\CMNT: 	NC3H7 		n-C3H7 						1-propyl radical 					*CH2-CH2-CH3
+	!\CMNT: 	IC3H7 		i-C3H7 						2-propyl radical 					CH3-CH*-CH3
+
+	!\REF: Ning et al. The journal of physical chemistry A, 119(18) (2015) 4093-107. https://dx.doi.org/10.1021/acs.jpca.5b02013
+	IC8H18=YC7H15+CH3	  7.01E+28	  	-2.56	    88334.2
+	PLOG/      0.0100     7.56E+44	    -9.14	    80568.9/
+	PLOG/      0.1000     3.76E+44	    -8.70	    83156.7/
+	PLOG/      1.0000     5.15E+45	    -8.69	    86609.8/
+	PLOG/     10.0000     2.06E+45	    -8.26	    88920.9/
+	PLOG/    100.0000     1.17E+45	    -8.01	    89337.2/
+
+	!\REF: Ning et al. The journal of physical chemistry A, 119(18) (2015) 4093-107. https://dx.doi.org/10.1021/acs.jpca.5b02013
+	IC8H18=PC7H15+CH3	  7.55E+27	   	-2.64	  	88196.3
+	PLOG/      0.0100     6.56E+44	    -9.08	    82723.0/
+	PLOG/      0.1000     5.44E+44	    -8.71	    85449.8/
+	PLOG/      1.0000     6.45E+44	    -8.42	    88021.3/
+	PLOG/     10.0000     1.22E+45	    -8.28	    89277.9/
+	PLOG/    100.0000     5.14E+44	    -7.97	    90329.0/
+
+	!\REF: Ning et al. The journal of physical chemistry A, 119(18) (2015) 4093-107. https://dx.doi.org/10.1021/acs.jpca.5b02013
+	IC8H18=TC4H9+IC4H9	  3.01E+29	  	-2.63	    87581.6
+	PLOG/      0.0100     7.65E+44	    -9.21	    78162.4/
+	PLOG/      0.1000     5.24E+44	    -8.80	    80815.7/
+	PLOG/      1.0000     5.82E+44	    -8.47	    83610.3/
+	PLOG/     10.0000     8.00E+44	    -8.17	    86458.5/
+	PLOG/    100.0000     5.56E+44	    -7.88	    87963.4/
+
+	!\REF: Ning et al. The journal of physical chemistry A, 119(18) (2015) 4093-107. https://dx.doi.org/10.1021/acs.jpca.5b02013
+	IC8H18=IC3H7+NEOC5H11 6.59E+28	   	-2.74	  88802.3
+	PLOG/      0.0100     5.00E+44	    -9.10     80012.4/
+	PLOG/      0.1000     7.47E+44	    -8.79     82859.4/
+	PLOG/      1.0000     7.56E+44	    -8.45     85652.5/
+	PLOG/     10.0000     2.55E+45	    -8.29     88366.8/
+	PLOG/    100.0000     3.49E+44	    -7.79     90229.2/
+
+		!\SOURCE: Atef et al. Combustion and Flame 178 (2017) 111-134. https://dx.doi.org/10.1016/j.combustflame.2016.12.029
+		!CH3+YC7H15=IC8H18    1.63E13 0.0 -5.96E2
+		!CH3+PC7H15=IC8H18    1.93E14 -0.32 0.0E0
+		!TC4H9+IC4H9=IC8H18    3.59E14 -0.75 0.0E0
+		!NEOC5H11+IC3H7=IC8H18    3.59E14 -0.75 0.0E0
+
+	!\SOURCE: Atef et al. Combustion and Flame 178 (2017) 111-134. https://dx.doi.org/10.1016/j.combustflame.2016.12.029
+	IC8H18=AC8H17+H    5.748E17 -0.36 1.012E5
+	IC8H18=BC8H17+H    3.299E18 -0.721 9.873E4
+	IC8H18=CC8H17+H    1.146E19 -0.941 9.543E4
+	IC8H18=DC8H17+H    1.919E17 -0.36 1.004E5
+
+	!\ENDRXN: \IC8H18_dissociation
+
+
+
 IC8H18+H=AC8H17+H2    1.998E6 2.54 6.756E3
 IC8H18+H=BC8H17+H2    1.3E6 2.4 4.471E3
 IC8H18+H=CC8H17+H2    6.02E5 2.4 2.583E3
