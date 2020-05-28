@@ -546,194 +546,194 @@ REACTIONS MOLES CAL/MOLE
 !         DUP
 !     !\ENDRXN: \H2O2+OH=H2O+HO2 
 
-! !\RXN: \H+O2+X !\BOYANG 
-!     !\SOURCE: KONNOV2018 !REF: Burke & Klippenstein. Nat Chem. 9(11) (2017) 1078 
-!     H+O2+H=H2+O2    8.8E22 -1.835 8.0E2
-!     !\SOURCE: KONNOV2018 !REF: Burke & Klippenstein. Nat Chem. 9(11) (2017) 1078 
-!     H+O2+H=OH+OH    4.0E22 -1.835 8.0E2
-!     !\SOURCE: KONNOV2018 !REF: Burke & Klippenstein. Nat Chem. 9(11) (2017) 1078 
-!     H+O2+O=OH+O2    7.35E22 -1.835 8.0E2
-!     !\SOURCE: KONNOV2018 !REF: Burke & Klippenstein. Nat Chem. 9(11) (2017) 1078 
-!     H+O2+OH=H2O+O2    2.56E22 -1.835 8.0E2
-!     !\ENDRXN: \H+O2+X 
+!\RXN: \H+O2+X !\BOYANG 
+    !\SOURCE: KONNOV2018 !REF: Burke & Klippenstein. Nat Chem. 9(11) (2017) 1078 
+    H+O2+H=H2+O2    8.8E22 -1.835 8.0E2
+    !\SOURCE: KONNOV2018 !REF: Burke & Klippenstein. Nat Chem. 9(11) (2017) 1078 
+    H+O2+H=OH+OH    4.0E22 -1.835 8.0E2
+    !\SOURCE: KONNOV2018 !REF: Burke & Klippenstein. Nat Chem. 9(11) (2017) 1078 
+    H+O2+O=OH+O2    7.35E22 -1.835 8.0E2
+    !\SOURCE: KONNOV2018 !REF: Burke & Klippenstein. Nat Chem. 9(11) (2017) 1078 
+    H+O2+OH=H2O+O2    2.56E22 -1.835 8.0E2
+    !\ENDRXN: \H+O2+X 
 
 ! !\ENDSUBMECH: \H2+O2
 
 
-!\SUBMECH: \OHX
-!\SUBMECHSOURCE: KEROMNES2013, KONNOV2018
+! !\SUBMECH: \OHX
+! !\SUBMECHSOURCE: KEROMNES2013, KONNOV2018
 
-!\RXN: \H+O+M=OHX+M 
-    !\SOURCE: KEROMNES2013 !\REF: KATHROTIA ET AL., COMBUST. FLAME 157(7) (2010) 1261–1273
-    H+O+M=OHX+M    1.5E13 0.0 5.975E3
-        H2/1.0/
-        H2O/6.5/
-        O2/0.4/
-        N2/0.4/
-        AR/0.35/
-        cH2O/6.5/  !\BOYANG
-    !\ENDRXN: \H+O+M=OHX+M 
+! !\RXN: \H+O+M=OHX+M 
+!     !\SOURCE: KEROMNES2013 !\REF: KATHROTIA ET AL., COMBUST. FLAME 157(7) (2010) 1261–1273
+!     H+O+M=OHX+M    1.5E13 0.0 5.975E3
+!         H2/1.0/
+!         H2O/6.5/
+!         O2/0.4/
+!         N2/0.4/
+!         AR/0.35/
+!         cH2O/6.5/  !\BOYANG
+!     !\ENDRXN: \H+O+M=OHX+M 
 
-!\RXN: \OHX=OH+hv 
-    !\SOURCE: KEROMNES2013 !\REF: SMITH ET AL., COMBUST. FLAME 131(1-2) (2002) 59–69.
-    OHX=OH+hv    1.45E6 0.0 0.0E0
-    !!\SOURCE: KONNOV2018 !\REF: GERMAN. J. CHEM. PHYS. 62 (1975) 2584-2587
-    !OHX=OH+hv    1.400E+06      0.0         0.0 
-    !\ENDRXN: \OHX=OH+hv 
+! !\RXN: \OHX=OH+hv 
+!     !\SOURCE: KEROMNES2013 !\REF: SMITH ET AL., COMBUST. FLAME 131(1-2) (2002) 59–69.
+!     OHX=OH+hv    1.45E6 0.0 0.0E0
+!     !!\SOURCE: KONNOV2018 !\REF: GERMAN. J. CHEM. PHYS. 62 (1975) 2584-2587
+!     !OHX=OH+hv    1.400E+06      0.0         0.0 
+!     !\ENDRXN: \OHX=OH+hv 
 
-!\RXN: \OHX+M=OH+M !\BOYANG !\CMNT: NON-REACTIVE QUECHING OF OHX 
-    !\CMNT: (BELOW) ----- AR -----
-    !!\SOURCE: KEROMNES2013 !\REF: PAUL ET AL., J. CHEM. PHYS. 102(21) (1995) 8378–8384.
-    !OHX+AR=OH+AR    1.69E12 0.0 4.135E3
-    !\SOURCE: KONNOV2018 !\REF: HALL & PETERSEN. INT. J. CHEM. KINET. 38 (2006) 714-724
-    OHX+AR=OH+AR    2.170E+10      0.5      2060.0 
-    !\CMNT: (BELOW) ----- H2 -----
-    !!\SOURCE: KEROMNES2013 !\REF: TAMURA ET AL., COMBUST. FLAME 114(3-4) (1998) 502–514.
-    !OHX+H2=OH+H2    2.95E12 0.5 -4.44E2
-    !\SOURCE: KONNOV2018 !\REF: (RATE) TAMURA ET AL., COMBUST. FLAME 114(3-4) (1998) 502–514. 
-    !\CMNT: REACTIVE QUENCHING CONSIDERED. 
-    !\REF: (BRANCHING RATIO) LEHMAN ET AL. J. CHEM. PHYS. 137 (2012) 094312
-    OHX+H2=OH+H2    3.540E+11      0.5      -444.0 
-    !\CMNT: (BELOW) ----- N2 -----
-    !\SOURCE: KEROMNES2013 !\REF: TAMURA ET AL., COMBUST. FLAME 114(3-4) (1998) 502–514.
-    OHX+N2=OH+N2    1.08E11 0.5 -1.242E3
-    !\CMNT: (BELOW) ----- OH -----
-    !\SOURCE: KEROMNES2013 !\REF: TAMURA ET AL., COMBUST. FLAME 114(3-4) (1998) 502–514.
-    OHX+OH=OH+OH    6.01E12 0.5 -7.64E2
-    !!\SOURCE: KONNOV2018 !\REF: HIDAKA ET AL. J. PHYS. CHEM. 86 (1982) 1429-1433
-    !OHX+OH=OH+OH    1.500E+12      0.5         0.0 
-    !\CMNT: (BELOW) ----- H -----
-    !\SOURCE: KEROMNES2013 !\REF: TAMURA ET AL., COMBUST. FLAME 114(3-4) (1998) 502–514.
-    OHX+H=OH+H    1.31E12 0.5 -1.67E2
-    !!\SOURCE: KONNOV2018 !\REF: HIDAKA ET AL. J. PHYS. CHEM. 86 (1982) 1429-1433
-    !OHX+H=OH+H    1.500E+12      0.5         0.0 
-    !\CMNT: (BELOW) ----- O -----
-    !\SOURCE: KONNOV2018 !\REF: HIDAKA ET AL. J. PHYS. CHEM. 86 (1982) 1429-1433
-    OHX+O=OH+O    1.500E+12      0.5         0.0 
-    !\CMNT: (BELOW) ----- O2 -----
-    !!\SOURCE: KEROMNES2013 !\REF: TAMURA ET AL., COMBUST. FLAME 114(3-4) (1998) 502–514.
-    !OHX+O2=OH+O2    2.1E12 0.5 -4.78E2
-    !\SOURCE: KONNOV2018 !\REF: (RATE) TAMURA ET AL., COMBUST. FLAME 114(3-4) (1998) 502–514. 
-    !\CMNT: REACTIVE QUENCHING CONSIDERED. 
-    !\REF: (BRANCHING RATIO) LEHMAN ET AL. J. CHEM. PHYS. 137 (2012) 094312
-    OHX+O2=OH+O2    8.400E+11      0.5      -482.0 
-    !\CMNT: (BELOW) ----- CO -----
-    !\SOURCE: KEROMNES2013 !\REF: TAMURA ET AL., COMBUST. FLAME 114(3-4) (1998) 502–514.
-    OHX+CO=OH+CO    3.23E12 0.5 -7.87E2
-    !\CMNT: (BELOW) ----- CH4 -----
-    !\SOURCE: ARAMCO3 
-    !OHX+CH4=OH+CH4    3.36E12 0.5 -6.35E2
-    !\CMNT: (BELOW) ----- H2O -----
-    !!\SOURCE: KEROMNES2013 !\REF: TAMURA ET AL., COMBUST. FLAME 114(3-4) (1998) 502–514.
-    !OHX+H2O=OH+H2O    5.93E12 0.5 -8.6E2
-    !\SOURCE: KONNOV2018 !\REF: (RATE) TAMURA ET AL., COMBUST. FLAME 114(3-4) (1998) 502–514. 
-    !\CMNT: REACTIVE QUENCHING CONSIDERED. BRANCHING RATIO IS ESTIMATED TO BE 0.5:0.5 TO REACTIVE QUENCHING OHX+H2O=H2O2+H
-    OHX+H2O=OH+H2O    2.960E+12      0.5      -861.0 
-    !\BOYANG !\CMNT: FALSE REACTION ADDED FOR cH2O
-    OHX+cH2O=OH+cH2O    2.960E+12      0.5      -861.0 
-    !\CMNT: (BELOW) ----- CO2 -----
-    !\SOURCE: KEROMNES2013 !\REF: TAMURA ET AL., COMBUST. FLAME 114(3-4) (1998) 502–514.
-    OHX+CO2=OH+CO2    2.75E12 0.5 -9.68E2
-    !\BOYANG !\CMNT: FALSE REACTION ADDED FOR cCO2
-    OHX+cCO2=OH+cCO2    2.75E12 0.5 -9.68E2
-    !\ENDRXN: \OHX+M=OH+M 
+! !\RXN: \OHX+M=OH+M !\BOYANG !\CMNT: NON-REACTIVE QUECHING OF OHX 
+!     !\CMNT: (BELOW) ----- AR -----
+!     !!\SOURCE: KEROMNES2013 !\REF: PAUL ET AL., J. CHEM. PHYS. 102(21) (1995) 8378–8384.
+!     !OHX+AR=OH+AR    1.69E12 0.0 4.135E3
+!     !\SOURCE: KONNOV2018 !\REF: HALL & PETERSEN. INT. J. CHEM. KINET. 38 (2006) 714-724
+!     OHX+AR=OH+AR    2.170E+10      0.5      2060.0 
+!     !\CMNT: (BELOW) ----- H2 -----
+!     !!\SOURCE: KEROMNES2013 !\REF: TAMURA ET AL., COMBUST. FLAME 114(3-4) (1998) 502–514.
+!     !OHX+H2=OH+H2    2.95E12 0.5 -4.44E2
+!     !\SOURCE: KONNOV2018 !\REF: (RATE) TAMURA ET AL., COMBUST. FLAME 114(3-4) (1998) 502–514. 
+!     !\CMNT: REACTIVE QUENCHING CONSIDERED. 
+!     !\REF: (BRANCHING RATIO) LEHMAN ET AL. J. CHEM. PHYS. 137 (2012) 094312
+!     OHX+H2=OH+H2    3.540E+11      0.5      -444.0 
+!     !\CMNT: (BELOW) ----- N2 -----
+!     !\SOURCE: KEROMNES2013 !\REF: TAMURA ET AL., COMBUST. FLAME 114(3-4) (1998) 502–514.
+!     OHX+N2=OH+N2    1.08E11 0.5 -1.242E3
+!     !\CMNT: (BELOW) ----- OH -----
+!     !\SOURCE: KEROMNES2013 !\REF: TAMURA ET AL., COMBUST. FLAME 114(3-4) (1998) 502–514.
+!     OHX+OH=OH+OH    6.01E12 0.5 -7.64E2
+!     !!\SOURCE: KONNOV2018 !\REF: HIDAKA ET AL. J. PHYS. CHEM. 86 (1982) 1429-1433
+!     !OHX+OH=OH+OH    1.500E+12      0.5         0.0 
+!     !\CMNT: (BELOW) ----- H -----
+!     !\SOURCE: KEROMNES2013 !\REF: TAMURA ET AL., COMBUST. FLAME 114(3-4) (1998) 502–514.
+!     OHX+H=OH+H    1.31E12 0.5 -1.67E2
+!     !!\SOURCE: KONNOV2018 !\REF: HIDAKA ET AL. J. PHYS. CHEM. 86 (1982) 1429-1433
+!     !OHX+H=OH+H    1.500E+12      0.5         0.0 
+!     !\CMNT: (BELOW) ----- O -----
+!     !\SOURCE: KONNOV2018 !\REF: HIDAKA ET AL. J. PHYS. CHEM. 86 (1982) 1429-1433
+!     OHX+O=OH+O    1.500E+12      0.5         0.0 
+!     !\CMNT: (BELOW) ----- O2 -----
+!     !!\SOURCE: KEROMNES2013 !\REF: TAMURA ET AL., COMBUST. FLAME 114(3-4) (1998) 502–514.
+!     !OHX+O2=OH+O2    2.1E12 0.5 -4.78E2
+!     !\SOURCE: KONNOV2018 !\REF: (RATE) TAMURA ET AL., COMBUST. FLAME 114(3-4) (1998) 502–514. 
+!     !\CMNT: REACTIVE QUENCHING CONSIDERED. 
+!     !\REF: (BRANCHING RATIO) LEHMAN ET AL. J. CHEM. PHYS. 137 (2012) 094312
+!     OHX+O2=OH+O2    8.400E+11      0.5      -482.0 
+!     !\CMNT: (BELOW) ----- CO -----
+!     !\SOURCE: KEROMNES2013 !\REF: TAMURA ET AL., COMBUST. FLAME 114(3-4) (1998) 502–514.
+!     OHX+CO=OH+CO    3.23E12 0.5 -7.87E2
+!     !\CMNT: (BELOW) ----- CH4 -----
+!     !\SOURCE: ARAMCO3 
+!     !OHX+CH4=OH+CH4    3.36E12 0.5 -6.35E2
+!     !\CMNT: (BELOW) ----- H2O -----
+!     !!\SOURCE: KEROMNES2013 !\REF: TAMURA ET AL., COMBUST. FLAME 114(3-4) (1998) 502–514.
+!     !OHX+H2O=OH+H2O    5.93E12 0.5 -8.6E2
+!     !\SOURCE: KONNOV2018 !\REF: (RATE) TAMURA ET AL., COMBUST. FLAME 114(3-4) (1998) 502–514. 
+!     !\CMNT: REACTIVE QUENCHING CONSIDERED. BRANCHING RATIO IS ESTIMATED TO BE 0.5:0.5 TO REACTIVE QUENCHING OHX+H2O=H2O2+H
+!     OHX+H2O=OH+H2O    2.960E+12      0.5      -861.0 
+!     !\BOYANG !\CMNT: FALSE REACTION ADDED FOR cH2O
+!     OHX+cH2O=OH+cH2O    2.960E+12      0.5      -861.0 
+!     !\CMNT: (BELOW) ----- CO2 -----
+!     !\SOURCE: KEROMNES2013 !\REF: TAMURA ET AL., COMBUST. FLAME 114(3-4) (1998) 502–514.
+!     OHX+CO2=OH+CO2    2.75E12 0.5 -9.68E2
+!     !\BOYANG !\CMNT: FALSE REACTION ADDED FOR cCO2
+!     OHX+cCO2=OH+cCO2    2.75E12 0.5 -9.68E2
+!     !\ENDRXN: \OHX+M=OH+M 
 
-!\RXN: \OHX+X !\CMNT: REACTIVE QUENCHING OF OHX
-    !\SOURCE: KONNOV2018 !\REF: (RATE) TAMURA ET AL., COMBUST. FLAME 114(3-4) (1998) 502–514. 
-    !\REF: (BRANCHING RATIO) LEHMAN ET AL. J. CHEM. PHYS. 137 (2012) 094312
-    OHX+H2=H2O+H      2.600E+12      0.5      -444.0 
-    !\SOURCE: KONNOV2018 !\REF: (RATE) TAMURA ET AL., COMBUST. FLAME 114(3-4) (1998) 502–514. 
-    !\REF: (BRANCHING RATIO) LEHMAN ET AL. J. CHEM. PHYS. 137 (2012) 094312
-    OHX+O2=O3+H       2.520E+11      0.5      -482.0 
-    !\SOURCE: KONNOV2018 !\REF: (RATE) TAMURA ET AL., COMBUST. FLAME 114(3-4) (1998) 502–514. 
-    !\REF: (BRANCHING RATIO) LEHMAN ET AL. J. CHEM. PHYS. 137 (2012) 094312
-    OHX+O2=HO2+O      1.008E+12      0.5      -482.0 
-    !\SOURCE: KONNOV2018 !\REF: (RATE) TAMURA ET AL., COMBUST. FLAME 114(3-4) (1998) 502–514. 
-    !\CMNT: REACTIVE QUENCHING CONSIDERED. BRANCHING RATIO IS ESTIMATED TO BE 0.5:0.5 TO REACTIVE QUENCHING OHX+H2O=H2O2+H
-    OHX+H2O=H2O2+H    2.960E+12      0.5      -861.0 
-    !\ENDRXN: \OHX+X 
+! !\RXN: \OHX+X !\CMNT: REACTIVE QUENCHING OF OHX
+!     !\SOURCE: KONNOV2018 !\REF: (RATE) TAMURA ET AL., COMBUST. FLAME 114(3-4) (1998) 502–514. 
+!     !\REF: (BRANCHING RATIO) LEHMAN ET AL. J. CHEM. PHYS. 137 (2012) 094312
+!     OHX+H2=H2O+H      2.600E+12      0.5      -444.0 
+!     !\SOURCE: KONNOV2018 !\REF: (RATE) TAMURA ET AL., COMBUST. FLAME 114(3-4) (1998) 502–514. 
+!     !\REF: (BRANCHING RATIO) LEHMAN ET AL. J. CHEM. PHYS. 137 (2012) 094312
+!     OHX+O2=O3+H       2.520E+11      0.5      -482.0 
+!     !\SOURCE: KONNOV2018 !\REF: (RATE) TAMURA ET AL., COMBUST. FLAME 114(3-4) (1998) 502–514. 
+!     !\REF: (BRANCHING RATIO) LEHMAN ET AL. J. CHEM. PHYS. 137 (2012) 094312
+!     OHX+O2=HO2+O      1.008E+12      0.5      -482.0 
+!     !\SOURCE: KONNOV2018 !\REF: (RATE) TAMURA ET AL., COMBUST. FLAME 114(3-4) (1998) 502–514. 
+!     !\CMNT: REACTIVE QUENCHING CONSIDERED. BRANCHING RATIO IS ESTIMATED TO BE 0.5:0.5 TO REACTIVE QUENCHING OHX+H2O=H2O2+H
+!     OHX+H2O=H2O2+H    2.960E+12      0.5      -861.0 
+!     !\ENDRXN: \OHX+X 
 
-!\ENDSUBMECH: \OHX
+! !\ENDSUBMECH: \OHX
 
 
-!\SUBMECH: \H2+O3+EXICITED 
-!\SUBMECHSOURCE: KONNOV2018 !\REF: KONNOV. COMBUST. FLAME. 162 (2015) 3755-3772 ; KONNOV. COMBUST. FLAME. 203 (2019) 14-22
+! !\SUBMECH: \H2+O3+EXICITED 
+! !\SUBMECHSOURCE: KONNOV2018 !\REF: KONNOV. COMBUST. FLAME. 162 (2015) 3755-3772 ; KONNOV. COMBUST. FLAME. 203 (2019) 14-22
 
-!\RXN: \O2+O+M=O3+M 
-    O2+O+M=O3+M       6.530E+17     -1.5         0.0
-        AR/0.0/    !\CMNT: REPLACED BY REACTION
-        O2/0.95/ 
-        O3/2.5/ 
-        O/4.0/
-        DUPLICATE
-    O2+O+M=O3+M       1.330E+22     -3.3         0.0
-        AR/0.0/    !\CMNT: REPLACED BY REACTION
-        O2/1.07/ 
-        O3/2.5/ 
-        O/4.0/
-        DUPLICATE
-    O2+O+AR=O3+AR     4.290E+17     -1.5         0.0 
-        DUPLICATE
-    O2+O+AR=O3+AR     5.100E+21     -3.2         0.0 
-        DUPLICATE
-    !\ENDRXN: \O2+O+M=O3+M 
-O3+O=O2+O2        4.820E+12      0.0      4094.0
-O3+O=O2X+O2       1.440E+11      0.0      4094.0
-O+O+M=O2X+M       7.000E+15     -1.0         0.0
-    O/28.8/ 
-    O2/8.0/ 
-    N2/2.0/ 
-    H2O/5.0/ 
-    O3/8.0/ 
-    !NO/2.0/ 
-    !N/2.0/ 
-    cH2O/5.0/   !\BOYANG
-!\RXN: \O2X+M=O2+M 
-    O2X+M=O2+M        1.800E+06      0.0       400.0
-        O/0/         !\CMNT: REPLACED BY REACTION
-        H/0/         !\CMNT: REPLACED BY REACTION
-        AR/0.005/ 
-        HE/0.005/ 
-        N2/0.002/ 
-        H2O/3.3/ 
-        H2/2.5/ 
-        CO2/0.01/ 
-        CO/5.6/
-        cH2O/3.3/    !\BOYANG
-        cCO2/0.01/   !\BOYANG
-    O2X+O=O2+O        7.800E+07      0.0         0.0
-    O2X+H=O2+H        4.000E+13      0.0      5030.0 
-    !\ENDRXN: \O2X+M=O2+M 
-O2X+O+M=O+O2+M    3.600E+15      0.0         0.0 
-  AR/0.63/ 
-O2X+O3=O2+O2+O    3.130E+13      0.0      5644.0
-OX+O2X=O+O2       6.030E+12      0.0         0.0
-OX+O2=O+O2X       1.590E+13      0.0      -139.0 
-!\RXN: \OX+M=O+M 
-    OX+M=O+M          4.800E+11      0.0         0.0 
-        O2/0/      !\CMNT: REPLACED BY REACTION
-        N2/0/      !\CMNT: REPLACED BY REACTION
-        O/10.0/ 
-        H2O/3.0/
-        cH2O/3.0/  !\BOYANG
-    OX+O2=O+O2        2.810E+12      0.0      -139.0 
-    OX+N2=O+N2        1.260E+13      0.0      -230.0 
-    !\ENDRXN: \OX+M=O+M 
-OX+O3=O2+O+O      7.230E+13      0.0         0.0 
-OX+O3=O2+O2       7.230E+13      0.0         0.0 
-H2+O2X=H+HO2      6.160E+05      2.335   31080.0
-H+O2X=OH+O        3.500E+08      1.45     4508.0 
-H+O2X+M=HO2+M     9.890E+09      2.03     3360.0
-!\REF: MONGE-PALACIOS & SARATHY. PHYS. CHEM. CHEM. PHYS. 20 (2018) 4478-4489
-HO2+OH=H2O+O2X    2.140E+06      1.65     2180.0 
-OH+O2X=O+HO2      1.300E+13      0.0     34000.0 
-O3+H=OH+O2        8.430E+13      0.0       934.0 
-O3+OH=HO2+O2      1.000E+12      0.0      1870.0 
-O3+HO2=OH+O2+O2   5.850E-04      4.57    -1377.0 
-H+HO2=H2O+OX      2.500E+12      0.0       300.0 
-OX+H2=OH+H        8.100E+13      0.0         0.0 
-OX+H2O=OH+OH      1.000E+14      0.0       -71.0 
-!\ENDSUBMECH: \H2+O3+EXICITED 
+! !\RXN: \O2+O+M=O3+M 
+!     O2+O+M=O3+M       6.530E+17     -1.5         0.0
+!         AR/0.0/    !\CMNT: REPLACED BY REACTION
+!         O2/0.95/ 
+!         O3/2.5/ 
+!         O/4.0/
+!         DUPLICATE
+!     O2+O+M=O3+M       1.330E+22     -3.3         0.0
+!         AR/0.0/    !\CMNT: REPLACED BY REACTION
+!         O2/1.07/ 
+!         O3/2.5/ 
+!         O/4.0/
+!         DUPLICATE
+!     O2+O+AR=O3+AR     4.290E+17     -1.5         0.0 
+!         DUPLICATE
+!     O2+O+AR=O3+AR     5.100E+21     -3.2         0.0 
+!         DUPLICATE
+!     !\ENDRXN: \O2+O+M=O3+M 
+! O3+O=O2+O2        4.820E+12      0.0      4094.0
+! O3+O=O2X+O2       1.440E+11      0.0      4094.0
+! O+O+M=O2X+M       7.000E+15     -1.0         0.0
+!     O/28.8/ 
+!     O2/8.0/ 
+!     N2/2.0/ 
+!     H2O/5.0/ 
+!     O3/8.0/ 
+!     !NO/2.0/ 
+!     !N/2.0/ 
+!     cH2O/5.0/   !\BOYANG
+! !\RXN: \O2X+M=O2+M 
+!     O2X+M=O2+M        1.800E+06      0.0       400.0
+!         O/0/         !\CMNT: REPLACED BY REACTION
+!         H/0/         !\CMNT: REPLACED BY REACTION
+!         AR/0.005/ 
+!         HE/0.005/ 
+!         N2/0.002/ 
+!         H2O/3.3/ 
+!         H2/2.5/ 
+!         CO2/0.01/ 
+!         CO/5.6/
+!         cH2O/3.3/    !\BOYANG
+!         cCO2/0.01/   !\BOYANG
+!     O2X+O=O2+O        7.800E+07      0.0         0.0
+!     O2X+H=O2+H        4.000E+13      0.0      5030.0 
+!     !\ENDRXN: \O2X+M=O2+M 
+! O2X+O+M=O+O2+M    3.600E+15      0.0         0.0 
+!   AR/0.63/ 
+! O2X+O3=O2+O2+O    3.130E+13      0.0      5644.0
+! OX+O2X=O+O2       6.030E+12      0.0         0.0
+! OX+O2=O+O2X       1.590E+13      0.0      -139.0 
+! !\RXN: \OX+M=O+M 
+!     OX+M=O+M          4.800E+11      0.0         0.0 
+!         O2/0/      !\CMNT: REPLACED BY REACTION
+!         N2/0/      !\CMNT: REPLACED BY REACTION
+!         O/10.0/ 
+!         H2O/3.0/
+!         cH2O/3.0/  !\BOYANG
+!     OX+O2=O+O2        2.810E+12      0.0      -139.0 
+!     OX+N2=O+N2        1.260E+13      0.0      -230.0 
+!     !\ENDRXN: \OX+M=O+M 
+! OX+O3=O2+O+O      7.230E+13      0.0         0.0 
+! OX+O3=O2+O2       7.230E+13      0.0         0.0 
+! H2+O2X=H+HO2      6.160E+05      2.335   31080.0
+! H+O2X=OH+O        3.500E+08      1.45     4508.0 
+! H+O2X+M=HO2+M     9.890E+09      2.03     3360.0
+! !\REF: MONGE-PALACIOS & SARATHY. PHYS. CHEM. CHEM. PHYS. 20 (2018) 4478-4489
+! HO2+OH=H2O+O2X    2.140E+06      1.65     2180.0 
+! OH+O2X=O+HO2      1.300E+13      0.0     34000.0 
+! O3+H=OH+O2        8.430E+13      0.0       934.0 
+! O3+OH=HO2+O2      1.000E+12      0.0      1870.0 
+! O3+HO2=OH+O2+O2   5.850E-04      4.57    -1377.0 
+! H+HO2=H2O+OX      2.500E+12      0.0       300.0 
+! OX+H2=OH+H        8.100E+13      0.0         0.0 
+! OX+H2O=OH+OH      1.000E+14      0.0       -71.0 
+! !\ENDSUBMECH: \H2+O3+EXICITED 
 
 
 ! !\SUBMECH: \H2+CO
@@ -1137,19 +1137,19 @@ H2 / 0.730 / H2O / 3.650 / CH4 / 2.000 / C2H6 / 3.000 / AR / 0.380 /
 O+H2O<=>OH+OH                                                +6.7000000E+007 +1.7040000E+000 +1.4986800E+004  
 O+H+M<=>OH+M                                                 +4.7140000E+018 -1.0000000E+000 +0.0000000E+000 
 H2 / 2.500 / H2O / 12.000 / AR / 0.750 / CO / 1.500 / CO2 / 2.000 / HE / 0.750 / CH4 / 2.000 / C2H6 / 3.000 / 
-! H+O+M<=>OHX+M                                                +1.5000000E+013 +0.0000000E+000 +5.9750000E+003 
-! H2 / 1.000 / H2O / 6.500 / O2 / 0.400 / N2 / 0.400 / AR / 0.350 / 
-! OHX+H2O<=>OH+H2O                                             +5.9300000E+012 +5.0000000E-001 -8.6000000E+002  
-! OHX+H2<=>OH+H2                                               +2.9500000E+012 +5.0000000E-001 -4.4400000E+002  
-! OHX+N2<=>OH+N2                                               +1.0800000E+011 +5.0000000E-001 -1.2420000E+003  
-! OHX+OH<=>OH+OH                                               +6.0100000E+012 +5.0000000E-001 -7.6400000E+002  
-! OHX+H<=>OH+H                                                 +1.3100000E+012 +5.0000000E-001 -1.6700000E+002  
-! OHX+AR<=>OH+AR                                               +1.6900000E+012 +0.0000000E+000 +4.1350000E+003  
-! OHX<=>OH                                                     +1.4500000E+006 +0.0000000E+000 +0.0000000E+000  
-! OHX+O2<=>OH+O2                                               +2.1000000E+012 +5.0000000E-001 -4.7800000E+002  
-! OHX+CO2<=>OH+CO2                                             +2.7500000E+012 +5.0000000E-001 -9.6800000E+002  
-! OHX+CO<=>OH+CO                                               +3.2300000E+012 +5.0000000E-001 -7.8700000E+002  
-! OHX+CH4<=>OH+CH4                                             +3.3600000E+012 +5.0000000E-001 -6.3500000E+002  
+H+O+M<=>OHX+M                                                +1.5000000E+013 +0.0000000E+000 +5.9750000E+003 
+H2 / 1.000 / H2O / 6.500 / O2 / 0.400 / N2 / 0.400 / AR / 0.350 / 
+OHX+H2O<=>OH+H2O                                             +5.9300000E+012 +5.0000000E-001 -8.6000000E+002  
+OHX+H2<=>OH+H2                                               +2.9500000E+012 +5.0000000E-001 -4.4400000E+002  
+OHX+N2<=>OH+N2                                               +1.0800000E+011 +5.0000000E-001 -1.2420000E+003  
+OHX+OH<=>OH+OH                                               +6.0100000E+012 +5.0000000E-001 -7.6400000E+002  
+OHX+H<=>OH+H                                                 +1.3100000E+012 +5.0000000E-001 -1.6700000E+002  
+OHX+AR<=>OH+AR                                               +1.6900000E+012 +0.0000000E+000 +4.1350000E+003  
+OHX<=>OH                                                     +1.4500000E+006 +0.0000000E+000 +0.0000000E+000  
+OHX+O2<=>OH+O2                                               +2.1000000E+012 +5.0000000E-001 -4.7800000E+002  
+OHX+CO2<=>OH+CO2                                             +2.7500000E+012 +5.0000000E-001 -9.6800000E+002  
+OHX+CO<=>OH+CO                                               +3.2300000E+012 +5.0000000E-001 -7.8700000E+002  
+OHX+CH4<=>OH+CH4                                             +3.3600000E+012 +5.0000000E-001 -6.3500000E+002  
 H2O2(+M)<=>OH+OH(+M)                                         +2.0000000E+012 +9.0000000E-001 +4.8749000E+004
 LOW /                                                        +2.4900000E+024 -2.3000000E+000 +4.8749000E+004 /
 TROE /                                       +4.3000000E-001 +1.0000000E-030 +1.0000000E+030 /
