@@ -163,172 +163,172 @@ END
 
 REACTIONS MOLES CAL/MOLE
 
-! !\SUBMECH: \H2+O2 
-! !\SUBMECHCMNT: modified based KEROMNES2013 and ARAMCO3.
+!\SUBMECH: \H2+O2 
+!\SUBMECHCMNT: modified based KEROMNES2013 and ARAMCO3.
 
-! !\RXN: \H+O2=O+OH !\BOYANG 
-!     !\SOURCE: KEROMNES2013 !\REF: HONG ET AL., PROC. COMBUST.INST. 33(1) (2011) 309–316. ; WANG ET AL. J. PHYS. CHEM. A 121(45) (2017) 8561-8568 
-!     H+O2=O+OH    1.04E14 0.0 1.5286E4
-!     !\BOYANG !\CMNT: ignored because it agrees very well with Hong et al. 2011 over the valid T range.
-!     !\CMNT: VALID FOR 1428–-1685 K, UNCERTAINTY = 10%
-!     !\REF: WANG ET AL. J. PHYS. CHEM. A 121(45) (2017) 8561-8568 
-!     !H+O2=O+OH    8.04E13 0.0 1.4646E4
-!     !\ENDRXN: \H+O2=O+OH=O+OH 
+!\RXN: \H+O2=O+OH !\BOYANG 
+    !\SOURCE: KEROMNES2013 !\REF: HONG ET AL., PROC. COMBUST.INST. 33(1) (2011) 309–316. ; WANG ET AL. J. PHYS. CHEM. A 121(45) (2017) 8561-8568 
+    H+O2=O+OH    1.04E14 0.0 1.5286E4
+    !\BOYANG !\CMNT: ignored because it agrees very well with Hong et al. 2011 over the valid T range.
+    !\CMNT: VALID FOR 1428–-1685 K, UNCERTAINTY = 10%
+    !\REF: WANG ET AL. J. PHYS. CHEM. A 121(45) (2017) 8561-8568 
+    !H+O2=O+OH    8.04E13 0.0 1.4646E4
+    !\ENDRXN: \H+O2=O+OH=O+OH 
 
-! !\RXN: \H2+O=H+OH !\BOYANG
+!\RXN: \H2+O=H+OH !\BOYANG
 
-!     !\BOYANG !\CMNT: COMBINED FIT OF BAULCH ET AL. AND NAGUYUEN & STANTON.
-!     !\REF: ( 200-1600 K) NAGUYUEN & STANTON. J. PHYS. CHEM. A 118(27) (2014) 4918-4928
-!     !\REF: (1700-3600 K) BAULCH ET AL. J. PHYS. CHEM. REF. DATA 34 (2005) 757-1397
-!     H2+O=H+OH    8.843E5 2.335 7.058E3
-!         DUP
-!     H2+O=H+OH    3.149E46 -12.972 1.146E4
-!         DUP
+    !\BOYANG !\CMNT: COMBINED FIT OF BAULCH ET AL. AND NAGUYUEN & STANTON.
+    !\REF: ( 200-1600 K) NAGUYUEN & STANTON. J. PHYS. CHEM. A 118(27) (2014) 4918-4928
+    !\REF: (1700-3600 K) BAULCH ET AL. J. PHYS. CHEM. REF. DATA 34 (2005) 757-1397
+    H2+O=H+OH    8.843E5 2.335 7.058E3
+        DUP
+    H2+O=H+OH    3.149E46 -12.972 1.146E4
+        DUP
 
-!     !\SOURCE: KEROMNES2013 !\REF: SUTHERLAND ET AL., 21ST SYMPOSIUM, P. 929 (1986)
-!     !H2+O=H+OH    5.08E4 2.67 6.292E3
+    !\SOURCE: KEROMNES2013 !\REF: SUTHERLAND ET AL., 21ST SYMPOSIUM, P. 929 (1986)
+    !H2+O=H+OH    5.08E4 2.67 6.292E3
 
-!     !\SOURCE: BURKE2012 !\REF: BAULCH ET AL. J. PHYS. CHEM. REF. DATA 34 (2005) 757-1397
-!     !\CMNT: VALID FOR 300-3500 K !\CMNT: AGREE WITH ALL MEASUREMENTS VERY WELL.
-!     !H2+O=H+OH    3.82E+12 0.00 7.948E+3
-!     !   DUP
-!     !H2+O=H+OH    8.79E+14 0.00 1.917E+4
-!     !   DUP
+    !\SOURCE: BURKE2012 !\REF: BAULCH ET AL. J. PHYS. CHEM. REF. DATA 34 (2005) 757-1397
+    !\CMNT: VALID FOR 300-3500 K !\CMNT: AGREE WITH ALL MEASUREMENTS VERY WELL.
+    !H2+O=H+OH    3.82E+12 0.00 7.948E+3
+    !   DUP
+    !H2+O=H+OH    8.79E+14 0.00 1.917E+4
+    !   DUP
 
-!     !\ENDRXN: \H2+O=H+OH 
+    !\ENDRXN: \H2+O=H+OH 
 
-! !\RXN: \H2+OH=H+H2O
+!\RXN: \H2+OH=H+H2O
 
-!     !\CMNT: LOWER THAN EXP AT HIGH T. 
-!     !\SOURCE: KEROMNES2013 !\REF: LAM ET AL. (STANFORD) SUBMITTED TO IJCK (2012)
-!     !H2+OH=H+H2O    4.38E13 0.0 6.99E3
+    !\CMNT: LOWER THAN EXP AT HIGH T. 
+    !\SOURCE: KEROMNES2013 !\REF: LAM ET AL. (STANFORD) SUBMITTED TO IJCK (2012)
+    !H2+OH=H+H2O    4.38E13 0.0 6.99E3
 
-!     !\CMNT: KONNOV2018 = BURKE2012 = LI2004 = HONG2011
-!     !\SOURCE: KONNOV2018 !\REF: BAULCH ET AL. J. PHYS. CHEM. REF. DATA 34 (2005) 757-1397
-!     H2+OH=H2O+H    2.14E8 1.52 3.45E3 
-!     !!\SOURCE: BURKE2012 !\REF: MICHAEL & SUTHERLAND. J. PHYS. CHEM. 92 (1988) 3853-3857
-!     !H2+OH=H2O+H    2.16E+08  1.51  3430.0 
-!     !!\SOURCE: HONG2011 !\REF: BAULCH ET AL. J. PHYS. CHEM. REF. DATA 34 (2005) 757-1397
-!     !H2+OH=H2O+H    2.17E+08  1.52  3457.0 
+    !\CMNT: KONNOV2018 = BURKE2012 = LI2004 = HONG2011
+    !\SOURCE: KONNOV2018 !\REF: BAULCH ET AL. J. PHYS. CHEM. REF. DATA 34 (2005) 757-1397
+    H2+OH=H2O+H    2.14E8 1.52 3.45E3 
+    !!\SOURCE: BURKE2012 !\REF: MICHAEL & SUTHERLAND. J. PHYS. CHEM. 92 (1988) 3853-3857
+    !H2+OH=H2O+H    2.16E+08  1.51  3430.0 
+    !!\SOURCE: HONG2011 !\REF: BAULCH ET AL. J. PHYS. CHEM. REF. DATA 34 (2005) 757-1397
+    !H2+OH=H2O+H    2.17E+08  1.52  3457.0 
 
-!     !\BOYANG !\CMNT: HIGHER THAN EXP AT HIGH T.
-!     !\REF: MEISNER & KASTNER. J. Chem. Phys. 144, 174303 (2016); J. Chem. Phys. 147, 049903 (2017)
-!     !H2+OH=H2O+H    1.0075E+06  2.1863  2.3225E+03  
-!     !   DUP
-!     !H2+OH=H2O+H    4.5157E-03  4.4531  -3.7552E+02
-!     !   DUP
+    !\BOYANG !\CMNT: HIGHER THAN EXP AT HIGH T.
+    !\REF: MEISNER & KASTNER. J. Chem. Phys. 144, 174303 (2016); J. Chem. Phys. 147, 049903 (2017)
+    !H2+OH=H2O+H    1.0075E+06  2.1863  2.3225E+03  
+    !   DUP
+    !H2+OH=H2O+H    4.5157E-03  4.4531  -3.7552E+02
+    !   DUP
 
-!     !\ENDRXN: \H2+OH=H+H2O
+    !\ENDRXN: \H2+OH=H+H2O
 
-! !\RXN: \O+H2O=OH+OH !\BOYANG
+!\RXN: \O+H2O=OH+OH !\BOYANG
 
-!     !\SOURCE: ARAMCO3
-!     !O+H2O=OH+OH    6.7E7 1.704 1.49868E4
+    !\SOURCE: ARAMCO3
+    !O+H2O=OH+OH    6.7E7 1.704 1.49868E4
 
-!     !\SOURCE: KEROMNES2013 !\REF:SUTHERLAND ET AL., 23RD SYMPOSIUM, P. 51 (1990)
-!     !O+H2O<=>OH+OH                         2.97E+06      2.02         1.340E+04 
+    !\SOURCE: KEROMNES2013 !\REF:SUTHERLAND ET AL., 23RD SYMPOSIUM, P. 51 (1990)
+    !O+H2O<=>OH+OH                         2.97E+06      2.02         1.340E+04 
 
-!     !\SOURCE: KONNOV2018 !\REF: Altinay & Macdonald. J. Phys. Chem. A 118 (2014) 38-54  !\REF: Nguyen & Stanton. J. Phys. Chem. A 117 (2013) 2678-2686
-!     OH+OH=H2O+O    2.668E6 1.82 -1.647E3
+    !\SOURCE: KONNOV2018 !\REF: Altinay & Macdonald. J. Phys. Chem. A 118 (2014) 38-54  !\REF: Nguyen & Stanton. J. Phys. Chem. A 117 (2013) 2678-2686
+    OH+OH=H2O+O    2.668E6 1.82 -1.647E3
 
-!     !\ENDRXN: \O+H2O=OH+OH
+    !\ENDRXN: \O+H2O=OH+OH
 
-! !\RXN: \H+H+M=H2+M 
+!\RXN: \H+H+M=H2+M 
 
-!     !\SOURCE: ARAMCO3 !\REF:TSANG AND HAMPSON, J. PHYS. CHEM. REF. DATA, 15:1087 (1986)
-!     H2+M=H+H+M    4.577E19 -1.4 1.044E5
-!         H2/2.5/
-!         H2O/12.0/
-!         CO/1.9/
-!         CO2/3.8/
-!         HE/0.83/
-!         CH4/2.0/
-!         C2H6/3.0/
-!         cCO2/3.8/    !\BOYANG
-!         cH2O/12.0/   !\BOYANG
+    !\SOURCE: ARAMCO3 !\REF:TSANG AND HAMPSON, J. PHYS. CHEM. REF. DATA, 15:1087 (1986)
+    H2+M=H+H+M    4.577E19 -1.4 1.044E5
+        H2/2.5/
+        H2O/12.0/
+        CO/1.9/
+        CO2/3.8/
+        HE/0.83/
+        CH4/2.0/
+        C2H6/3.0/
+        cCO2/3.8/    !\BOYANG
+        cH2O/12.0/   !\BOYANG
 
-!     !\SOURCE: KONNOV2018 !\REF: Cohen & Westberg. J. Phys. Chem. Ref. Data 12 (1983) 531
-!     !H+H+M=H2+M                     7.000E+17     -1.0         0.0
-!     !   H2/0.0/ 
-!     !   N2/0.0/ 
-!     !   H/0.0/ 
-!     !   H2O/14.3/ 
-!     !   CO/3.0/ 
-!     !   CO2/3.0/ 
-!     !   cCO2/3.0/    !\BOYANG
-!     !   cH2O/14.3/   !\BOYANG
-!     !H+H+H2=H2+H2                   1.000E+17     -0.6         0.0 
-!     !H+H+N2=H2+N2                   5.400E+18     -1.3         0.0 
-!     !H+H+H=H2+H                     3.200E+15      0.0         0.0 
+    !\SOURCE: KONNOV2018 !\REF: Cohen & Westberg. J. Phys. Chem. Ref. Data 12 (1983) 531
+    !H+H+M=H2+M                     7.000E+17     -1.0         0.0
+    !   H2/0.0/ 
+    !   N2/0.0/ 
+    !   H/0.0/ 
+    !   H2O/14.3/ 
+    !   CO/3.0/ 
+    !   CO2/3.0/ 
+    !   cCO2/3.0/    !\BOYANG
+    !   cH2O/14.3/   !\BOYANG
+    !H+H+H2=H2+H2                   1.000E+17     -0.6         0.0 
+    !H+H+N2=H2+N2                   5.400E+18     -1.3         0.0 
+    !H+H+H=H2+H                     3.200E+15      0.0         0.0 
 
-!     !\ENDRXN: \H+H+M=H2+M 
+    !\ENDRXN: \H+H+M=H2+M 
 
-! !\RXN: \O+O+M=O2+M 
-!     !\SOURCE: ARAMCO3 !\REF:TSANG AND HAMPSON, J. PHYS. CHEM. REF. DATA, 15:1087 (1986)
-!     O+O+M=O2+M    6.165E15 -0.5 0.0E0
-!         H2/2.5/
-!         H2O/12.0/
-!         CO/1.9/
-!         CO2/3.8/
-!         HE/0.83/
-!         CH4/2.0/
-!         C2H6/3.0/
-!         cH2O/12.0/   !\BOYANG
-!         cCO2/3.8/    !\BOYANG
-!     !!\SOURCE: KONNOV2018 !\REF: WARNATZ. COMBUSTION CHEMISTRY. (1984) p.197
-!     !O+O+M=O2+M                     1.000E+17     -1.0         0.0 
-!     !   O/28.8/ 
-!     !   O2/8.0/ 
-!     !   N2/2.0/ 
-!     !   H2O/5.0/ 
-!     !   O3/8.0/ 
-!     !   NO/2.0/ 
-!     !   N/2.0/ 
-!     !   cH2O/5.0/   !\BOYANG
-!     !\ENDRXN: \O+O+M=O2+M 
+!\RXN: \O+O+M=O2+M 
+    !\SOURCE: ARAMCO3 !\REF:TSANG AND HAMPSON, J. PHYS. CHEM. REF. DATA, 15:1087 (1986)
+    O+O+M=O2+M    6.165E15 -0.5 0.0E0
+        H2/2.5/
+        H2O/12.0/
+        CO/1.9/
+        CO2/3.8/
+        HE/0.83/
+        CH4/2.0/
+        C2H6/3.0/
+        cH2O/12.0/   !\BOYANG
+        cCO2/3.8/    !\BOYANG
+    !!\SOURCE: KONNOV2018 !\REF: WARNATZ. COMBUSTION CHEMISTRY. (1984) p.197
+    !O+O+M=O2+M                     1.000E+17     -1.0         0.0 
+    !   O/28.8/ 
+    !   O2/8.0/ 
+    !   N2/2.0/ 
+    !   H2O/5.0/ 
+    !   O3/8.0/ 
+    !   NO/2.0/ 
+    !   N/2.0/ 
+    !   cH2O/5.0/   !\BOYANG
+    !\ENDRXN: \O+O+M=O2+M 
 
-! !\RXN: \O+H+M=OH+M 
-!     !\SOURCE: ARAMCO3 !\REF:TSANG AND HAMPSON, J. PHYS. CHEM. REF. DATA, 15:1087 (1986)
-!     O+H+M=OH+M    4.714E18 -1.0 0.0E0
-!         H2/2.5/
-!         H2O/12.0/
-!         CO/1.5/
-!         CO2/2.0/
-!         HE/0.75/
-!         CH4/2.0/
-!         C2H6/3.0/
-!         cH2O/12.0/   !\BOYANG
-!         cCO2/2.0/    !\BOYANG
-!     !\SOURCE: KONNOV2018 !\REF: Naudet et al. Combust. Sci. Technol. 164 (2001) 113-128
-!     !O+H+M=OH+M                     6.750E+18     -1.0         0.0 
-!     !   H2O/5.0/ 
-!     !\ENDRXN: \O+H+M=OH+M
+!\RXN: \O+H+M=OH+M 
+    !\SOURCE: ARAMCO3 !\REF:TSANG AND HAMPSON, J. PHYS. CHEM. REF. DATA, 15:1087 (1986)
+    O+H+M=OH+M    4.714E18 -1.0 0.0E0
+        H2/2.5/
+        H2O/12.0/
+        CO/1.5/
+        CO2/2.0/
+        HE/0.75/
+        CH4/2.0/
+        C2H6/3.0/
+        cH2O/12.0/   !\BOYANG
+        cCO2/2.0/    !\BOYANG
+    !\SOURCE: KONNOV2018 !\REF: Naudet et al. Combust. Sci. Technol. 164 (2001) 113-128
+    !O+H+M=OH+M                     6.750E+18     -1.0         0.0 
+    !   H2O/5.0/ 
+    !\ENDRXN: \O+H+M=OH+M
 
-! !\RXN: \H+OH+M=H2O+M !\BOYANG 
+!\RXN: \H+OH+M=H2O+M !\BOYANG 
 
-!     !!\SOURCE: ARAMCO3 !\REF: LI INT. J. CHEM. KINET. 36(10) (2004) 566–575.
-!     !H+OH+M=H2O+M    3.5E22 -2.0 0.0E0
-!     !    H2/0.73/
-!     !    H2O/3.65/
-!     !    CH4/2.0/
-!     !    C2H6/3.0/
-!     !    cH2O/3.65/   !\BOYANG
+    !!\SOURCE: ARAMCO3 !\REF: LI INT. J. CHEM. KINET. 36(10) (2004) 566–575.
+    !H+OH+M=H2O+M    3.5E22 -2.0 0.0E0
+    !    H2/0.73/
+    !    H2O/3.65/
+    !    CH4/2.0/
+    !    C2H6/3.0/
+    !    cH2O/3.65/   !\BOYANG
 
-!     !\SOURCE: KONNOV2018 !\REF: Srinivasan & Michael. Int. J. Chem. Kinet. 38 (2006) 211-219
-!     H2O+M=H+OH+M    6.06E27 -3.312 1.2077E5
-!         H2O/0.0/       !\CMNT: REPLACED BY REACTION
-!         H2/3.0/ 
-!         N2/2.0/ 
-!         O2/1.5/ 
-!         HE/1.1/ 
-!         CH4/7.0/ 
-!         CO2/4.0/
-!         cCO2/4.0/      !\BOYANG 
-!     H2O+H2O=H+OH+H2O    1.0E26 -2.44 1.2016E5
-!     !\BOYANG !\CMNT: FALSE REACTION FOR cH2O
-!     H2O+cH2O=H+OH+cH2O    1.0E26 -2.44 1.2016E5
+    !\SOURCE: KONNOV2018 !\REF: Srinivasan & Michael. Int. J. Chem. Kinet. 38 (2006) 211-219
+    H2O+M=H+OH+M    6.06E27 -3.312 1.2077E5
+        H2O/0.0/       !\CMNT: REPLACED BY REACTION
+        H2/3.0/ 
+        N2/2.0/ 
+        O2/1.5/ 
+        HE/1.1/ 
+        CH4/7.0/ 
+        CO2/4.0/
+        cCO2/4.0/      !\BOYANG 
+    H2O+H2O=H+OH+H2O    1.0E26 -2.44 1.2016E5
+    !\BOYANG !\CMNT: FALSE REACTION FOR cH2O
+    H2O+cH2O=H+OH+cH2O    1.0E26 -2.44 1.2016E5
 
-!     !\ENDRXN: \H+OH+M=H2O+M 
+    !\ENDRXN: \H+OH+M=H2O+M 
 
 !\RXN: \H+O2(+M)=HO2(+M) !\BOYANG 
 
@@ -378,851 +378,856 @@ REACTIONS MOLES CAL/MOLE
         LOW/2.037E+20 -1.2 0.0/
         TROE/0.5 1 1E+10/   
 
-    !!\SOURCE: KONNOV2018
-    !!\REF: (HPL) Troe. Proc. Combust. Inst. 28 (2000) 1463-1469
-    !!\REF: (LPL & 3rd-body Eff.) Shao et al. Proc. Combust. Inst. 37 (2019) 145-152
-    !H+O2(+M)=HO2(+M)               4.660E+12      0.44        0.0 
-    !   AR/0.72/ 
-    !   H2O/16.6/ 
-    !   O2/1.0/ 
-    !   H2/1.5/ 
-    !   HE/0.57/ 
-    !   CO2/3.61/ 
-    !   CH4/3.5/  
-    !   cCO2/3.61/   !\BOYANG
-    !   cH2O/16.6/   !\BOYANG
-    !   LOW/1.225E+19 -1.2 0.0/ 
-    !   TROE/0.5 1 1E+10/ 
+    !\SOURCE: KONNOV2018
+    !\REF: (HPL) Troe. Proc. Combust. Inst. 28 (2000) 1463-1469
+    !\REF: (LPL & 3rd-body Eff.) Shao et al. Proc. Combust. Inst. 37 (2019) 145-152
+    H+O2(+M)=HO2(+M)               4.660E+12      0.44        0.0 
+      AR/0.72/ 
+      H2O/16.6/ 
+      O2/1.0/ 
+      H2/1.5/ 
+      HE/0.57/ 
+      CO2/3.61/ 
+      CH4/3.5/  
+      cCO2/3.61/   !\BOYANG
+      cH2O/16.6/   !\BOYANG
+      LOW/1.225E+19 -1.2 0.0/ 
+      TROE/0.5 1 1E+10/ 
 
-    !!\SOURCE: ARAMCO3 !\REF: FERNANDES ET AL.,PHYS. CHEM. CHEM. PHYS. 10(29) (2008) 4313–4321
-    !H+O2(+M)=HO2(+M)    4.65E12 0.44 0.0E0
-    !    !HE/0.64/
-    !    HE/0.00/     !\CMNT: replaced by reaction
-    !    AR/0.00/     !\CMNT: replaced by reaction
-    !    H2/1.3/
-    !    CO/1.9/
-    !    CO2/3.8/
-    !    H2O/10.0/
+    !\SOURCE: ARAMCO3 !\REF: FERNANDES ET AL.,PHYS. CHEM. CHEM. PHYS. 10(29) (2008) 4313–4321
+    H+O2(+M)=HO2(+M)    4.65E12 0.44 0.0E0
+       !HE/0.64/
+       HE/0.00/     !\CMNT: replaced by reaction
+       AR/0.00/     !\CMNT: replaced by reaction
+       H2/1.3/
+       CO/1.9/
+       CO2/3.8/
+       H2O/10.0/
+       CH4/2.0/
+       C2H6/3.0/
+       cCO2/3.8/    !\BOYANG
+       cH2O/10.0/   !\BOYANG
+       LOW/1.737E19 -1.23E0 0.0E0/
+       TROE/6.7E-1 1.0E-30 1.0E30 1.0E30/
+
+    !\SOURCE: KEROMNES2013 !\REF: FERNANDES ET AL.,PHYS. CHEM. CHEM. PHYS. 10(29) (2008) 4313–4321
+    H+O2(+HE)<=>HO2(+HE)    4.65E12 0.44 0.0E0
+      LOW/9.192E+18 -1.20 0.0E0 /  !\CMNT: FERNANDES X 1.5
+      TROE/0.59 1E-30 1E30 1E30 /
+
+    !\SOURCE: KEROMNES2013 !\REF: FERNANDES ET AL.,PHYS. CHEM. CHEM. PHYS. 10(29) (2008) 4313–4321
+    H+O2(+AR)<=>HO2(+AR)    4.65E12 0.44 0.0E0
+    \REF: BATES ET AL. PHYS. CHEM. CHEM. PHYS. 3(12) (2001) 2337–2342.
+      LOW/6.810E+18 -1.200 0.0/
+      TROE/0.70 1.0E-30 1.0E+30 1.0E+30/
+
+    \ENDRXN: \H+O2(+M)=HO2(+M)
+
+!\RXN: \HO2+H=OH+OH 
+    !\SOURCE: ARAMCO3 !\REF: MUELLER ET AL., INT. J. CHEM. KINET. 31(10) (1999) 705–724.
+    HO2+H=OH+OH    7.079E13 0.0 2.95E2
+    !\ENDRXN: \HO2+H=OH+OH 
+
+!\RXN: \H2+O2=H+HO2 
+    !\SOURCE: ARAMCO3 
+    HO2+H=H2+O2    1.1402E10 1.0827 5.5378E2
+    !\SOURCE: KEROMNES2013 !\REF: MICHAEL ET AL., PROC. COMBUST. INST. 28(2) (2000) 1471–1478.
+    !H2+O2<=>H+HO2                          5.176E+05    2.433          53502.0
+    !\SOURCE: KONNOV2018 !\REF: MICHAEL ET AL., PROC. COMBUST. INST. 28(2) (2000) 1471–1478.
+    !H2+O2=H+HO2                    7.400E+05      2.43    53500.0 
+    !\ENDRXN: \H2+O2=H+HO2 
+
+!\RXN: \H+HO2=H2O+O !\CMNT: ADDED FROM KONNOV2018
+    !\SOURCE: KONNOV2018 !\REF: CONFORTI ET AL. J. CHEM. PHYS. 133 (2010) 164312-164322
+    H2O+O=H+HO2    2.2E8 2.0 6.16E4
+    !\ENDRXN: \H+HO2=H2O+O 
+
+!\RXN: \HO2+O=OH+O2 
+
+    !!\SOURCE: KEROMNES2013 !\REF:BAULCH ET AL., J. PHYS. CHEM. REF DATA, 21(3) (1992) 411-734
+    !HO2+O=OH+O2    3.25E13 0.0 0.0E0
+
+    !\SOURCE: BURKE2012 !\REF: FERNANDES & VARANDAS. J. PHYS. CHEM. A 106 (2002) 4077-4083
+    !\CMNT: 0.6 * ORIGINAL RATE IN PARER
+    HO2+O=OH+O2    2.85E10 1.0 -7.239E2
+
+    !\ENDRXN: \HO2+O=OH+O2
+
+!\RXN: \HO2+OH=H2O+O2 !\BOYANG 
+    
+    !\BOYANG !\REF: MONGE-PALACIOS & SARATHY. PHYS. CHEM. CHEM. PHYS. 20 (2018) 4478-4489
+    HO2+OH=H2O+O2    3.08E+12  0.07  -1151
+        DUP
+    HO2+OH=H2O+O2    8.00E+12  0.32   6896
+        DUP
+
+    !!\SOURCE: KEROMNES2013 !\REF:KEYSER, J. PHYS. CHEM. 92 (1988) 1193–1200. REDUCED BY 15%
+    !HO2+OH=H2O+O2    2.456E13 0.0 -4.97E2
+
+    !!\SOURCE: KONNOV2018 !\REF: HONG ET AL. PROC. COMBUST. INST. 34 (2013) 565-571
+    !HO2+OH=H2O+O2                  7.000E+12      0.0     -1093.0 
+    !    DUPLICATE
+    !HO2+OH=H2O+O2                  4.500E+14      0.0     10930.0 
+    !    DUPLICATE
+
+    !\ENDRXN: \HO2+OH=H2O+O2 
+
+!\RXN: \HO2+HO2=H2O2+O2 
+
+    !\SOURCE: KONNOV2018 !\REF: KAPPEL ET AL. PHYS. CHEM. CHEM. PHYS. 4 (2002) 4392-4398
+    HO2+HO2=H2O2+O2    1.03E14 0.0 1.104E4
+        DUP
+    HO2+HO2=H2O2+O2    1.94E11 0.0 -1.409E3 
+        DUP
+
+    !\SOURCE: KEROMNES2013 !\REF:HIPPLER ET AL., J. CHEM. PHYS. 93(3) (1990) 1755–1760.
+    !HO2+HO2=O2+H2O2                      1.300E+11    0.000          -1630.00
+    !   DUPLICATE
+    !HO2+HO2=O2+H2O2                      3.658E+14    0.000          12000.00 !HIPPLER X 0.87
+    !   DUPLICATE
+
+    !\ENDRXN: \HO2+HO2=H2O2+O2 
+
+!\RXN: \H2O2(+M)=OH+OH(+M) 
+
+    !\SOURCE: ARAMCO3 !\REF: TROE, COMBUST. FLAME 158(4) (2011) 594–601.
+    H2O2(+M)=OH+OH(+M)    2.0E12 0.9 4.8749E4
+        !H2O/7.65/
+        H2O/0.0/     !\CMNT: replaced by reaction
+        CO2/1.6/
+        N2/1.5/
+        O2/1.2/
+        HE/0.65/
+        H2O2/7.7/
+        H2/3.7/      !\REF: LI ET AL., INT. J. CHEM. KINET. 36:566-575 (2004)
+        CO/2.8/      !\REF: LI ET AL., INT. J. CHEM. KINET. 36:566-575 (2004)
+        !cH2O/7.65/   !\BOYANG
+        cH2O/0.0/    !\CMNT: replaced by reaction
+        cCO2/1.6/    !\BOYANG
+        LOW/2.49E24 -2.3E0 4.8749E4/
+        TROE/4.3E-1 1.0E-30 1.0E30/
+
+    !\SOURCE: KEROMNES2013 !\REF: TROE, COMBUST. FLAME 158(4) (2011) 594–601. 
+    H2O2(+H2O)<=>OH+OH(+H2O)    2.0E12 0.9 4.8749E4
+        LOW/1.865E+25 -2.30 4.8749E+04/
+        TROE/0.51 1E-30 1E+30/
+
+    !\BOYANG !\CMNT: FALSE REACTION ADDED FRO cH2O
+    H2O2(+cH2O)<=>OH+OH(+cH2O)    2.0E12 0.9 4.8749E4
+        LOW/1.865E+25 -2.30 4.8749E+04/
+        TROE/0.51 1E-30 1E+30/
+
+    !\ENDRXN: \H2O2(+M)=OH+OH(+M) 
+
+!\RXN: \H2O2+H=H2O+OH 
+    !\SOURCE: KONNOV2018 !\REF: ELLINGSON ET AL. J. PHYS. CHEM. A 111 (2007) 13554-13556
+    H2O2+H=H2O+OH    2.03E7 2.02 2.62E3
+    !!\SOURCE: KEROMNES2013 !\REF:TSANG AND HAMPSON, J. PHYS. CHEM. REF. DATA 15 (1986) 1087–1280.
+    !H2O2+H=H2O+OH    2.41E13 0.0 3.97E3
+    !\ENDRXN: \H2O2+H=H2O+OH 
+
+!\RXN: \H2O2+H=HO2+H2 
+    !\SOURCE: KONNOV2018 !\REF: ELLINGSON ET AL. J. PHYS. CHEM. A 111 (2007) 13554-13556
+    H2O2+H=HO2+H2    5.02E6 2.07 4.3E3
+    !!\SOURCE: KEROMNES2013 !\REF: ELLINGSON ET AL., J. PHYS. CHEM. A 111(51) (2007) 13554–13566. (FIT TO THE THEORETICAL RATE)
+    !H2O2+H=H2+HO2    2.15E10 1.0 6.0E3
+    !\RXN: \H2O2+H=HO2+H2 
+
+!\RXN: \H2O2+O=OH+HO2 
+    !\SOURCE: KEROMNES2013 !\REF:TSANG AND HAMPSON, J. PHYS. CHEM. REF. DATA 15 (1986) 1087–1280.
+    H2O2+O=OH+HO2    9.55E6 2.0 3.97E3
+    !\ENDRXN: \H2O2+O=OH+HO2 
+
+!\RXN: \H2O2+OH=H2O+HO2 
+    !\SOURCE: KEROMNES2013 !\REF: HONG ET AL., J. PHYS. CHEM. A 114(18) (2010) 5718–5727.
+    H2O2+OH=H2O+HO2    1.74E12 0.0 3.18E2
+        DUP
+    H2O2+OH=H2O+HO2    7.59E13 0.0 7.269E3
+        DUP
+    !\ENDRXN: \H2O2+OH=H2O+HO2 
+
+!\RXN: \H+O2+X !\BOYANG 
+    !\SOURCE: KONNOV2018 !REF: Burke & Klippenstein. Nat Chem. 9(11) (2017) 1078 
+    H+O2+H=H2+O2    8.8E22 -1.835 8.0E2
+    !\SOURCE: KONNOV2018 !REF: Burke & Klippenstein. Nat Chem. 9(11) (2017) 1078 
+    H+O2+H=OH+OH    4.0E22 -1.835 8.0E2
+    !\SOURCE: KONNOV2018 !REF: Burke & Klippenstein. Nat Chem. 9(11) (2017) 1078 
+    H+O2+O=OH+O2    7.35E22 -1.835 8.0E2
+    !\SOURCE: KONNOV2018 !REF: Burke & Klippenstein. Nat Chem. 9(11) (2017) 1078 
+    H+O2+OH=H2O+O2    2.56E22 -1.835 8.0E2
+    !\ENDRXN: \H+O2+X 
+
+!\ENDSUBMECH: \H2+O2
+
+
+!\SUBMECH: \OHX
+!\SUBMECHSOURCE: KEROMNES2013, KONNOV2018
+
+!\RXN: \H+O+M=OHX+M 
+    !\SOURCE: KEROMNES2013 !\REF: KATHROTIA ET AL., COMBUST. FLAME 157(7) (2010) 1261–1273
+    H+O+M=OHX+M    1.5E13 0.0 5.975E3
+        H2/1.0/
+        H2O/6.5/
+        O2/0.4/
+        N2/0.4/
+        AR/0.35/
+        cH2O/6.5/  !\BOYANG
+    !\ENDRXN: \H+O+M=OHX+M 
+
+!\RXN: \OHX=OH+hv 
+    !\SOURCE: KEROMNES2013 !\REF: SMITH ET AL., COMBUST. FLAME 131(1-2) (2002) 59–69.
+    OHX=OH+hv    1.45E6 0.0 0.0E0
+    !!\SOURCE: KONNOV2018 !\REF: GERMAN. J. CHEM. PHYS. 62 (1975) 2584-2587
+    !OHX=OH+hv    1.400E+06      0.0         0.0 
+    !\ENDRXN: \OHX=OH+hv 
+
+!\RXN: \OHX+M=OH+M !\BOYANG !\CMNT: NON-REACTIVE QUECHING OF OHX 
+    !\CMNT: (BELOW) ----- AR -----
+    !!\SOURCE: KEROMNES2013 !\REF: PAUL ET AL., J. CHEM. PHYS. 102(21) (1995) 8378–8384.
+    !OHX+AR=OH+AR    1.69E12 0.0 4.135E3
+    !\SOURCE: KONNOV2018 !\REF: HALL & PETERSEN. INT. J. CHEM. KINET. 38 (2006) 714-724
+    OHX+AR=OH+AR    2.170E+10      0.5      2060.0 
+    !\CMNT: (BELOW) ----- H2 -----
+    !!\SOURCE: KEROMNES2013 !\REF: TAMURA ET AL., COMBUST. FLAME 114(3-4) (1998) 502–514.
+    !OHX+H2=OH+H2    2.95E12 0.5 -4.44E2
+    !\SOURCE: KONNOV2018 !\REF: (RATE) TAMURA ET AL., COMBUST. FLAME 114(3-4) (1998) 502–514. 
+    !\CMNT: REACTIVE QUENCHING CONSIDERED. 
+    !\REF: (BRANCHING RATIO) LEHMAN ET AL. J. CHEM. PHYS. 137 (2012) 094312
+    OHX+H2=OH+H2    3.540E+11      0.5      -444.0 
+    !\CMNT: (BELOW) ----- N2 -----
+    !\SOURCE: KEROMNES2013 !\REF: TAMURA ET AL., COMBUST. FLAME 114(3-4) (1998) 502–514.
+    OHX+N2=OH+N2    1.08E11 0.5 -1.242E3
+    !\CMNT: (BELOW) ----- OH -----
+    !\SOURCE: KEROMNES2013 !\REF: TAMURA ET AL., COMBUST. FLAME 114(3-4) (1998) 502–514.
+    OHX+OH=OH+OH    6.01E12 0.5 -7.64E2
+    !!\SOURCE: KONNOV2018 !\REF: HIDAKA ET AL. J. PHYS. CHEM. 86 (1982) 1429-1433
+    !OHX+OH=OH+OH    1.500E+12      0.5         0.0 
+    !\CMNT: (BELOW) ----- H -----
+    !\SOURCE: KEROMNES2013 !\REF: TAMURA ET AL., COMBUST. FLAME 114(3-4) (1998) 502–514.
+    OHX+H=OH+H    1.31E12 0.5 -1.67E2
+    !!\SOURCE: KONNOV2018 !\REF: HIDAKA ET AL. J. PHYS. CHEM. 86 (1982) 1429-1433
+    !OHX+H=OH+H    1.500E+12      0.5         0.0 
+    !\CMNT: (BELOW) ----- O -----
+    !\SOURCE: KONNOV2018 !\REF: HIDAKA ET AL. J. PHYS. CHEM. 86 (1982) 1429-1433
+    OHX+O=OH+O    1.500E+12      0.5         0.0 
+    !\CMNT: (BELOW) ----- O2 -----
+    !!\SOURCE: KEROMNES2013 !\REF: TAMURA ET AL., COMBUST. FLAME 114(3-4) (1998) 502–514.
+    !OHX+O2=OH+O2    2.1E12 0.5 -4.78E2
+    !\SOURCE: KONNOV2018 !\REF: (RATE) TAMURA ET AL., COMBUST. FLAME 114(3-4) (1998) 502–514. 
+    !\CMNT: REACTIVE QUENCHING CONSIDERED. 
+    !\REF: (BRANCHING RATIO) LEHMAN ET AL. J. CHEM. PHYS. 137 (2012) 094312
+    OHX+O2=OH+O2    8.400E+11      0.5      -482.0 
+    !\CMNT: (BELOW) ----- CO -----
+    !\SOURCE: KEROMNES2013 !\REF: TAMURA ET AL., COMBUST. FLAME 114(3-4) (1998) 502–514.
+    OHX+CO=OH+CO    3.23E12 0.5 -7.87E2
+    !\CMNT: (BELOW) ----- CH4 -----
+    !\SOURCE: ARAMCO3 
+    !OHX+CH4=OH+CH4    3.36E12 0.5 -6.35E2
+    !\CMNT: (BELOW) ----- H2O -----
+    !!\SOURCE: KEROMNES2013 !\REF: TAMURA ET AL., COMBUST. FLAME 114(3-4) (1998) 502–514.
+    !OHX+H2O=OH+H2O    5.93E12 0.5 -8.6E2
+    !\SOURCE: KONNOV2018 !\REF: (RATE) TAMURA ET AL., COMBUST. FLAME 114(3-4) (1998) 502–514. 
+    !\CMNT: REACTIVE QUENCHING CONSIDERED. BRANCHING RATIO IS ESTIMATED TO BE 0.5:0.5 TO REACTIVE QUENCHING OHX+H2O=H2O2+H
+    OHX+H2O=OH+H2O    2.960E+12      0.5      -861.0 
+    !\BOYANG !\CMNT: FALSE REACTION ADDED FOR cH2O
+    OHX+cH2O=OH+cH2O    2.960E+12      0.5      -861.0 
+    !\CMNT: (BELOW) ----- CO2 -----
+    !\SOURCE: KEROMNES2013 !\REF: TAMURA ET AL., COMBUST. FLAME 114(3-4) (1998) 502–514.
+    OHX+CO2=OH+CO2    2.75E12 0.5 -9.68E2
+    !\BOYANG !\CMNT: FALSE REACTION ADDED FOR cCO2
+    OHX+cCO2=OH+cCO2    2.75E12 0.5 -9.68E2
+    !\ENDRXN: \OHX+M=OH+M 
+
+!\RXN: \OHX+X !\CMNT: REACTIVE QUENCHING OF OHX
+    !\SOURCE: KONNOV2018 !\REF: (RATE) TAMURA ET AL., COMBUST. FLAME 114(3-4) (1998) 502–514. 
+    !\REF: (BRANCHING RATIO) LEHMAN ET AL. J. CHEM. PHYS. 137 (2012) 094312
+    OHX+H2=H2O+H      2.600E+12      0.5      -444.0 
+    !\SOURCE: KONNOV2018 !\REF: (RATE) TAMURA ET AL., COMBUST. FLAME 114(3-4) (1998) 502–514. 
+    !\REF: (BRANCHING RATIO) LEHMAN ET AL. J. CHEM. PHYS. 137 (2012) 094312
+    OHX+O2=O3+H       2.520E+11      0.5      -482.0 
+    !\SOURCE: KONNOV2018 !\REF: (RATE) TAMURA ET AL., COMBUST. FLAME 114(3-4) (1998) 502–514. 
+    !\REF: (BRANCHING RATIO) LEHMAN ET AL. J. CHEM. PHYS. 137 (2012) 094312
+    OHX+O2=HO2+O      1.008E+12      0.5      -482.0 
+    !\SOURCE: KONNOV2018 !\REF: (RATE) TAMURA ET AL., COMBUST. FLAME 114(3-4) (1998) 502–514. 
+    !\CMNT: REACTIVE QUENCHING CONSIDERED. BRANCHING RATIO IS ESTIMATED TO BE 0.5:0.5 TO REACTIVE QUENCHING OHX+H2O=H2O2+H
+    OHX+H2O=H2O2+H    2.960E+12      0.5      -861.0 
+    !\ENDRXN: \OHX+X 
+
+!\ENDSUBMECH: \OHX
+
+
+!\SUBMECH: \H2+O3+EXICITED 
+!\SUBMECHSOURCE: KONNOV2018 !\REF: KONNOV. COMBUST. FLAME. 162 (2015) 3755-3772 ; KONNOV. COMBUST. FLAME. 203 (2019) 14-22
+
+!\RXN: \O2+O+M=O3+M 
+    O2+O+M=O3+M       6.530E+17     -1.5         0.0
+        AR/0.0/    !\CMNT: REPLACED BY REACTION
+        O2/0.95/ 
+        O3/2.5/ 
+        O/4.0/
+        DUPLICATE
+    O2+O+M=O3+M       1.330E+22     -3.3         0.0
+        AR/0.0/    !\CMNT: REPLACED BY REACTION
+        O2/1.07/ 
+        O3/2.5/ 
+        O/4.0/
+        DUPLICATE
+    O2+O+AR=O3+AR     4.290E+17     -1.5         0.0 
+        DUPLICATE
+    O2+O+AR=O3+AR     5.100E+21     -3.2         0.0 
+        DUPLICATE
+    !\ENDRXN: \O2+O+M=O3+M 
+O3+O=O2+O2        4.820E+12      0.0      4094.0
+O3+O=O2X+O2       1.440E+11      0.0      4094.0
+O+O+M=O2X+M       7.000E+15     -1.0         0.0
+    O/28.8/ 
+    O2/8.0/ 
+    N2/2.0/ 
+    H2O/5.0/ 
+    O3/8.0/ 
+    !NO/2.0/ 
+    !N/2.0/ 
+    cH2O/5.0/   !\BOYANG
+!\RXN: \O2X+M=O2+M 
+    O2X+M=O2+M        1.800E+06      0.0       400.0
+        O/0/         !\CMNT: REPLACED BY REACTION
+        H/0/         !\CMNT: REPLACED BY REACTION
+        AR/0.005/ 
+        HE/0.005/ 
+        N2/0.002/ 
+        H2O/3.3/ 
+        H2/2.5/ 
+        CO2/0.01/ 
+        CO/5.6/
+        cH2O/3.3/    !\BOYANG
+        cCO2/0.01/   !\BOYANG
+    O2X+O=O2+O        7.800E+07      0.0         0.0
+    O2X+H=O2+H        4.000E+13      0.0      5030.0 
+    !\ENDRXN: \O2X+M=O2+M 
+O2X+O+M=O+O2+M    3.600E+15      0.0         0.0 
+  AR/0.63/ 
+O2X+O3=O2+O2+O    3.130E+13      0.0      5644.0
+OX+O2X=O+O2       6.030E+12      0.0         0.0
+OX+O2=O+O2X       1.590E+13      0.0      -139.0 
+!\RXN: \OX+M=O+M 
+    OX+M=O+M          4.800E+11      0.0         0.0 
+        O2/0/      !\CMNT: REPLACED BY REACTION
+        N2/0/      !\CMNT: REPLACED BY REACTION
+        O/10.0/ 
+        H2O/3.0/
+        cH2O/3.0/  !\BOYANG
+    OX+O2=O+O2        2.810E+12      0.0      -139.0 
+    OX+N2=O+N2        1.260E+13      0.0      -230.0 
+    !\ENDRXN: \OX+M=O+M 
+OX+O3=O2+O+O      7.230E+13      0.0         0.0 
+OX+O3=O2+O2       7.230E+13      0.0         0.0 
+H2+O2X=H+HO2      6.160E+05      2.335   31080.0
+H+O2X=OH+O        3.500E+08      1.45     4508.0 
+H+O2X+M=HO2+M     9.890E+09      2.03     3360.0
+!\REF: MONGE-PALACIOS & SARATHY. PHYS. CHEM. CHEM. PHYS. 20 (2018) 4478-4489
+HO2+OH=H2O+O2X    2.140E+06      1.65     2180.0 
+OH+O2X=O+HO2      1.300E+13      0.0     34000.0 
+O3+H=OH+O2        8.430E+13      0.0       934.0 
+O3+OH=HO2+O2      1.000E+12      0.0      1870.0 
+O3+HO2=OH+O2+O2   5.850E-04      4.57    -1377.0 
+H+HO2=H2O+OX      2.500E+12      0.0       300.0 
+OX+H2=OH+H        8.100E+13      0.0         0.0 
+OX+H2O=OH+OH      1.000E+14      0.0       -71.0 
+!\ENDSUBMECH: \H2+O3+EXICITED 
+
+
+!\SUBMECH: \H2+CO
+
+!\RXN: \CO+O(+M)=CO2(+M) !\BOYANG 
+    !!\SOURCE: KEROMNES2013 !\REF: (HPL) TROE, J. PHYS. CHEM. 83 (1979) 114–126. X 0.76
+    !!\SOURCE: KEROMNES2013 !\REF: (LPL) WESTMORELAND ET AL, AICHE JOURNAL 32(12) (1986) 1971–1979. X 0.87
+    !CO+O(+M)=CO2(+M)    1.362E10 0.0 2.384E3
+    !    H2/2.0/
+    !    H2O/12.0/
+    !    CO/1.75/
+    !    CO2/3.6/
+    !    HE/0.7/
+    !    cH2O/12.0/
+    !    cCO2/3.6/
+    !    LOW/1.173E24 -2.79E0 4.191E3/ 
+
+    !\BOYANG !\REF: (HPL) JASPER. J. PHYS. CHEM. A 119(28) (2015) 7339-7351
+    !\SOURCE: KEROMNES2013 !\REF: (LPL) WESTMORELAND ET AL, AICHE JOURNAL 32(12) (1986) 1971–1979. X 0.87
+    !\SOURCE: KEROMNES2013 !\REF: (3RD-BODY EFF.) ALLEN ET AL. COMBUST. FLAME 109(3) (1997) 449-470
+    CO+O(+M)=CO2(+M)    1.06E13 -0.308 6.943E3
+        H2/2.0/
+        H2O/12.0/
+        CO/1.75/
+        CO2/3.6/
+        HE/0.7/
+        AR/0.87/
+        cH2O/12.0/
+        cCO2/3.6/
+        LOW/1.173E24 -2.79E0 4.191E3/ 
+
+    !!\SOURCE: NILSSON2016 !\REF: (HPL) JASPER. J. CHEM. PHYS. 139 (2013) 154313
+    !!\SOURCE: NILSSON2016 !\REF: (LPL) TSANG & HAMPSON. J. PHYS. CHEM. REF. DATA 15(3) (1986) 1087-1279
+    !!\SOURCE: NILSSON2016 !\REF: (3RD-BODY EFF.) ALLEN ET AL. COMBUST. FLAME 109(3) (1997) 449-470
+    !CO+O(+M)=CO2(+M)    4.00E15 -0.960 9.837E3
+    !   H2/2.5/
+    !   H2O/12/
+    !   CO/1.9/
+    !   CO2/3.8/
+    !   AR/0.87/
+    !   LOW/6.14E14 0.0 3.000E3/
+
+    !\ENDRXN: \CO+O(+M)=CO2(+M) 
+
+!\RXN: \CO+O2=CO2+O 
+    !!\SOURCE: KEROMNES2013 !\REF:TSANG AND HAMPSON, J. PHYS. CHEM. REF. DATA 15 (1986) 1087–1280.
+    !CO+O2=CO2+O    1.119E12 0.0 4.77E4
+
+    !\SOURCE: NILSSON2016 !\REF: THIELEN & ROTH. Ber.Bunsen-Ges.-Phys. Chem. Chem. Phys. 87(10) (1983) 920-925
+    !\CMNT: (SUPPORTED BY) SHARIPOV & STARIK. J. PHYS. CHEM. A 115(10) (2011) 1795-1803
+    CO+O2=CO2+O    5.06E13 0.0 6.319E4
+
+    !\ENDRXN: \CO+O2=CO2+O 
+
+!\RXN: \CO+OH=CO2+OH !\BOYANG 
+
+    !\SOURCE: KEROMNES2013 !\REF: (BATHGAS = HE) JOSHI AND WANG IJCK (2006), 38, (1), 57-73.
+    CO+OH=CO2+H    7.015E4 2.053 -3.557E2
+        DUP
+    CO+OH=CO2+H    5.757E12 -0.664 3.318E2
+        DUP
+
+    !\BOYANG !\REF: WANG ET AL. J. PHYS. CHEM. A 121(45) (2017) 8561-8568 
+    !\CMNT: VALID FOR 1428-1685 K, UNCERTAINTY = 10%
+    !\CMNT: IGNORED: valid range is too narrow.
+    !CO+OH=CO2+H    1.90E12 0.0 5.4847E3
+    
+    !\BOYANG !\REF: RAS/GLA07a (1-50 bar, 300<T<2000K)
+    !CO+OH=CO2+H                          8.000E+10   0.000       0   ! RAS/GLA07a (1 bar, 300<T<2000K)
+    !                        PLOG /  0.9869 8.000E+10   0.000       0 / ! RAS/GLA07a (1 bar, 300<T<2000K)
+    !                        PLOG /  0.9869 8.800E+05   1.770     954 / ! RAS/GLA07a (1 bar, 300<T<2000K)
+    !                        PLOG /  2.9607 7.000E+10   0.000       0 / ! RAS/GLA07a (3 bar, 300<T<2000K)
+    !                        PLOG /  2.9607 2.900E+05   1.900     397 / ! RAS/GLA07a (3 bar, 300<T<2000K)
+    !                        PLOG /  9.8692 3.700E+12   0.000   12518 / ! RAS/GLA07a (10 bar, 300<T<2000K)
+    !                        PLOG /  9.8692 9.300E+07   1.100       0 / ! RAS/GLA07a (10 bar, 300<T<2000K)
+    !                        PLOG / 19.7385 2.900E+12   0.000   11922 / ! RAS/GLA07a (20 bar, 300<T<2000K)
+    !                        PLOG / 19.7385 4.500E+07   1.200       0 / ! RAS/GLA07a (20 bar, 300<T<2000K)
+    !                        PLOG / 49.3462 1.500E+12   0.000   13909 / ! RAS/GLA07a (50 bar, 150<T<2000K)
+    !                        PLOG / 49.3462 5.800E+06   1.500       0 / ! RAS/GLA07a (50 bar, 150<T<2000K)
+
+
+    !\BOYANG !\WARNING: This is biomolecular rate coefficient for OH(H2O)+CO=CO2+H2O+H reaction, (NOT the termolecular rate which is needed). Ref does not have rate for the preceeding OH+H2O=OH(H2O) reaction. 
+    !\WARNING: This is a global reaction.
+    !\CMNT: IGNORED: MAY NOT BE IMPORTANT AT COMBUSTION TEMPERATURES.
+    !\REF: Zhang et al. J. Phys. Chem. A (2017) 121, 26, 4868-4880 
+    !CO+OH+H2O=CO2+H+H2O    2.42381E3 2.31973 3.11047E3
+    !    DUP
+    !CO+OH+H2O=CO2+H+H2O    5.97405E1 2.62052 -8.6291E2
+    !    DUP
+
+    !\ENDRXN: \CO+OH=CO2+OH 
+
+!\RXN: \HOCO=CO+OH !\BOYANG 
+
+    !\CMNT: 3RD-BODY EFF. IGNORED BY CHEMKIN WHEN USING PLOG FORMALISM.
+    !!\BOYANG !\CMNT: Bimolecular rates converted from unimolecular rates, using equations: A_new = A*82.057/P[atm], n_new = n+1, E_new = E 
+    !!\REF: (BATHGAS = HE) Weston et al. J. Phys. Chem. A 117(5) (2013) 821-835
+    !HOCO+M=CO+OH+M    3.775E+28  -4.120E+00  2.757E+04
+    !   CO2/0.0/   !\CMNT: REPLACED BY REACTION
+    !   cCO2/0.0/  !\CMNT: REPLACED BY REACTION
+    !   PLOG/1.00E-03   1.272E-03   3.930E+00   8.768E+03/
+    !   PLOG/3.00E-03   4.841E+07   1.340E+00   1.808E+04/
+    !   PLOG/2.96E-02   5.600E+16   -8.700E-01  2.276E+04/
+    !   PLOG/9.87E-02   1.397E+21   -2.050E+00  2.432E+04/
+    !   PLOG/2.96E-01   6.928E+26   -3.630E+00  2.707E+04/
+    !   PLOG/9.87E-01   3.775E+28   -4.120E+00  2.757E+04/
+    !   PLOG/2.96E+00   1.973E+30   -4.600E+00  2.854E+04/
+    !   PLOG/9.87E+00   4.556E+30   -4.700E+00  2.890E+04/
+    !   PLOG/2.96E+01   2.741E+32   -5.190E+00  3.052E+04/
+    !   PLOG/9.87E+01   4.773E+33   -5.530E+00  3.207E+04/
+    !   PLOG/2.96E+02   7.234E+32   -5.290E+00  3.223E+04/
+    !   PLOG/9.87E+02   5.238E+31   -4.960E+00  3.247E+04/
+
+    ! !\BOYANG !\CMNT: Termolecular rates converted from bimolecular rates, using equations: A_new = A*82.057/P[atm], n_new = n+1, E_new = E 
+    ! !\REF: (BATHGAS = CO2) PANTELEEV ET AL. J. PHYS. CHEM. A 122(4) 2018 897-908
+    ! OH+CO+CO2=>HOCO+CO2    4.306E14 1.055 1.013E4
+    !     PLOG/3.0E-1 1.627E16 1.044E0 1.022E4/
+    !     PLOG/1.0E0 9.568E15 9.603E-1 1.041E4/
+    !     PLOG/3.0E0 2.834E15 9.75E-1 1.036E4/
+    !     PLOG/1.0E1 4.306E14 1.055E0 1.013E4/
+    !     PLOG/3.0E1 7.7E12 1.405E0 8.829E3/
+    !     PLOG/1.0E2 8.214E12 1.381E0 8.664E3/
+    !     PLOG/3.0E2 2.495E15 4.106E-1 9.406E3/
+    !     PLOG/1.0E3 5.673E13 8.271E-1 7.545E3/
+
+    ! !\BOYANG !\CMNT: Bimolecular rates converted from unimolecular rates, using equations: A_new = A*82.057/P[atm], n_new = n+1, E_new = E 
+    ! !\REF: (BATHGAS = CO2) PANTELEEV ET AL. J. PHYS. CHEM. A 122(4) 2018 897-908
+    ! HOCO+CO2=>OH+CO+CO2    1.088E37 -3.882 5.921E4
+    !     PLOG/3.0E-1 1.437E37 -3.765E0 5.898E4/
+    !     PLOG/1.0E0 1.088E37 -3.882E0 5.921E4/
+    !     PLOG/3.0E0 2.894E36 -3.852E0 5.917E4/
+    !     PLOG/1.0E1 5.878E35 -3.798E0 5.911E4/
+    !     PLOG/3.0E1 4.237E36 -4.15E0 5.996E4/
+    !     PLOG/1.0E2 1.412E39 -5.007E0 6.156E4/
+    !     PLOG/3.0E2 2.725E39 -5.146E0 6.262E4/
+    !     PLOG/1.0E3 7.933E39 -5.371E0 6.362E4/
+
+    ! !\BOYANG !\CMNT: FALSE REACTION FOR cCO2
+    ! OH+CO+cCO2=>HOCO+cCO2    4.306E14 1.055 1.013E4
+    !     PLOG/3.0E-1 1.627E16 1.044E0 1.022E4/
+    !     PLOG/1.0E0 9.568E15 9.603E-1 1.041E4/
+    !     PLOG/3.0E0 2.834E15 9.75E-1 1.036E4/
+    !     PLOG/1.0E1 4.306E14 1.055E0 1.013E4/
+    !     PLOG/3.0E1 7.7E12 1.405E0 8.829E3/
+    !     PLOG/1.0E2 8.214E12 1.381E0 8.664E3/
+    !     PLOG/3.0E2 2.495E15 4.106E-1 9.406E3/
+    !     PLOG/1.0E3 5.673E13 8.271E-1 7.545E3/
+
+    ! !\BOYANG !\CMNT: FALSE REACTION FOR cCO2
+    ! HOCO+cCO2=>OH+CO+cCO2    1.088E37 -3.882 5.921E4
+    !     PLOG/3.0E-1 1.437E37 -3.765E0 5.898E4/
+    !     PLOG/1.0E0 1.088E37 -3.882E0 5.921E4/
+    !     PLOG/3.0E0 2.894E36 -3.852E0 5.917E4/
+    !     PLOG/1.0E1 5.878E35 -3.798E0 5.911E4/
+    !     PLOG/3.0E1 4.237E36 -4.15E0 5.996E4/
+    !     PLOG/1.0E2 1.412E39 -5.007E0 6.156E4/
+    !     PLOG/3.0E2 2.725E39 -5.146E0 6.262E4/
+    !     PLOG/1.0E3 7.933E39 -5.371E0 6.362E4/
+
+    !\SOURCE: ARAMCO3 !\REF: Weston et al. J. Phys. Chem. A 117(5) (2013) 821-835
+    HOCO=CO+OH    6.3E32 -5.96 3.247E4
+        PLOG/1.0E-3 1.55E-8 2.93E0 8.768E3/
+        PLOG/3.0E-3 1.77E3 3.4E-1 1.8076E4/
+        PLOG/2.96E-2 2.02E13 -1.87E0 2.2755E4/
+        PLOG/9.87E-2 1.68E18 -3.05E0 2.4323E4/
+        PLOG/2.961E-1 2.5E24 -4.63E0 2.7067E4/
+        PLOG/9.869E-1 4.54E26 -5.12E0 2.7572E4/
+        PLOG/2.9607E0 7.12E28 -5.6E0 2.8535E4/
+        PLOG/9.869E0 5.48E29 -5.7E0 2.8899E4/
+        PLOG/2.9607E1 9.89E31 -6.19E0 3.0518E4/
+        PLOG/9.869E1 5.74E33 -6.53E0 3.2068E4/
+        PLOG/2.9607E2 2.61E33 -6.29E0 3.2231E4/
+        PLOG/9.869E2 6.3E32 -5.96E0 3.247E4/
+
+
+    !\BOYANG !\REF: RAS/GLA07a (1-50 bar, 300<T<2000K)
+    !CO+OH=HOCO                           3.000E+26  -5.600    2881   ! RAS/GLA07a (1 bar, 300<T<2000K)
+    !                        PLOG /  0.9869 3.000E+26  -5.600    2881 / ! RAS/GLA07a (1 bar, 300<T<2000K)
+    !                        PLOG /  0.9869 3.000E+26  -5.600    2881 / ! RAS/GLA07a (1 bar, 300<T<2000K)                                                        
+    !                        PLOG /  2.9607 1.100E+27  -5.600    3239 / ! RAS/GLA07a (3 bar, 300<T<2000K)
+    !                        PLOG /  2.9607 1.100E+27  -5.600    3239 / ! RAS/GLA07a (3 bar, 300<T<2000K)
+    !                        PLOG /  9.8692 1.500E+25  -5.000    1987 / ! RAS/GLA07a (10 bar, 300<T<2000K)
+    !                        PLOG /  9.8692 1.300E+37  -8.400    7948 / ! RAS/GLA07a (10 bar, 300<T<2000K)
+    !                        PLOG / 19.7385 7.500E+28  -6.000    3775 / ! RAS/GLA07a (20 bar, 300<T<2000K)
+    !                        PLOG / 19.7385 4.000E+39  -9.000    9935 / ! RAS/GLA07a (20 bar, 300<T<2000K)
+    !                        PLOG / 49.3462 4.000E+38  -9.000    6955 / ! RAS/GLA07a (50 bar, 150<T<2000K)
+    !                        PLOG / 49.3462 5.000E+43 -10.000   13015 / ! RAS/GLA07a (50 bar, 150<T<2000K)
+
+    !\ENDRXN: \HOCO=CO+OH 
+
+!\RXN: \HOCO=CO2+H !\BOYANG 
+    !\CMNT: 3RD-BODY EFF. IGNORED BY CHEMKIN WHEN USING PLOG FORMALISM.
+    !!\BOYANG !\CMNT: Bimolecular rates converted from unimolecular rates, using equations: A_new = A*82.057/P[atm], n_new = n+1, E_new = E 
+    !!\REF: (BATHGAS = HE) Weston et al. J. Phys. Chem. A 117(5) (2013) 821-835
+    !HOCO+M=CO2+H+M    1.897E38 -8.047 3.424E4
+    !   CO2/0.0/   !\CMNT: REPLACED BY REACTION
+    !   cCO2/0.0/  !\CMNT: REPLACED BY REACTION
+    !   PLOG/1.00E-03  3.904E+23  -2.817E+00  1.768E+04/
+    !   PLOG/3.00E-03  6.086E+24  -3.149E+00  1.904E+04/
+    !   PLOG/9.90E-03  6.269E+25  -3.434E+00  2.033E+04/
+    !   PLOG/2.96E-02  2.525E+28  -4.189E+00  2.242E+04/
+    !   PLOG/9.87E-02  2.614E+32  -5.376E+00  2.523E+04/
+    !   PLOG/2.96E-01  3.187E+34  -6.037E+00  2.666E+04/
+    !   PLOG/9.87E-01  8.888E+37  -7.107E+00  2.906E+04/
+    !   PLOG/2.96E+00  6.757E+37  -7.153E+00  2.934E+04/
+    !   PLOG/9.87E+00  5.540E+36  -6.919E+00  2.922E+04/
+    !   PLOG/2.96E+01  4.775E+38  -7.506E+00  3.127E+04/
+    !   PLOG/9.87E+01  2.500E+41  -8.290E+00  3.397E+04/
+    !   PLOG/2.96E+02  1.876E+36  -6.832E+00  3.161E+04/
+    !   PLOG/9.87E+02  1.577E+37  -7.047E+00  3.424E+04/
+
+    ! !\BOYANG !\CMNT: Bimolecular rates converted from unimolecular rates, using equations: A_new = A*82.057/P[atm], n_new = n+1, E_new = E  
+    ! HOCO+CO2=CO2+H+CO2    1.897E38 -8.047 3.424E4
+    !     PLOG/3.0E-1 2.295E25 -1.502E0 1.701E4/
+    !     PLOG/1.0E0 5.97E24 -1.025E0 1.912E4/
+    !     PLOG/3.0E0 2.738E22 -6.132E-1 1.753E4/
+    !     PLOG/1.0E1 5.051E23 -1.396E0 1.649E4/
+    !     PLOG/3.0E1 9.067E24 -2.062E0 1.596E4/
+    !     PLOG/1.0E2 2.884E26 -2.441E0 1.543E4/
+    !     PLOG/3.0E2 1.836E28 -3.21E0 1.458E4/
+    !     PLOG/1.0E3 1.308E29 -3.892E0 1.46E4/
+
+    ! !\BOYANG !\CMNT: FALSE REACTION FOR cCO2
+    ! HOCO+cCO2=CO2+H+cCO2    1.897E38 -8.047 3.424E4
+    !     PLOG/3.0E-1 2.295E25 -1.502E0 1.701E4/
+    !     PLOG/1.0E0 5.97E24 -1.025E0 1.912E4/
+    !     PLOG/3.0E0 2.738E22 -6.132E-1 1.753E4/
+    !     PLOG/1.0E1 5.051E23 -1.396E0 1.649E4/
+    !     PLOG/3.0E1 9.067E24 -2.062E0 1.596E4/
+    !     PLOG/1.0E2 2.884E26 -2.441E0 1.543E4/
+    !     PLOG/3.0E2 1.836E28 -3.21E0 1.458E4/
+    !     PLOG/1.0E3 1.308E29 -3.892E0 1.46E4/
+
+    !\SOURCE: ARAMCO3 !\REF: Weston et al. J. Phys. Chem. A 117(5) (2013) 821-835
+    HOCO=CO2+H    1.897E38 -8.047 3.424E4
+        PLOG/1.0E-3 4.758E18 -3.817E0 1.7676E4/
+        PLOG/3.0E-3 2.225E20 -4.149E0 1.9037E4/
+        PLOG/9.9E-3 7.564E21 -4.434E0 2.0325E4/
+        PLOG/2.96E-2 9.107E24 -5.189E0 2.2419E4/
+        PLOG/9.87E-2 3.144E29 -6.376E0 2.5233E4/
+        PLOG/2.961E-1 1.15E32 -7.037E0 2.6662E4/
+        PLOG/9.869E-1 1.069E36 -8.107E0 2.9064E4/
+        PLOG/2.9607E0 2.438E36 -8.153E0 2.9336E4/
+        PLOG/9.869E0 6.663E35 -7.919E0 2.9217E4/
+        PLOG/2.9607E1 1.723E38 -8.506E0 3.1273E4/
+        PLOG/9.869E1 3.007E41 -9.29E0 3.3966E4/
+        PLOG/2.9607E2 6.767E36 -7.832E0 3.1613E4/
+        PLOG/9.869E2 1.897E38 -8.047E0 3.424E4/
+
+    !\BOYANG !\CMNT: k(T,P) = (3.50E+56*P[bar]^0.95 -15.000   46500) + (2.50E+69*P[bar]^0.95 -18.000   60000)
+    !\REF: RAS/GLA07a (1-50 bar, 300<T<2000K)
+    !HOCO=CO2+H                             3.50E+56 -15.000   46500 
+    !                         PLOG /   0.9869 3.50E+56 -15.000   46500 /
+    !                         PLOG /   0.9869 2.50E+69 -18.000   60000 /
+    !                         PLOG /   2.9607 9.94E+56 -15.000   46500 /
+    !                         PLOG /   2.9607 7.01E+69 -15.000   46500 /
+    !                         PLOG /   4.9346 1.61E+57 -15.000   46500 /
+    !                         PLOG /   4.9346 1.15E+70 -18.000   60000 /
+    !                         PLOG /   9.8692 3.12E+57 -15.000   46500 /
+    !                         PLOG /   9.8692 2.23E+70 -18.000   60000 /
+    !                         PLOG /  19.7385 6.03E+57 -15.000   46500 /
+    !                         PLOG /  19.7385 4.30E+70 -18.000   60000 /
+    !                         PLOG /  49.3462 1.44E+58 -15.000   46500 /
+    !                         PLOG /  49.3462 1.03E+71 -18.000   60000 / 
+
+    !\ENDRXN: \HOCO=CO2+H 
+
+!\RXN: \CO+HO2=CO2+OH 
+    !\SOURCE: KEROMNES2013 !\REF: YOU ET AL. J. PHYS. CHEM. A 111(19) (2007) 4031–4042.
+    CO+HO2=CO2+OH    1.57E5 2.18 1.794E4
+    !\ENDRXN: \CO+HO2=CO2+OH 
+
+!\RXN: \HCO+M=H+CO+M !\BOYANG 
+
+    !\BOYANG !\REF: LI ET AL. INT. J. CHEM. KINET. 39(3) (2007) 109–136.
+    !\CMNT: (SUPPORTED BY) RYU ET AL. Bull. Korean Chem. Soc. 38 (2017) 228-236
+    HCO+M=H+CO+M    4.75E11 0.66 1.487E4
+       AR/0.87/
+       N2/1.0/
+       H2/2.5/ 
+       H2O/12.0/ 
+       CO/1.9/ 
+       CO2/3.8/
+       CH4/2.0/
+       C2H6/3.0/
+       cH2O/12.0/ !\BOYANG
+       cCO2/3.8/  !\BOYANG
+
+
+    !\SOURCE: ARAMCO3 !\CMNT: ORIGINAL RATE *1.2
+    !\REF: LI ET AL. INT. J. CHEM. KINET. 39(3) (2007) 109–136.
+    !HCO+M=H+CO+M    5.7E11 0.66 1.487E4
+    !    H2/2.0/
+    !    H2O/6.0/
+    !    CO/1.5/
+    !    CO2/2.0/
     !    CH4/2.0/
     !    C2H6/3.0/
-    !    cCO2/3.8/    !\BOYANG
-    !    cH2O/10.0/   !\BOYANG
-    !    LOW/1.737E19 -1.23E0 0.0E0/
-    !    TROE/6.7E-1 1.0E-30 1.0E30 1.0E30/
+    !    cH2O/6.0/   !\BOYANG
+    !    cCO2/2.0/   !\BOYANG
 
-    !!\SOURCE: KEROMNES2013 !\REF: FERNANDES ET AL.,PHYS. CHEM. CHEM. PHYS. 10(29) (2008) 4313–4321
-    !H+O2(+HE)<=>HO2(+HE)    4.65E12 0.44 0.0E0
-    !   LOW/9.192E+18 -1.20 0.0E0 /  !\CMNT: FERNANDES X 1.5
-    !   TROE/0.59 1E-30 1E30 1E30 /
+    !\ENDRXN: \HCO+M=H+CO+M 
 
-    !!\SOURCE: KEROMNES2013 !\REF: FERNANDES ET AL.,PHYS. CHEM. CHEM. PHYS. 10(29) (2008) 4313–4321
-    !H+O2(+AR)<=>HO2(+AR)    4.65E12 0.44 0.0E0
-    !\REF: BATES ET AL. PHYS. CHEM. CHEM. PHYS. 3(12) (2001) 2337–2342.
-    !   LOW/6.810E+18 -1.200 0.0/
-    !   TROE/0.70 1.0E-30 1.0E+30 1.0E+30/
+!\RXN: \HCO+O2=CO+HO2 !\BOYANG 
+    !!\SOURCE: KEROMNES2013 !\REF: TIMONEN ET AL., J. PHYS. CHEM. 92(3) (1988) 651–655.
+    !HCO+O2=CO+HO2    7.58E12 0.0 4.1E2
+
+    !\SOURCE: NILSSON2016 !\REF: HSU ET AL. J. CHEM. PHYS. 105(6) (1996) 2346-2352
+    !\CMNT: (SUPPORTED BY) COLBERG & FRIEDRICHS. J. PHYS. CHEM. A 110(1) (2006) 160-170
+    !HCO+O2=CO+HO2    1.20E10 0.807 -727
+
+    !\BOYANG !\REF: FASSHEBER ET AL. J. Phys. Chem. A 119(28) (2015) 7305-7315
+    !\CMNT: VALID FOR 295-1705 K
+    !\CMNT: both addition and direct abstraction are considered.
+    HCO+O2=CO+HO2    6.92E6 1.9 -1.3695E3
+
+    !\ENDRXN: \HCO+O2=CO+HO2 
+
+!\RXN: \HCO+H=CO+H2 
+    !!\SOURCE: KEROMNES2013 !\REF: TIMONEN ET AL., J. PHYS. CHEM. 91(3) (1987) 692–694.
+    !HCO+H=CO+H2    7.34E13 0.0 0.0E0
+
+    !\SOURCE: NILSSON2016 !\REF: TROE & USHAKOV. J. PHYS. CHEM. A 111(29) (2007) 6610-6614
+    HCO+H=CO+H2    1.2E14 0.0 0.0E0
+
+    !\ENDRXN: \HCO+H=CO+H2 
+
+!\RXN: \HCO+O 
+    !\SOURCE: KEROMNES2013 !\REF:TSANG AND HAMPSON, J. PHYS. CHEM. REF. DATA 15 (1986) 1087–1280.
+    HCO+O=CO+OH    3.02E13 0.0 0.0E0
+    HCO+O=CO2+H    3.0E13 0.0 0.0E0
+    !\ENDRXN: \HCO+O 
+
+!\RXN: \HCO+OH=CO+H2O !\BOYANG 
+
+    !\BOYANG !\REF: DONTGEN & LEONHARD. J. PHYS. CHEM. A 120(11) (2016) 1819-1824 ; DONTGEN & LEONHARD. J. PHYS. CHEM. A 122(38) (2018) 7775
+    !\CMNT: VALID FOR 500-2000 K
+    !\CMNT: WELL-SKIPPING DIRECT ABSTRACTION IS CONSIDERED.
+    HCO+OH=CO+H2O    1.1918E+15  -1.147  4.1197E+3
+        DUP
+    HCO+OH=CO+H2O    1.9849E+14  -0.661  4.0852E+2
+        DUP
+
+    !\SOURCE: ARAMCO3 !\REF:TSANG AND HAMPSON, J. PHYS. CHEM. REF. DATA, 15:1087 (1986)
+    !HCO+OH=CO+H2O    3.011E13 0.0 0.0E0
+
+    !\SOURCE: KEROMNES2013 !\REF: BAULCH ET AL., J. PHYS. CHEM. REF. DATA 21(3) (1992) 411–734. ; TEMPS & WAGNER. BER. BUNSEN-GES.-PHYS. CHEM. CHEM. PHYS. 88(4) (1984) 415-418
+    !HCO+OH<=>CO+H2O 1.020E+14 0.000 0.000E+00
+
+    !\ENDRXN: \HCO+OH=CO+H2O 
+
+!\RXN: \HCO+HO2 !\BOYANG
+    !\SOURCE: NILSSON2016 !\REF:TSANG AND HAMPSON, J. PHYS. CHEM. REF. DATA 15 (1986) 1087–1280.
+    HCO+HO2=CO2+H+OH    3.0E13 0.0 0.0E0
+    ! HCO+HO2=CO+H2O2     3.0E12 0.0 0.0E0
+    !\ENDRXN: \HCO+HO2 
+
+!\RXN: \HCO+HCO 
+    !\SOURCE: NILSSON2016 !\REF:TSANG AND HAMPSON, J. PHYS. CHEM. REF. DATA 15 (1986) 1087–1280.
+    !\CMNT: (SUPPORTED BY) KRASNOPEROV ET AL. PROC. COMBUST. INST. 30(1) (2005) 935-943
+    !\CMNT: (BRANCHING RATIO) HOROWITZ & CALVERT. INT. J. CHEM. KINET. 10(7) (1978) 713-732
+    HCO+HCO=H2+CO+CO    3.0E12 0.0 0.0E0
+    HCO+HCO=CH2O+CO     1.8E13 0.0 0.0E0
+
+    !\BOYANG !\REF: QUEE & THYNNE. BER. BUNSENGES. PHYS. CHEM. 72(2) (1968) 211-217
+    !\CMNT: INGNORED: NOT IMPORTANT
+    ! HCO+HCO=CHOCHO      1.66E+11  0.0  0.0E0
+
+    !\ENDRXN: \HCO+HCO 
+
+!\ENDSUBMECH: \H2+CO
+
+!\SUBMECH: \HOCO !\BOYANG
+    !\SUBMECHSOURCE: NILSSON2016
+
+    HOCO+H=H2+CO2        4.07E+17  -1.38    597 
+    HOCO+H=H2O+CO        1.96E+14  -0.06   1634
+    HOCO+O=OH+CO2        2.95E+12   0.17  -69.9
+    HOCO+OH=H2O+CO2      4.56E+12    0.0    -89
+        DUP
+    HOCO+OH=H2O+CO2      9.54E+06    2.0    -89
+        DUP
+    HOCO+OH=H2O2+CO      3.90E+05   2.09   5444
+    HOCO+O2=HO2+CO2      1.38E+10  0.842    160
+    HOCO+HO2=H2O2+CO2    3.00E+13    0.0    0.0
+
+    !\ENDSUBMECH: \HOCO 
+
+
+!\SUBMECH: \testing_H2/CO !\BOYANG
+
+    ! !!!!!! H2/CO submech from Aramco 3 !!!!!!!
+
+    ! H2+M<=>H+H+M                                                 +4.5770000E+019 -1.4000000E+000 +1.0440000E+005 
+    ! H2 / 2.500 / H2O / 12.000 / CO / 1.900 / CO2 / 3.800 / HE / 0.830 / CH4 / 2.000 / C2H6 / 3.000 / 
+    ! H2+O<=>H+OH                                                  +5.0800000E+004 +2.6700000E+000 +6.2920000E+003  
+    ! H2+OH<=>H+H2O                                                +4.3800000E+013 +0.0000000E+000 +6.9900000E+003  
+    ! O+O+M<=>O2+M                                                 +6.1650000E+015 -5.0000000E-001 +0.0000000E+000 
+    ! H2 / 2.500 / H2O / 12.000 / AR / 0.830 / CO / 1.900 / CO2 / 3.800 / HE / 0.830 / CH4 / 2.000 / C2H6 / 3.000 / 
+    ! O2+H<=>O+OH                                                  +1.0400000E+014 +0.0000000E+000 +1.5286000E+004  
+    ! H+OH+M<=>H2O+M                                               +3.5000000E+022 -2.0000000E+000 +0.0000000E+000 
+    ! H2 / 0.730 / H2O / 3.650 / CH4 / 2.000 / C2H6 / 3.000 / AR / 0.380 / 
+    ! O+H2O<=>OH+OH                                                +6.7000000E+007 +1.7040000E+000 +1.4986800E+004  
+    ! O+H+M<=>OH+M                                                 +4.7140000E+018 -1.0000000E+000 +0.0000000E+000 
+    ! H2 / 2.500 / H2O / 12.000 / AR / 0.750 / CO / 1.500 / CO2 / 2.000 / HE / 0.750 / CH4 / 2.000 / C2H6 / 3.000 / 
+    ! H+O+M<=>OHX+M                                                +1.5000000E+013 +0.0000000E+000 +5.9750000E+003 
+    ! H2 / 1.000 / H2O / 6.500 / O2 / 0.400 / N2 / 0.400 / AR / 0.350 / 
+    ! OHX+H2O<=>OH+H2O                                             +5.9300000E+012 +5.0000000E-001 -8.6000000E+002  
+    ! OHX+H2<=>OH+H2                                               +2.9500000E+012 +5.0000000E-001 -4.4400000E+002  
+    ! OHX+N2<=>OH+N2                                               +1.0800000E+011 +5.0000000E-001 -1.2420000E+003  
+    ! OHX+OH<=>OH+OH                                               +6.0100000E+012 +5.0000000E-001 -7.6400000E+002  
+    ! OHX+H<=>OH+H                                                 +1.3100000E+012 +5.0000000E-001 -1.6700000E+002  
+    ! OHX+AR<=>OH+AR                                               +1.6900000E+012 +0.0000000E+000 +4.1350000E+003  
+    ! OHX<=>OH                                                     +1.4500000E+006 +0.0000000E+000 +0.0000000E+000  
+    ! OHX+O2<=>OH+O2                                               +2.1000000E+012 +5.0000000E-001 -4.7800000E+002  
+    ! OHX+CO2<=>OH+CO2                                             +2.7500000E+012 +5.0000000E-001 -9.6800000E+002  
+    ! OHX+CO<=>OH+CO                                               +3.2300000E+012 +5.0000000E-001 -7.8700000E+002  
+    ! OHX+CH4<=>OH+CH4                                             +3.3600000E+012 +5.0000000E-001 -6.3500000E+002  
+    ! H2O2(+M)<=>OH+OH(+M)                                         +2.0000000E+012 +9.0000000E-001 +4.8749000E+004
+    ! LOW /                                                        +2.4900000E+024 -2.3000000E+000 +4.8749000E+004 /
+    ! TROE /                                       +4.3000000E-001 +1.0000000E-030 +1.0000000E+030 /
+    ! H2O / 7.650 / CO2 / 1.600 / N2 / 1.500 / O2 / 1.200 / HE / 0.650 / H2O2 / 7.700 / H2 / 3.700 / CO / 2.800 / 
+    ! H2O2+H<=>H2O+OH                                              +2.4100000E+013 +0.0000000E+000 +3.9700000E+003  
+    ! H2O2+H<=>H2+HO2                                              +2.1500000E+010 +1.0000000E+000 +6.0000000E+003  
+    ! H2O2+O<=>OH+HO2                                              +9.5500000E+006 +2.0000000E+000 +3.9700000E+003  
+    ! H2O2+OH<=>H2O+HO2                                            +1.7400000E+012 +0.0000000E+000 +3.1800000E+002  
+    ! DUP 
+    ! H2O2+OH<=>H2O+HO2                                            +7.5900000E+013 +0.0000000E+000 +7.2690000E+003  
+    ! DUP 
+    ! HO2+H<=>OH+OH                                                +7.0790000E+013 +0.0000000E+000 +2.9500000E+002  
+    ! HO2+H<=>H2+O2                                                +1.1402000E+010 +1.0827000E+000 +5.5378000E+002  
+    ! HO2+O<=>OH+O2                                                +3.2500000E+013 +0.0000000E+000 +0.0000000E+000  
+    ! HO2+OH<=>H2O+O2                                              +2.4560000E+013 +0.0000000E+000 -4.9700000E+002  
+    ! HO2+HO2<=>H2O2+O2                                            +1.0000000E+014 +0.0000000E+000 +1.1040883E+004  
+    ! DUP 
+    ! HO2+HO2<=>H2O2+O2                                            +1.9000000E+011 +0.0000000E+000 -1.4089248E+003  
+    ! DUP 
+    ! H+O2(+M)<=>HO2(+M)                                           +4.6500000E+012 +4.4000000E-001 +0.0000000E+000
+    ! LOW /                                                        +1.7370000E+019 -1.2300000E+000 +0.0000000E+000 /
+    ! TROE /                                       +6.7000000E-001 +1.0000000E-030 +1.0000000E+030 +1.0000000E+030 /
+    ! H2 / 1.300 / CO / 1.900 / CO2 / 3.800 / HE / 0.640 / H2O / 10.000 / AR / 0.500 / CH4 / 2.000 / C2H6 / 3.000 / 
+    ! CO+O(+M)<=>CO2(+M)                                           +1.3620000E+010 +0.0000000E+000 +2.3840000E+003
+    ! LOW /                                                        +1.1730000E+024 -2.7900000E+000 +4.1910000E+003 /
+    ! H2 / 2.000 / H2O / 12.000 / CO / 1.750 / CO2 / 3.600 / AR / 0.700 / HE / 0.700 / 
+    ! CO+OH<=>CO2+H                                                +7.0150000E+004 +2.0530000E+000 -3.5570000E+002  
+    ! DUP 
+    ! CO+OH<=>CO2+H                                                +5.7570000E+012 -6.6400000E-001 +3.3180000E+002  
+    ! DUP 
+    ! CO+HO2<=>CO2+OH                                              +1.5700000E+005 +2.1800000E+000 +1.7940000E+004  
+    ! CO+O2<=>CO2+O                                                +1.1190000E+012 +0.0000000E+000 +4.7700000E+004  
+    ! !H+CO2<=>OCHO                                                 +7.5000000E+013 +0.0000000E+000 +2.9000000E+004  
+    ! HOCO<=>CO+OH                                                 +6.3000000E+032 -5.9600000E+000 +3.2470000E+004  
+    ! PLOG /                                       +1.0000000E-003 +1.5500000E-008 +2.9300000E+000 +8.7680000E+003 / 
+    ! PLOG /                                       +3.0000000E-003 +1.7700000E+003 +3.4000000E-001 +1.8076000E+004 / 
+    ! PLOG /                                       +2.9600000E-002 +2.0200000E+013 -1.8700000E+000 +2.2755000E+004 / 
+    ! PLOG /                                       +9.8700000E-002 +1.6800000E+018 -3.0500000E+000 +2.4323000E+004 / 
+    ! PLOG /                                       +2.9610000E-001 +2.5000000E+024 -4.6300000E+000 +2.7067000E+004 / 
+    ! PLOG /                                       +9.8690000E-001 +4.5400000E+026 -5.1200000E+000 +2.7572000E+004 / 
+    ! PLOG /                                       +2.9607000E+000 +7.1200000E+028 -5.6000000E+000 +2.8535000E+004 / 
+    ! PLOG /                                       +9.8690000E+000 +5.4800000E+029 -5.7000000E+000 +2.8899000E+004 / 
+    ! PLOG /                                       +2.9607000E+001 +9.8900000E+031 -6.1900000E+000 +3.0518000E+004 / 
+    ! PLOG /                                       +9.8690000E+001 +5.7400000E+033 -6.5300000E+000 +3.2068000E+004 / 
+    ! PLOG /                                       +2.9607000E+002 +2.6100000E+033 -6.2900000E+000 +3.2231000E+004 / 
+    ! PLOG /                                       +9.8690000E+002 +6.3000000E+032 -5.9600000E+000 +3.2470000E+004 / 
+    ! HOCO<=>CO2+H                                                 +1.8970000E+038 -8.0470000E+000 +3.4240000E+004  
+    ! PLOG /                                       +1.0000000E-003 +4.7580000E+018 -3.8170000E+000 +1.7676000E+004 / 
+    ! PLOG /                                       +3.0000000E-003 +2.2250000E+020 -4.1490000E+000 +1.9037000E+004 / 
+    ! PLOG /                                       +9.9000000E-003 +7.5640000E+021 -4.4340000E+000 +2.0325000E+004 / 
+    ! PLOG /                                       +2.9600000E-002 +9.1070000E+024 -5.1890000E+000 +2.2419000E+004 / 
+    ! PLOG /                                       +9.8700000E-002 +3.1440000E+029 -6.3760000E+000 +2.5233000E+004 / 
+    ! PLOG /                                       +2.9610000E-001 +1.1500000E+032 -7.0370000E+000 +2.6662000E+004 / 
+    ! PLOG /                                       +9.8690000E-001 +1.0690000E+036 -8.1070000E+000 +2.9064000E+004 / 
+    ! PLOG /                                       +2.9607000E+000 +2.4380000E+036 -8.1530000E+000 +2.9336000E+004 / 
+    ! PLOG /                                       +9.8690000E+000 +6.6630000E+035 -7.9190000E+000 +2.9217000E+004 / 
+    ! PLOG /                                       +2.9607000E+001 +1.7230000E+038 -8.5060000E+000 +3.1273000E+004 / 
+    ! PLOG /                                       +9.8690000E+001 +3.0070000E+041 -9.2900000E+000 +3.3966000E+004 / 
+    ! PLOG /                                       +2.9607000E+002 +6.7670000E+036 -7.8320000E+000 +3.1613000E+004 / 
+    ! PLOG /                                       +9.8690000E+002 +1.8970000E+038 -8.0470000E+000 +3.4240000E+004 / 
+
+    ! HCO+M<=>H+CO+M                                               +5.7000000E+011 +6.6000000E-001 +1.4870000E+004 
+    ! H2 / 2.000 / H2O / 6.000 / CO / 1.500 / CO2 / 2.000 / CH4 / 2.000 / C2H6 / 3.000 / 
+    ! HCO+O2<=>CO+HO2                                              +7.5800000E+012 +0.0000000E+000 +4.1000000E+002  
+    ! HCO+O<=>CO+OH                                                +3.0200000E+013 +0.0000000E+000 +0.0000000E+000  
+    ! HCO+H<=>CO+H2                                                +7.3400000E+013 +0.0000000E+000 +0.0000000E+000  
+    ! HCO+OH<=>CO+H2O                                                                                           +2.6500000E+013 +0.0000000E+000 +0.0000000E+000  
+    ! HCO+HCO<=>CO+CH2O                                            +1.8000000E+013 +0.0000000E+000 +0.0000000E+000  
+    ! HCO+O<=>CO2+H                                                +3.0000000E+013 +0.0000000E+000 +0.0000000E+000  
+    ! HCO+HO2=>CO2+H+OH                                            +3.0000000E+013 +0.0000000E+000 +0.0000000E+000  
+    ! HCO+HCO=>H2+CO+CO                                            +3.0000000E+012 +0.0000000E+000 +0.0000000E+000 
+
+    ! !!!!! H2/CO submech from Aramco 3 !!!!!!!
+
+    !\ENDSUBMECH: \testing_H2/CO
 
-    !\ENDRXN: \H+O2(+M)=HO2(+M)
-
-! !\RXN: \HO2+H=OH+OH 
-!     !\SOURCE: ARAMCO3 !\REF: MUELLER ET AL., INT. J. CHEM. KINET. 31(10) (1999) 705–724.
-!     HO2+H=OH+OH    7.079E13 0.0 2.95E2
-!     !\ENDRXN: \HO2+H=OH+OH 
-
-! !\RXN: \H2+O2=H+HO2 
-!     !\SOURCE: ARAMCO3 
-!     HO2+H=H2+O2    1.1402E10 1.0827 5.5378E2
-!     !\SOURCE: KEROMNES2013 !\REF: MICHAEL ET AL., PROC. COMBUST. INST. 28(2) (2000) 1471–1478.
-!     !H2+O2<=>H+HO2                          5.176E+05    2.433          53502.0
-!     !\SOURCE: KONNOV2018 !\REF: MICHAEL ET AL., PROC. COMBUST. INST. 28(2) (2000) 1471–1478.
-!     !H2+O2=H+HO2                    7.400E+05      2.43    53500.0 
-!     !\ENDRXN: \H2+O2=H+HO2 
-
-! !\RXN: \H+HO2=H2O+O !\CMNT: ADDED FROM KONNOV2018
-!     !\SOURCE: KONNOV2018 !\REF: CONFORTI ET AL. J. CHEM. PHYS. 133 (2010) 164312-164322
-!     H2O+O=H+HO2    2.2E8 2.0 6.16E4
-!     !\ENDRXN: \H+HO2=H2O+O 
-
-! !\RXN: \HO2+O=OH+O2 
-
-!     !!\SOURCE: KEROMNES2013 !\REF:BAULCH ET AL., J. PHYS. CHEM. REF DATA, 21(3) (1992) 411-734
-!     !HO2+O=OH+O2    3.25E13 0.0 0.0E0
-
-!     !\SOURCE: BURKE2012 !\REF: FERNANDES & VARANDAS. J. PHYS. CHEM. A 106 (2002) 4077-4083
-!     !\CMNT: 0.6 * ORIGINAL RATE IN PARER
-!     HO2+O=OH+O2    2.85E10 1.0 -7.239E2
-
-!     !\ENDRXN: \HO2+O=OH+O2
-
-! !\RXN: \HO2+OH=H2O+O2 !\BOYANG 
-    
-!     !\BOYANG !\REF: MONGE-PALACIOS & SARATHY. PHYS. CHEM. CHEM. PHYS. 20 (2018) 4478-4489
-!     HO2+OH=H2O+O2    3.08E+12  0.07  -1151
-!         DUP
-!     HO2+OH=H2O+O2    8.00E+12  0.32   6896
-!         DUP
-
-!     !!\SOURCE: KEROMNES2013 !\REF:KEYSER, J. PHYS. CHEM. 92 (1988) 1193–1200. REDUCED BY 15%
-!     !HO2+OH=H2O+O2    2.456E13 0.0 -4.97E2
-
-!     !!\SOURCE: KONNOV2018 !\REF: HONG ET AL. PROC. COMBUST. INST. 34 (2013) 565-571
-!     !HO2+OH=H2O+O2                  7.000E+12      0.0     -1093.0 
-!     !    DUPLICATE
-!     !HO2+OH=H2O+O2                  4.500E+14      0.0     10930.0 
-!     !    DUPLICATE
-
-!     !\ENDRXN: \HO2+OH=H2O+O2 
-
-! !\RXN: \HO2+HO2=H2O2+O2 
-
-!     !\SOURCE: KONNOV2018 !\REF: KAPPEL ET AL. PHYS. CHEM. CHEM. PHYS. 4 (2002) 4392-4398
-!     HO2+HO2=H2O2+O2    1.03E14 0.0 1.104E4
-!         DUP
-!     HO2+HO2=H2O2+O2    1.94E11 0.0 -1.409E3 
-!         DUP
-
-!     !\SOURCE: KEROMNES2013 !\REF:HIPPLER ET AL., J. CHEM. PHYS. 93(3) (1990) 1755–1760.
-!     !HO2+HO2=O2+H2O2                      1.300E+11    0.000          -1630.00
-!     !   DUPLICATE
-!     !HO2+HO2=O2+H2O2                      3.658E+14    0.000          12000.00 !HIPPLER X 0.87
-!     !   DUPLICATE
-
-!     !\ENDRXN: \HO2+HO2=H2O2+O2 
-
-! !\RXN: \H2O2(+M)=OH+OH(+M) 
-
-!     !\SOURCE: ARAMCO3 !\REF: TROE, COMBUST. FLAME 158(4) (2011) 594–601.
-!     H2O2(+M)=OH+OH(+M)    2.0E12 0.9 4.8749E4
-!         !H2O/7.65/
-!         H2O/0.0/     !\CMNT: replaced by reaction
-!         CO2/1.6/
-!         N2/1.5/
-!         O2/1.2/
-!         HE/0.65/
-!         H2O2/7.7/
-!         H2/3.7/      !\REF: LI ET AL., INT. J. CHEM. KINET. 36:566-575 (2004)
-!         CO/2.8/      !\REF: LI ET AL., INT. J. CHEM. KINET. 36:566-575 (2004)
-!         !cH2O/7.65/   !\BOYANG
-!         cH2O/0.0/    !\CMNT: replaced by reaction
-!         cCO2/1.6/    !\BOYANG
-!         LOW/2.49E24 -2.3E0 4.8749E4/
-!         TROE/4.3E-1 1.0E-30 1.0E30/
-
-!     !\SOURCE: KEROMNES2013 !\REF: TROE, COMBUST. FLAME 158(4) (2011) 594–601. 
-!     H2O2(+H2O)<=>OH+OH(+H2O)    2.0E12 0.9 4.8749E4
-!         LOW/1.865E+25 -2.30 4.8749E+04/
-!         TROE/0.51 1E-30 1E+30/
-
-!     !\BOYANG !\CMNT: FALSE REACTION ADDED FRO cH2O
-!     H2O2(+cH2O)<=>OH+OH(+cH2O)    2.0E12 0.9 4.8749E4
-!         LOW/1.865E+25 -2.30 4.8749E+04/
-!         TROE/0.51 1E-30 1E+30/
-
-!     !\ENDRXN: \H2O2(+M)=OH+OH(+M) 
-
-! !\RXN: \H2O2+H=H2O+OH 
-!     !\SOURCE: KONNOV2018 !\REF: ELLINGSON ET AL. J. PHYS. CHEM. A 111 (2007) 13554-13556
-!     H2O2+H=H2O+OH    2.03E7 2.02 2.62E3
-!     !!\SOURCE: KEROMNES2013 !\REF:TSANG AND HAMPSON, J. PHYS. CHEM. REF. DATA 15 (1986) 1087–1280.
-!     !H2O2+H=H2O+OH    2.41E13 0.0 3.97E3
-!     !\ENDRXN: \H2O2+H=H2O+OH 
-
-! !\RXN: \H2O2+H=HO2+H2 
-!     !\SOURCE: KONNOV2018 !\REF: ELLINGSON ET AL. J. PHYS. CHEM. A 111 (2007) 13554-13556
-!     H2O2+H=HO2+H2    5.02E6 2.07 4.3E3
-!     !!\SOURCE: KEROMNES2013 !\REF: ELLINGSON ET AL., J. PHYS. CHEM. A 111(51) (2007) 13554–13566. (FIT TO THE THEORETICAL RATE)
-!     !H2O2+H=H2+HO2    2.15E10 1.0 6.0E3
-!     !\RXN: \H2O2+H=HO2+H2 
-
-! !\RXN: \H2O2+O=OH+HO2 
-!     !\SOURCE: KEROMNES2013 !\REF:TSANG AND HAMPSON, J. PHYS. CHEM. REF. DATA 15 (1986) 1087–1280.
-!     H2O2+O=OH+HO2    9.55E6 2.0 3.97E3
-!     !\ENDRXN: \H2O2+O=OH+HO2 
-
-! !\RXN: \H2O2+OH=H2O+HO2 
-!     !\SOURCE: KEROMNES2013 !\REF: HONG ET AL., J. PHYS. CHEM. A 114(18) (2010) 5718–5727.
-!     H2O2+OH=H2O+HO2    1.74E12 0.0 3.18E2
-!         DUP
-!     H2O2+OH=H2O+HO2    7.59E13 0.0 7.269E3
-!         DUP
-!     !\ENDRXN: \H2O2+OH=H2O+HO2 
-
-! !\RXN: \H+O2+X !\BOYANG 
-!     !\SOURCE: KONNOV2018 !REF: Burke & Klippenstein. Nat Chem. 9(11) (2017) 1078 
-!     H+O2+H=H2+O2    8.8E22 -1.835 8.0E2
-!     !\SOURCE: KONNOV2018 !REF: Burke & Klippenstein. Nat Chem. 9(11) (2017) 1078 
-!     H+O2+H=OH+OH    4.0E22 -1.835 8.0E2
-!     !\SOURCE: KONNOV2018 !REF: Burke & Klippenstein. Nat Chem. 9(11) (2017) 1078 
-!     H+O2+O=OH+O2    7.35E22 -1.835 8.0E2
-!     !\SOURCE: KONNOV2018 !REF: Burke & Klippenstein. Nat Chem. 9(11) (2017) 1078 
-!     H+O2+OH=H2O+O2    2.56E22 -1.835 8.0E2
-!     !\ENDRXN: \H+O2+X 
-
-! !\ENDSUBMECH: \H2+O2
-
-
-! !\SUBMECH: \OHX
-! !\SUBMECHSOURCE: KEROMNES2013, KONNOV2018
-
-! !\RXN: \H+O+M=OHX+M 
-!     !\SOURCE: KEROMNES2013 !\REF: KATHROTIA ET AL., COMBUST. FLAME 157(7) (2010) 1261–1273
-!     H+O+M=OHX+M    1.5E13 0.0 5.975E3
-!         H2/1.0/
-!         H2O/6.5/
-!         O2/0.4/
-!         N2/0.4/
-!         AR/0.35/
-!         cH2O/6.5/  !\BOYANG
-!     !\ENDRXN: \H+O+M=OHX+M 
-
-! !\RXN: \OHX=OH+hv 
-!     !\SOURCE: KEROMNES2013 !\REF: SMITH ET AL., COMBUST. FLAME 131(1-2) (2002) 59–69.
-!     OHX=OH+hv    1.45E6 0.0 0.0E0
-!     !!\SOURCE: KONNOV2018 !\REF: GERMAN. J. CHEM. PHYS. 62 (1975) 2584-2587
-!     !OHX=OH+hv    1.400E+06      0.0         0.0 
-!     !\ENDRXN: \OHX=OH+hv 
-
-! !\RXN: \OHX+M=OH+M !\BOYANG !\CMNT: NON-REACTIVE QUECHING OF OHX 
-!     !\CMNT: (BELOW) ----- AR -----
-!     !!\SOURCE: KEROMNES2013 !\REF: PAUL ET AL., J. CHEM. PHYS. 102(21) (1995) 8378–8384.
-!     !OHX+AR=OH+AR    1.69E12 0.0 4.135E3
-!     !\SOURCE: KONNOV2018 !\REF: HALL & PETERSEN. INT. J. CHEM. KINET. 38 (2006) 714-724
-!     OHX+AR=OH+AR    2.170E+10      0.5      2060.0 
-!     !\CMNT: (BELOW) ----- H2 -----
-!     !!\SOURCE: KEROMNES2013 !\REF: TAMURA ET AL., COMBUST. FLAME 114(3-4) (1998) 502–514.
-!     !OHX+H2=OH+H2    2.95E12 0.5 -4.44E2
-!     !\SOURCE: KONNOV2018 !\REF: (RATE) TAMURA ET AL., COMBUST. FLAME 114(3-4) (1998) 502–514. 
-!     !\CMNT: REACTIVE QUENCHING CONSIDERED. 
-!     !\REF: (BRANCHING RATIO) LEHMAN ET AL. J. CHEM. PHYS. 137 (2012) 094312
-!     OHX+H2=OH+H2    3.540E+11      0.5      -444.0 
-!     !\CMNT: (BELOW) ----- N2 -----
-!     !\SOURCE: KEROMNES2013 !\REF: TAMURA ET AL., COMBUST. FLAME 114(3-4) (1998) 502–514.
-!     OHX+N2=OH+N2    1.08E11 0.5 -1.242E3
-!     !\CMNT: (BELOW) ----- OH -----
-!     !\SOURCE: KEROMNES2013 !\REF: TAMURA ET AL., COMBUST. FLAME 114(3-4) (1998) 502–514.
-!     OHX+OH=OH+OH    6.01E12 0.5 -7.64E2
-!     !!\SOURCE: KONNOV2018 !\REF: HIDAKA ET AL. J. PHYS. CHEM. 86 (1982) 1429-1433
-!     !OHX+OH=OH+OH    1.500E+12      0.5         0.0 
-!     !\CMNT: (BELOW) ----- H -----
-!     !\SOURCE: KEROMNES2013 !\REF: TAMURA ET AL., COMBUST. FLAME 114(3-4) (1998) 502–514.
-!     OHX+H=OH+H    1.31E12 0.5 -1.67E2
-!     !!\SOURCE: KONNOV2018 !\REF: HIDAKA ET AL. J. PHYS. CHEM. 86 (1982) 1429-1433
-!     !OHX+H=OH+H    1.500E+12      0.5         0.0 
-!     !\CMNT: (BELOW) ----- O -----
-!     !\SOURCE: KONNOV2018 !\REF: HIDAKA ET AL. J. PHYS. CHEM. 86 (1982) 1429-1433
-!     OHX+O=OH+O    1.500E+12      0.5         0.0 
-!     !\CMNT: (BELOW) ----- O2 -----
-!     !!\SOURCE: KEROMNES2013 !\REF: TAMURA ET AL., COMBUST. FLAME 114(3-4) (1998) 502–514.
-!     !OHX+O2=OH+O2    2.1E12 0.5 -4.78E2
-!     !\SOURCE: KONNOV2018 !\REF: (RATE) TAMURA ET AL., COMBUST. FLAME 114(3-4) (1998) 502–514. 
-!     !\CMNT: REACTIVE QUENCHING CONSIDERED. 
-!     !\REF: (BRANCHING RATIO) LEHMAN ET AL. J. CHEM. PHYS. 137 (2012) 094312
-!     OHX+O2=OH+O2    8.400E+11      0.5      -482.0 
-!     !\CMNT: (BELOW) ----- CO -----
-!     !\SOURCE: KEROMNES2013 !\REF: TAMURA ET AL., COMBUST. FLAME 114(3-4) (1998) 502–514.
-!     OHX+CO=OH+CO    3.23E12 0.5 -7.87E2
-!     !\CMNT: (BELOW) ----- CH4 -----
-!     !\SOURCE: ARAMCO3 
-!     !OHX+CH4=OH+CH4    3.36E12 0.5 -6.35E2
-!     !\CMNT: (BELOW) ----- H2O -----
-!     !!\SOURCE: KEROMNES2013 !\REF: TAMURA ET AL., COMBUST. FLAME 114(3-4) (1998) 502–514.
-!     !OHX+H2O=OH+H2O    5.93E12 0.5 -8.6E2
-!     !\SOURCE: KONNOV2018 !\REF: (RATE) TAMURA ET AL., COMBUST. FLAME 114(3-4) (1998) 502–514. 
-!     !\CMNT: REACTIVE QUENCHING CONSIDERED. BRANCHING RATIO IS ESTIMATED TO BE 0.5:0.5 TO REACTIVE QUENCHING OHX+H2O=H2O2+H
-!     OHX+H2O=OH+H2O    2.960E+12      0.5      -861.0 
-!     !\BOYANG !\CMNT: FALSE REACTION ADDED FOR cH2O
-!     OHX+cH2O=OH+cH2O    2.960E+12      0.5      -861.0 
-!     !\CMNT: (BELOW) ----- CO2 -----
-!     !\SOURCE: KEROMNES2013 !\REF: TAMURA ET AL., COMBUST. FLAME 114(3-4) (1998) 502–514.
-!     OHX+CO2=OH+CO2    2.75E12 0.5 -9.68E2
-!     !\BOYANG !\CMNT: FALSE REACTION ADDED FOR cCO2
-!     OHX+cCO2=OH+cCO2    2.75E12 0.5 -9.68E2
-!     !\ENDRXN: \OHX+M=OH+M 
-
-! !\RXN: \OHX+X !\CMNT: REACTIVE QUENCHING OF OHX
-!     !\SOURCE: KONNOV2018 !\REF: (RATE) TAMURA ET AL., COMBUST. FLAME 114(3-4) (1998) 502–514. 
-!     !\REF: (BRANCHING RATIO) LEHMAN ET AL. J. CHEM. PHYS. 137 (2012) 094312
-!     OHX+H2=H2O+H      2.600E+12      0.5      -444.0 
-!     !\SOURCE: KONNOV2018 !\REF: (RATE) TAMURA ET AL., COMBUST. FLAME 114(3-4) (1998) 502–514. 
-!     !\REF: (BRANCHING RATIO) LEHMAN ET AL. J. CHEM. PHYS. 137 (2012) 094312
-!     OHX+O2=O3+H       2.520E+11      0.5      -482.0 
-!     !\SOURCE: KONNOV2018 !\REF: (RATE) TAMURA ET AL., COMBUST. FLAME 114(3-4) (1998) 502–514. 
-!     !\REF: (BRANCHING RATIO) LEHMAN ET AL. J. CHEM. PHYS. 137 (2012) 094312
-!     OHX+O2=HO2+O      1.008E+12      0.5      -482.0 
-!     !\SOURCE: KONNOV2018 !\REF: (RATE) TAMURA ET AL., COMBUST. FLAME 114(3-4) (1998) 502–514. 
-!     !\CMNT: REACTIVE QUENCHING CONSIDERED. BRANCHING RATIO IS ESTIMATED TO BE 0.5:0.5 TO REACTIVE QUENCHING OHX+H2O=H2O2+H
-!     OHX+H2O=H2O2+H    2.960E+12      0.5      -861.0 
-!     !\ENDRXN: \OHX+X 
-
-! !\ENDSUBMECH: \OHX
-
-
-! !\SUBMECH: \H2+O3+EXICITED 
-! !\SUBMECHSOURCE: KONNOV2018 !\REF: KONNOV. COMBUST. FLAME. 162 (2015) 3755-3772 ; KONNOV. COMBUST. FLAME. 203 (2019) 14-22
-
-! !\RXN: \O2+O+M=O3+M 
-!     O2+O+M=O3+M       6.530E+17     -1.5         0.0
-!         AR/0.0/    !\CMNT: REPLACED BY REACTION
-!         O2/0.95/ 
-!         O3/2.5/ 
-!         O/4.0/
-!         DUPLICATE
-!     O2+O+M=O3+M       1.330E+22     -3.3         0.0
-!         AR/0.0/    !\CMNT: REPLACED BY REACTION
-!         O2/1.07/ 
-!         O3/2.5/ 
-!         O/4.0/
-!         DUPLICATE
-!     O2+O+AR=O3+AR     4.290E+17     -1.5         0.0 
-!         DUPLICATE
-!     O2+O+AR=O3+AR     5.100E+21     -3.2         0.0 
-!         DUPLICATE
-!     !\ENDRXN: \O2+O+M=O3+M 
-! O3+O=O2+O2        4.820E+12      0.0      4094.0
-! O3+O=O2X+O2       1.440E+11      0.0      4094.0
-! O+O+M=O2X+M       7.000E+15     -1.0         0.0
-!     O/28.8/ 
-!     O2/8.0/ 
-!     N2/2.0/ 
-!     H2O/5.0/ 
-!     O3/8.0/ 
-!     !NO/2.0/ 
-!     !N/2.0/ 
-!     cH2O/5.0/   !\BOYANG
-! !\RXN: \O2X+M=O2+M 
-!     O2X+M=O2+M        1.800E+06      0.0       400.0
-!         O/0/         !\CMNT: REPLACED BY REACTION
-!         H/0/         !\CMNT: REPLACED BY REACTION
-!         AR/0.005/ 
-!         HE/0.005/ 
-!         N2/0.002/ 
-!         H2O/3.3/ 
-!         H2/2.5/ 
-!         CO2/0.01/ 
-!         CO/5.6/
-!         cH2O/3.3/    !\BOYANG
-!         cCO2/0.01/   !\BOYANG
-!     O2X+O=O2+O        7.800E+07      0.0         0.0
-!     O2X+H=O2+H        4.000E+13      0.0      5030.0 
-!     !\ENDRXN: \O2X+M=O2+M 
-! O2X+O+M=O+O2+M    3.600E+15      0.0         0.0 
-!   AR/0.63/ 
-! O2X+O3=O2+O2+O    3.130E+13      0.0      5644.0
-! OX+O2X=O+O2       6.030E+12      0.0         0.0
-! OX+O2=O+O2X       1.590E+13      0.0      -139.0 
-! !\RXN: \OX+M=O+M 
-!     OX+M=O+M          4.800E+11      0.0         0.0 
-!         O2/0/      !\CMNT: REPLACED BY REACTION
-!         N2/0/      !\CMNT: REPLACED BY REACTION
-!         O/10.0/ 
-!         H2O/3.0/
-!         cH2O/3.0/  !\BOYANG
-!     OX+O2=O+O2        2.810E+12      0.0      -139.0 
-!     OX+N2=O+N2        1.260E+13      0.0      -230.0 
-!     !\ENDRXN: \OX+M=O+M 
-! OX+O3=O2+O+O      7.230E+13      0.0         0.0 
-! OX+O3=O2+O2       7.230E+13      0.0         0.0 
-! H2+O2X=H+HO2      6.160E+05      2.335   31080.0
-! H+O2X=OH+O        3.500E+08      1.45     4508.0 
-! H+O2X+M=HO2+M     9.890E+09      2.03     3360.0
-! !\REF: MONGE-PALACIOS & SARATHY. PHYS. CHEM. CHEM. PHYS. 20 (2018) 4478-4489
-! HO2+OH=H2O+O2X    2.140E+06      1.65     2180.0 
-! OH+O2X=O+HO2      1.300E+13      0.0     34000.0 
-! O3+H=OH+O2        8.430E+13      0.0       934.0 
-! O3+OH=HO2+O2      1.000E+12      0.0      1870.0 
-! O3+HO2=OH+O2+O2   5.850E-04      4.57    -1377.0 
-! H+HO2=H2O+OX      2.500E+12      0.0       300.0 
-! OX+H2=OH+H        8.100E+13      0.0         0.0 
-! OX+H2O=OH+OH      1.000E+14      0.0       -71.0 
-! !\ENDSUBMECH: \H2+O3+EXICITED 
-
-
-! !\SUBMECH: \H2+CO
-
-! !\RXN: \CO+O(+M)=CO2(+M) !\BOYANG 
-!     !!\SOURCE: KEROMNES2013 !\REF: (HPL) TROE, J. PHYS. CHEM. 83 (1979) 114–126. X 0.76
-!     !!\SOURCE: KEROMNES2013 !\REF: (LPL) WESTMORELAND ET AL, AICHE JOURNAL 32(12) (1986) 1971–1979. X 0.87
-!     !CO+O(+M)=CO2(+M)    1.362E10 0.0 2.384E3
-!     !    H2/2.0/
-!     !    H2O/12.0/
-!     !    CO/1.75/
-!     !    CO2/3.6/
-!     !    HE/0.7/
-!     !    cH2O/12.0/
-!     !    cCO2/3.6/
-!     !    LOW/1.173E24 -2.79E0 4.191E3/ 
-
-!     !\BOYANG !\REF: (HPL) JASPER. J. PHYS. CHEM. A 119(28) (2015) 7339-7351
-!     !\SOURCE: KEROMNES2013 !\REF: (LPL) WESTMORELAND ET AL, AICHE JOURNAL 32(12) (1986) 1971–1979. X 0.87
-!     !\SOURCE: KEROMNES2013 !\REF: (3RD-BODY EFF.) ALLEN ET AL. COMBUST. FLAME 109(3) (1997) 449-470
-!     CO+O(+M)=CO2(+M)    1.06E13 -0.308 6.943E3
-!         H2/2.0/
-!         H2O/12.0/
-!         CO/1.75/
-!         CO2/3.6/
-!         HE/0.7/
-!         AR/0.87/
-!         cH2O/12.0/
-!         cCO2/3.6/
-!         LOW/1.173E24 -2.79E0 4.191E3/ 
-
-!     !!\SOURCE: NILSSON2016 !\REF: (HPL) JASPER. J. CHEM. PHYS. 139 (2013) 154313
-!     !!\SOURCE: NILSSON2016 !\REF: (LPL) TSANG & HAMPSON. J. PHYS. CHEM. REF. DATA 15(3) (1986) 1087-1279
-!     !!\SOURCE: NILSSON2016 !\REF: (3RD-BODY EFF.) ALLEN ET AL. COMBUST. FLAME 109(3) (1997) 449-470
-!     !CO+O(+M)=CO2(+M)    4.00E15 -0.960 9.837E3
-!     !   H2/2.5/
-!     !   H2O/12/
-!     !   CO/1.9/
-!     !   CO2/3.8/
-!     !   AR/0.87/
-!     !   LOW/6.14E14 0.0 3.000E3/
-
-!     !\ENDRXN: \CO+O(+M)=CO2(+M) 
-
-! !\RXN: \CO+O2=CO2+O 
-!     !!\SOURCE: KEROMNES2013 !\REF:TSANG AND HAMPSON, J. PHYS. CHEM. REF. DATA 15 (1986) 1087–1280.
-!     !CO+O2=CO2+O    1.119E12 0.0 4.77E4
-
-!     !\SOURCE: NILSSON2016 !\REF: THIELEN & ROTH. Ber.Bunsen-Ges.-Phys. Chem. Chem. Phys. 87(10) (1983) 920-925
-!     !\CMNT: (SUPPORTED BY) SHARIPOV & STARIK. J. PHYS. CHEM. A 115(10) (2011) 1795-1803
-!     CO+O2=CO2+O    5.06E13 0.0 6.319E4
-
-!     !\ENDRXN: \CO+O2=CO2+O 
-
-! !\RXN: \CO+OH=CO2+OH !\BOYANG 
-
-!     !\SOURCE: KEROMNES2013 !\REF: (BATHGAS = HE) JOSHI AND WANG IJCK (2006), 38, (1), 57-73.
-!     CO+OH=CO2+H    7.015E4 2.053 -3.557E2
-!         DUP
-!     CO+OH=CO2+H    5.757E12 -0.664 3.318E2
-!         DUP
-
-!     !\BOYANG !\REF: WANG ET AL. J. PHYS. CHEM. A 121(45) (2017) 8561-8568 
-!     !\CMNT: VALID FOR 1428-1685 K, UNCERTAINTY = 10%
-!     !\CMNT: IGNORED: valid range is too narrow.
-!     !CO+OH=CO2+H    1.90E12 0.0 5.4847E3
-    
-!     !\BOYANG !\REF: RAS/GLA07a (1-50 bar, 300<T<2000K)
-!     !CO+OH=CO2+H                          8.000E+10   0.000       0   ! RAS/GLA07a (1 bar, 300<T<2000K)
-!     !                        PLOG /  0.9869 8.000E+10   0.000       0 / ! RAS/GLA07a (1 bar, 300<T<2000K)
-!     !                        PLOG /  0.9869 8.800E+05   1.770     954 / ! RAS/GLA07a (1 bar, 300<T<2000K)
-!     !                        PLOG /  2.9607 7.000E+10   0.000       0 / ! RAS/GLA07a (3 bar, 300<T<2000K)
-!     !                        PLOG /  2.9607 2.900E+05   1.900     397 / ! RAS/GLA07a (3 bar, 300<T<2000K)
-!     !                        PLOG /  9.8692 3.700E+12   0.000   12518 / ! RAS/GLA07a (10 bar, 300<T<2000K)
-!     !                        PLOG /  9.8692 9.300E+07   1.100       0 / ! RAS/GLA07a (10 bar, 300<T<2000K)
-!     !                        PLOG / 19.7385 2.900E+12   0.000   11922 / ! RAS/GLA07a (20 bar, 300<T<2000K)
-!     !                        PLOG / 19.7385 4.500E+07   1.200       0 / ! RAS/GLA07a (20 bar, 300<T<2000K)
-!     !                        PLOG / 49.3462 1.500E+12   0.000   13909 / ! RAS/GLA07a (50 bar, 150<T<2000K)
-!     !                        PLOG / 49.3462 5.800E+06   1.500       0 / ! RAS/GLA07a (50 bar, 150<T<2000K)
-
-
-!     !\BOYANG !\WARNING: This is biomolecular rate coefficient for OH(H2O)+CO=CO2+H2O+H reaction, (NOT the termolecular rate which is needed). Ref does not have rate for the preceeding OH+H2O=OH(H2O) reaction. 
-!     !\WARNING: This is a global reaction.
-!     !\CMNT: IGNORED: MAY NOT BE IMPORTANT AT COMBUSTION TEMPERATURES.
-!     !\REF: Zhang et al. J. Phys. Chem. A (2017) 121, 26, 4868-4880 
-!     !CO+OH+H2O=CO2+H+H2O    2.42381E3 2.31973 3.11047E3
-!     !    DUP
-!     !CO+OH+H2O=CO2+H+H2O    5.97405E1 2.62052 -8.6291E2
-!     !    DUP
-
-!     !\ENDRXN: \CO+OH=CO2+OH 
-
-! !\RXN: \HOCO=CO+OH !\BOYANG 
-
-!     !\CMNT: 3RD-BODY EFF. IGNORED BY CHEMKIN WHEN USING PLOG FORMALISM.
-!     !!\BOYANG !\CMNT: Bimolecular rates converted from unimolecular rates, using equations: A_new = A*82.057/P[atm], n_new = n+1, E_new = E 
-!     !!\REF: (BATHGAS = HE) Weston et al. J. Phys. Chem. A 117(5) (2013) 821-835
-!     !HOCO+M=CO+OH+M    3.775E+28  -4.120E+00  2.757E+04
-!     !   CO2/0.0/   !\CMNT: REPLACED BY REACTION
-!     !   cCO2/0.0/  !\CMNT: REPLACED BY REACTION
-!     !   PLOG/1.00E-03   1.272E-03   3.930E+00   8.768E+03/
-!     !   PLOG/3.00E-03   4.841E+07   1.340E+00   1.808E+04/
-!     !   PLOG/2.96E-02   5.600E+16   -8.700E-01  2.276E+04/
-!     !   PLOG/9.87E-02   1.397E+21   -2.050E+00  2.432E+04/
-!     !   PLOG/2.96E-01   6.928E+26   -3.630E+00  2.707E+04/
-!     !   PLOG/9.87E-01   3.775E+28   -4.120E+00  2.757E+04/
-!     !   PLOG/2.96E+00   1.973E+30   -4.600E+00  2.854E+04/
-!     !   PLOG/9.87E+00   4.556E+30   -4.700E+00  2.890E+04/
-!     !   PLOG/2.96E+01   2.741E+32   -5.190E+00  3.052E+04/
-!     !   PLOG/9.87E+01   4.773E+33   -5.530E+00  3.207E+04/
-!     !   PLOG/2.96E+02   7.234E+32   -5.290E+00  3.223E+04/
-!     !   PLOG/9.87E+02   5.238E+31   -4.960E+00  3.247E+04/
-
-!     ! !\BOYANG !\CMNT: Termolecular rates converted from bimolecular rates, using equations: A_new = A*82.057/P[atm], n_new = n+1, E_new = E 
-!     ! !\REF: (BATHGAS = CO2) PANTELEEV ET AL. J. PHYS. CHEM. A 122(4) 2018 897-908
-!     ! OH+CO+CO2=>HOCO+CO2    4.306E14 1.055 1.013E4
-!     !     PLOG/3.0E-1 1.627E16 1.044E0 1.022E4/
-!     !     PLOG/1.0E0 9.568E15 9.603E-1 1.041E4/
-!     !     PLOG/3.0E0 2.834E15 9.75E-1 1.036E4/
-!     !     PLOG/1.0E1 4.306E14 1.055E0 1.013E4/
-!     !     PLOG/3.0E1 7.7E12 1.405E0 8.829E3/
-!     !     PLOG/1.0E2 8.214E12 1.381E0 8.664E3/
-!     !     PLOG/3.0E2 2.495E15 4.106E-1 9.406E3/
-!     !     PLOG/1.0E3 5.673E13 8.271E-1 7.545E3/
-
-!     ! !\BOYANG !\CMNT: Bimolecular rates converted from unimolecular rates, using equations: A_new = A*82.057/P[atm], n_new = n+1, E_new = E 
-!     ! !\REF: (BATHGAS = CO2) PANTELEEV ET AL. J. PHYS. CHEM. A 122(4) 2018 897-908
-!     ! HOCO+CO2=>OH+CO+CO2    1.088E37 -3.882 5.921E4
-!     !     PLOG/3.0E-1 1.437E37 -3.765E0 5.898E4/
-!     !     PLOG/1.0E0 1.088E37 -3.882E0 5.921E4/
-!     !     PLOG/3.0E0 2.894E36 -3.852E0 5.917E4/
-!     !     PLOG/1.0E1 5.878E35 -3.798E0 5.911E4/
-!     !     PLOG/3.0E1 4.237E36 -4.15E0 5.996E4/
-!     !     PLOG/1.0E2 1.412E39 -5.007E0 6.156E4/
-!     !     PLOG/3.0E2 2.725E39 -5.146E0 6.262E4/
-!     !     PLOG/1.0E3 7.933E39 -5.371E0 6.362E4/
-
-!     ! !\BOYANG !\CMNT: FALSE REACTION FOR cCO2
-!     ! OH+CO+cCO2=>HOCO+cCO2    4.306E14 1.055 1.013E4
-!     !     PLOG/3.0E-1 1.627E16 1.044E0 1.022E4/
-!     !     PLOG/1.0E0 9.568E15 9.603E-1 1.041E4/
-!     !     PLOG/3.0E0 2.834E15 9.75E-1 1.036E4/
-!     !     PLOG/1.0E1 4.306E14 1.055E0 1.013E4/
-!     !     PLOG/3.0E1 7.7E12 1.405E0 8.829E3/
-!     !     PLOG/1.0E2 8.214E12 1.381E0 8.664E3/
-!     !     PLOG/3.0E2 2.495E15 4.106E-1 9.406E3/
-!     !     PLOG/1.0E3 5.673E13 8.271E-1 7.545E3/
-
-!     ! !\BOYANG !\CMNT: FALSE REACTION FOR cCO2
-!     ! HOCO+cCO2=>OH+CO+cCO2    1.088E37 -3.882 5.921E4
-!     !     PLOG/3.0E-1 1.437E37 -3.765E0 5.898E4/
-!     !     PLOG/1.0E0 1.088E37 -3.882E0 5.921E4/
-!     !     PLOG/3.0E0 2.894E36 -3.852E0 5.917E4/
-!     !     PLOG/1.0E1 5.878E35 -3.798E0 5.911E4/
-!     !     PLOG/3.0E1 4.237E36 -4.15E0 5.996E4/
-!     !     PLOG/1.0E2 1.412E39 -5.007E0 6.156E4/
-!     !     PLOG/3.0E2 2.725E39 -5.146E0 6.262E4/
-!     !     PLOG/1.0E3 7.933E39 -5.371E0 6.362E4/
-
-!     !\SOURCE: ARAMCO3 !\REF: Weston et al. J. Phys. Chem. A 117(5) (2013) 821-835
-!     HOCO=CO+OH    6.3E32 -5.96 3.247E4
-!         PLOG/1.0E-3 1.55E-8 2.93E0 8.768E3/
-!         PLOG/3.0E-3 1.77E3 3.4E-1 1.8076E4/
-!         PLOG/2.96E-2 2.02E13 -1.87E0 2.2755E4/
-!         PLOG/9.87E-2 1.68E18 -3.05E0 2.4323E4/
-!         PLOG/2.961E-1 2.5E24 -4.63E0 2.7067E4/
-!         PLOG/9.869E-1 4.54E26 -5.12E0 2.7572E4/
-!         PLOG/2.9607E0 7.12E28 -5.6E0 2.8535E4/
-!         PLOG/9.869E0 5.48E29 -5.7E0 2.8899E4/
-!         PLOG/2.9607E1 9.89E31 -6.19E0 3.0518E4/
-!         PLOG/9.869E1 5.74E33 -6.53E0 3.2068E4/
-!         PLOG/2.9607E2 2.61E33 -6.29E0 3.2231E4/
-!         PLOG/9.869E2 6.3E32 -5.96E0 3.247E4/
-
-
-!     !\BOYANG !\REF: RAS/GLA07a (1-50 bar, 300<T<2000K)
-!     !CO+OH=HOCO                           3.000E+26  -5.600    2881   ! RAS/GLA07a (1 bar, 300<T<2000K)
-!     !                        PLOG /  0.9869 3.000E+26  -5.600    2881 / ! RAS/GLA07a (1 bar, 300<T<2000K)
-!     !                        PLOG /  0.9869 3.000E+26  -5.600    2881 / ! RAS/GLA07a (1 bar, 300<T<2000K)                                                        
-!     !                        PLOG /  2.9607 1.100E+27  -5.600    3239 / ! RAS/GLA07a (3 bar, 300<T<2000K)
-!     !                        PLOG /  2.9607 1.100E+27  -5.600    3239 / ! RAS/GLA07a (3 bar, 300<T<2000K)
-!     !                        PLOG /  9.8692 1.500E+25  -5.000    1987 / ! RAS/GLA07a (10 bar, 300<T<2000K)
-!     !                        PLOG /  9.8692 1.300E+37  -8.400    7948 / ! RAS/GLA07a (10 bar, 300<T<2000K)
-!     !                        PLOG / 19.7385 7.500E+28  -6.000    3775 / ! RAS/GLA07a (20 bar, 300<T<2000K)
-!     !                        PLOG / 19.7385 4.000E+39  -9.000    9935 / ! RAS/GLA07a (20 bar, 300<T<2000K)
-!     !                        PLOG / 49.3462 4.000E+38  -9.000    6955 / ! RAS/GLA07a (50 bar, 150<T<2000K)
-!     !                        PLOG / 49.3462 5.000E+43 -10.000   13015 / ! RAS/GLA07a (50 bar, 150<T<2000K)
-
-!     !\ENDRXN: \HOCO=CO+OH 
-
-! !\RXN: \HOCO=CO2+H !\BOYANG 
-!     !\CMNT: 3RD-BODY EFF. IGNORED BY CHEMKIN WHEN USING PLOG FORMALISM.
-!     !!\BOYANG !\CMNT: Bimolecular rates converted from unimolecular rates, using equations: A_new = A*82.057/P[atm], n_new = n+1, E_new = E 
-!     !!\REF: (BATHGAS = HE) Weston et al. J. Phys. Chem. A 117(5) (2013) 821-835
-!     !HOCO+M=CO2+H+M    1.897E38 -8.047 3.424E4
-!     !   CO2/0.0/   !\CMNT: REPLACED BY REACTION
-!     !   cCO2/0.0/  !\CMNT: REPLACED BY REACTION
-!     !   PLOG/1.00E-03  3.904E+23  -2.817E+00  1.768E+04/
-!     !   PLOG/3.00E-03  6.086E+24  -3.149E+00  1.904E+04/
-!     !   PLOG/9.90E-03  6.269E+25  -3.434E+00  2.033E+04/
-!     !   PLOG/2.96E-02  2.525E+28  -4.189E+00  2.242E+04/
-!     !   PLOG/9.87E-02  2.614E+32  -5.376E+00  2.523E+04/
-!     !   PLOG/2.96E-01  3.187E+34  -6.037E+00  2.666E+04/
-!     !   PLOG/9.87E-01  8.888E+37  -7.107E+00  2.906E+04/
-!     !   PLOG/2.96E+00  6.757E+37  -7.153E+00  2.934E+04/
-!     !   PLOG/9.87E+00  5.540E+36  -6.919E+00  2.922E+04/
-!     !   PLOG/2.96E+01  4.775E+38  -7.506E+00  3.127E+04/
-!     !   PLOG/9.87E+01  2.500E+41  -8.290E+00  3.397E+04/
-!     !   PLOG/2.96E+02  1.876E+36  -6.832E+00  3.161E+04/
-!     !   PLOG/9.87E+02  1.577E+37  -7.047E+00  3.424E+04/
-
-!     ! !\BOYANG !\CMNT: Bimolecular rates converted from unimolecular rates, using equations: A_new = A*82.057/P[atm], n_new = n+1, E_new = E  
-!     ! HOCO+CO2=CO2+H+CO2    1.897E38 -8.047 3.424E4
-!     !     PLOG/3.0E-1 2.295E25 -1.502E0 1.701E4/
-!     !     PLOG/1.0E0 5.97E24 -1.025E0 1.912E4/
-!     !     PLOG/3.0E0 2.738E22 -6.132E-1 1.753E4/
-!     !     PLOG/1.0E1 5.051E23 -1.396E0 1.649E4/
-!     !     PLOG/3.0E1 9.067E24 -2.062E0 1.596E4/
-!     !     PLOG/1.0E2 2.884E26 -2.441E0 1.543E4/
-!     !     PLOG/3.0E2 1.836E28 -3.21E0 1.458E4/
-!     !     PLOG/1.0E3 1.308E29 -3.892E0 1.46E4/
-
-!     ! !\BOYANG !\CMNT: FALSE REACTION FOR cCO2
-!     ! HOCO+cCO2=CO2+H+cCO2    1.897E38 -8.047 3.424E4
-!     !     PLOG/3.0E-1 2.295E25 -1.502E0 1.701E4/
-!     !     PLOG/1.0E0 5.97E24 -1.025E0 1.912E4/
-!     !     PLOG/3.0E0 2.738E22 -6.132E-1 1.753E4/
-!     !     PLOG/1.0E1 5.051E23 -1.396E0 1.649E4/
-!     !     PLOG/3.0E1 9.067E24 -2.062E0 1.596E4/
-!     !     PLOG/1.0E2 2.884E26 -2.441E0 1.543E4/
-!     !     PLOG/3.0E2 1.836E28 -3.21E0 1.458E4/
-!     !     PLOG/1.0E3 1.308E29 -3.892E0 1.46E4/
-
-!     !\SOURCE: ARAMCO3 !\REF: Weston et al. J. Phys. Chem. A 117(5) (2013) 821-835
-!     HOCO=CO2+H    1.897E38 -8.047 3.424E4
-!         PLOG/1.0E-3 4.758E18 -3.817E0 1.7676E4/
-!         PLOG/3.0E-3 2.225E20 -4.149E0 1.9037E4/
-!         PLOG/9.9E-3 7.564E21 -4.434E0 2.0325E4/
-!         PLOG/2.96E-2 9.107E24 -5.189E0 2.2419E4/
-!         PLOG/9.87E-2 3.144E29 -6.376E0 2.5233E4/
-!         PLOG/2.961E-1 1.15E32 -7.037E0 2.6662E4/
-!         PLOG/9.869E-1 1.069E36 -8.107E0 2.9064E4/
-!         PLOG/2.9607E0 2.438E36 -8.153E0 2.9336E4/
-!         PLOG/9.869E0 6.663E35 -7.919E0 2.9217E4/
-!         PLOG/2.9607E1 1.723E38 -8.506E0 3.1273E4/
-!         PLOG/9.869E1 3.007E41 -9.29E0 3.3966E4/
-!         PLOG/2.9607E2 6.767E36 -7.832E0 3.1613E4/
-!         PLOG/9.869E2 1.897E38 -8.047E0 3.424E4/
-
-!     !\BOYANG !\CMNT: k(T,P) = (3.50E+56*P[bar]^0.95 -15.000   46500) + (2.50E+69*P[bar]^0.95 -18.000   60000)
-!     !\REF: RAS/GLA07a (1-50 bar, 300<T<2000K)
-!     !HOCO=CO2+H                             3.50E+56 -15.000   46500 
-!     !                         PLOG /   0.9869 3.50E+56 -15.000   46500 /
-!     !                         PLOG /   0.9869 2.50E+69 -18.000   60000 /
-!     !                         PLOG /   2.9607 9.94E+56 -15.000   46500 /
-!     !                         PLOG /   2.9607 7.01E+69 -15.000   46500 /
-!     !                         PLOG /   4.9346 1.61E+57 -15.000   46500 /
-!     !                         PLOG /   4.9346 1.15E+70 -18.000   60000 /
-!     !                         PLOG /   9.8692 3.12E+57 -15.000   46500 /
-!     !                         PLOG /   9.8692 2.23E+70 -18.000   60000 /
-!     !                         PLOG /  19.7385 6.03E+57 -15.000   46500 /
-!     !                         PLOG /  19.7385 4.30E+70 -18.000   60000 /
-!     !                         PLOG /  49.3462 1.44E+58 -15.000   46500 /
-!     !                         PLOG /  49.3462 1.03E+71 -18.000   60000 / 
-
-!     !\ENDRXN: \HOCO=CO2+H 
-
-! !\RXN: \CO+HO2=CO2+OH 
-!     !\SOURCE: KEROMNES2013 !\REF: YOU ET AL. J. PHYS. CHEM. A 111(19) (2007) 4031–4042.
-!     CO+HO2=CO2+OH    1.57E5 2.18 1.794E4
-!     !\ENDRXN: \CO+HO2=CO2+OH 
-
-! !\RXN: \HCO+M=H+CO+M !\BOYANG 
-
-!     !\BOYANG !\REF: LI ET AL. INT. J. CHEM. KINET. 39(3) (2007) 109–136.
-!     !\CMNT: (SUPPORTED BY) RYU ET AL. Bull. Korean Chem. Soc. 38 (2017) 228-236
-!     HCO+M=H+CO+M    4.75E11 0.66 1.487E4
-!        AR/0.87/
-!        N2/1.0/
-!        H2/2.5/ 
-!        H2O/12.0/ 
-!        CO/1.9/ 
-!        CO2/3.8/
-!        CH4/2.0/
-!        C2H6/3.0/
-!        cH2O/12.0/ !\BOYANG
-!        cCO2/3.8/  !\BOYANG
-
-
-!     !\SOURCE: ARAMCO3 !\CMNT: ORIGINAL RATE *1.2
-!     !\REF: LI ET AL. INT. J. CHEM. KINET. 39(3) (2007) 109–136.
-!     !HCO+M=H+CO+M    5.7E11 0.66 1.487E4
-!     !    H2/2.0/
-!     !    H2O/6.0/
-!     !    CO/1.5/
-!     !    CO2/2.0/
-!     !    CH4/2.0/
-!     !    C2H6/3.0/
-!     !    cH2O/6.0/   !\BOYANG
-!     !    cCO2/2.0/   !\BOYANG
-
-!     !\ENDRXN: \HCO+M=H+CO+M 
-
-! !\RXN: \HCO+O2=CO+HO2 !\BOYANG 
-!     !!\SOURCE: KEROMNES2013 !\REF: TIMONEN ET AL., J. PHYS. CHEM. 92(3) (1988) 651–655.
-!     !HCO+O2=CO+HO2    7.58E12 0.0 4.1E2
-
-!     !\SOURCE: NILSSON2016 !\REF: HSU ET AL. J. CHEM. PHYS. 105(6) (1996) 2346-2352
-!     !\CMNT: (SUPPORTED BY) COLBERG & FRIEDRICHS. J. PHYS. CHEM. A 110(1) (2006) 160-170
-!     !HCO+O2=CO+HO2    1.20E10 0.807 -727
-
-!     !\BOYANG !\REF: FASSHEBER ET AL. J. Phys. Chem. A 119(28) (2015) 7305-7315
-!     !\CMNT: VALID FOR 295-1705 K
-!     !\CMNT: both addition and direct abstraction are considered.
-!     HCO+O2=CO+HO2    6.92E6 1.9 -1.3695E3
-
-!     !\ENDRXN: \HCO+O2=CO+HO2 
-
-! !\RXN: \HCO+H=CO+H2 
-!     !!\SOURCE: KEROMNES2013 !\REF: TIMONEN ET AL., J. PHYS. CHEM. 91(3) (1987) 692–694.
-!     !HCO+H=CO+H2    7.34E13 0.0 0.0E0
-
-!     !\SOURCE: NILSSON2016 !\REF: TROE & USHAKOV. J. PHYS. CHEM. A 111(29) (2007) 6610-6614
-!     HCO+H=CO+H2    1.2E14 0.0 0.0E0
-
-!     !\ENDRXN: \HCO+H=CO+H2 
-
-! !\RXN: \HCO+O 
-!     !\SOURCE: KEROMNES2013 !\REF:TSANG AND HAMPSON, J. PHYS. CHEM. REF. DATA 15 (1986) 1087–1280.
-!     HCO+O=CO+OH    3.02E13 0.0 0.0E0
-!     HCO+O=CO2+H    3.0E13 0.0 0.0E0
-!     !\ENDRXN: \HCO+O 
-
-! !\RXN: \HCO+OH=CO+H2O !\BOYANG 
-
-!     !\BOYANG !\REF: DONTGEN & LEONHARD. J. PHYS. CHEM. A 120(11) (2016) 1819-1824 ; DONTGEN & LEONHARD. J. PHYS. CHEM. A 122(38) (2018) 7775
-!     !\CMNT: VALID FOR 500-2000 K
-!     !\CMNT: WELL-SKIPPING DIRECT ABSTRACTION IS CONSIDERED.
-!     HCO+OH=CO+H2O    1.1918E+15  -1.147  4.1197E+3
-!         DUP
-!     HCO+OH=CO+H2O    1.9849E+14  -0.661  4.0852E+2
-!         DUP
-
-!     !\SOURCE: ARAMCO3 !\REF:TSANG AND HAMPSON, J. PHYS. CHEM. REF. DATA, 15:1087 (1986)
-!     !HCO+OH=CO+H2O    3.011E13 0.0 0.0E0
-
-!     !\SOURCE: KEROMNES2013 !\REF: BAULCH ET AL., J. PHYS. CHEM. REF. DATA 21(3) (1992) 411–734. ; TEMPS & WAGNER. BER. BUNSEN-GES.-PHYS. CHEM. CHEM. PHYS. 88(4) (1984) 415-418
-!     !HCO+OH<=>CO+H2O 1.020E+14 0.000 0.000E+00
-
-!     !\ENDRXN: \HCO+OH=CO+H2O 
-
-! !\RXN: \HCO+HO2 !\BOYANG
-!     !\SOURCE: NILSSON2016 !\REF:TSANG AND HAMPSON, J. PHYS. CHEM. REF. DATA 15 (1986) 1087–1280.
-!     HCO+HO2=CO2+H+OH    3.0E13 0.0 0.0E0
-!     ! HCO+HO2=CO+H2O2     3.0E12 0.0 0.0E0
-!     !\ENDRXN: \HCO+HO2 
-
-! !\RXN: \HCO+HCO 
-!     !\SOURCE: NILSSON2016 !\REF:TSANG AND HAMPSON, J. PHYS. CHEM. REF. DATA 15 (1986) 1087–1280.
-!     !\CMNT: (SUPPORTED BY) KRASNOPEROV ET AL. PROC. COMBUST. INST. 30(1) (2005) 935-943
-!     !\CMNT: (BRANCHING RATIO) HOROWITZ & CALVERT. INT. J. CHEM. KINET. 10(7) (1978) 713-732
-!     HCO+HCO=H2+CO+CO    3.0E12 0.0 0.0E0
-!     HCO+HCO=CH2O+CO     1.8E13 0.0 0.0E0
-
-!     !\BOYANG !\REF: QUEE & THYNNE. BER. BUNSENGES. PHYS. CHEM. 72(2) (1968) 211-217
-!     !\CMNT: INGNORED: NOT IMPORTANT
-!     ! HCO+HCO=CHOCHO      1.66E+11  0.0  0.0E0
-
-!     !\ENDRXN: \HCO+HCO 
-
-! !\ENDSUBMECH: \H2+CO
-
-! ! !\SUBMECH: \HOCO !\BOYANG
-! ! !\SUBMECHSOURCE: NILSSON2016
-
-! ! HOCO+H=H2+CO2        4.07E+17  -1.38    597 
-! ! HOCO+H=H2O+CO        1.96E+14  -0.06   1634
-! ! HOCO+O=OH+CO2        2.95E+12   0.17  -69.9
-! ! HOCO+OH=H2O+CO2      4.56E+12    0.0    -89
-! !     DUP
-! ! HOCO+OH=H2O+CO2      9.54E+06    2.0    -89
-! !     DUP
-! ! HOCO+OH=H2O2+CO      3.90E+05   2.09   5444
-! ! HOCO+O2=HO2+CO2      1.38E+10  0.842    160
-! ! HOCO+HO2=H2O2+CO2    3.00E+13    0.0    0.0
-
-! ! !\ENDSUBMECH: \HOCO 
-
-
-!!!!!! H2/CO submech from Aramco 3 !!!!!!!
-
-H2+M<=>H+H+M                                                 +4.5770000E+019 -1.4000000E+000 +1.0440000E+005 
-H2 / 2.500 / H2O / 12.000 / CO / 1.900 / CO2 / 3.800 / HE / 0.830 / CH4 / 2.000 / C2H6 / 3.000 / 
-H2+O<=>H+OH                                                  +5.0800000E+004 +2.6700000E+000 +6.2920000E+003  
-H2+OH<=>H+H2O                                                +4.3800000E+013 +0.0000000E+000 +6.9900000E+003  
-O+O+M<=>O2+M                                                 +6.1650000E+015 -5.0000000E-001 +0.0000000E+000 
-H2 / 2.500 / H2O / 12.000 / AR / 0.830 / CO / 1.900 / CO2 / 3.800 / HE / 0.830 / CH4 / 2.000 / C2H6 / 3.000 / 
-O2+H<=>O+OH                                                  +1.0400000E+014 +0.0000000E+000 +1.5286000E+004  
-H+OH+M<=>H2O+M                                               +3.5000000E+022 -2.0000000E+000 +0.0000000E+000 
-H2 / 0.730 / H2O / 3.650 / CH4 / 2.000 / C2H6 / 3.000 / AR / 0.380 / 
-O+H2O<=>OH+OH                                                +6.7000000E+007 +1.7040000E+000 +1.4986800E+004  
-O+H+M<=>OH+M                                                 +4.7140000E+018 -1.0000000E+000 +0.0000000E+000 
-H2 / 2.500 / H2O / 12.000 / AR / 0.750 / CO / 1.500 / CO2 / 2.000 / HE / 0.750 / CH4 / 2.000 / C2H6 / 3.000 / 
-H+O+M<=>OHX+M                                                +1.5000000E+013 +0.0000000E+000 +5.9750000E+003 
-H2 / 1.000 / H2O / 6.500 / O2 / 0.400 / N2 / 0.400 / AR / 0.350 / 
-OHX+H2O<=>OH+H2O                                             +5.9300000E+012 +5.0000000E-001 -8.6000000E+002  
-OHX+H2<=>OH+H2                                               +2.9500000E+012 +5.0000000E-001 -4.4400000E+002  
-OHX+N2<=>OH+N2                                               +1.0800000E+011 +5.0000000E-001 -1.2420000E+003  
-OHX+OH<=>OH+OH                                               +6.0100000E+012 +5.0000000E-001 -7.6400000E+002  
-OHX+H<=>OH+H                                                 +1.3100000E+012 +5.0000000E-001 -1.6700000E+002  
-OHX+AR<=>OH+AR                                               +1.6900000E+012 +0.0000000E+000 +4.1350000E+003  
-OHX<=>OH                                                     +1.4500000E+006 +0.0000000E+000 +0.0000000E+000  
-OHX+O2<=>OH+O2                                               +2.1000000E+012 +5.0000000E-001 -4.7800000E+002  
-OHX+CO2<=>OH+CO2                                             +2.7500000E+012 +5.0000000E-001 -9.6800000E+002  
-OHX+CO<=>OH+CO                                               +3.2300000E+012 +5.0000000E-001 -7.8700000E+002  
-OHX+CH4<=>OH+CH4                                             +3.3600000E+012 +5.0000000E-001 -6.3500000E+002  
-H2O2(+M)<=>OH+OH(+M)                                         +2.0000000E+012 +9.0000000E-001 +4.8749000E+004
-LOW /                                                        +2.4900000E+024 -2.3000000E+000 +4.8749000E+004 /
-TROE /                                       +4.3000000E-001 +1.0000000E-030 +1.0000000E+030 /
-H2O / 7.650 / CO2 / 1.600 / N2 / 1.500 / O2 / 1.200 / HE / 0.650 / H2O2 / 7.700 / H2 / 3.700 / CO / 2.800 / 
-H2O2+H<=>H2O+OH                                              +2.4100000E+013 +0.0000000E+000 +3.9700000E+003  
-H2O2+H<=>H2+HO2                                              +2.1500000E+010 +1.0000000E+000 +6.0000000E+003  
-H2O2+O<=>OH+HO2                                              +9.5500000E+006 +2.0000000E+000 +3.9700000E+003  
-H2O2+OH<=>H2O+HO2                                            +1.7400000E+012 +0.0000000E+000 +3.1800000E+002  
-DUP 
-H2O2+OH<=>H2O+HO2                                            +7.5900000E+013 +0.0000000E+000 +7.2690000E+003  
-DUP 
-HO2+H<=>OH+OH                                                +7.0790000E+013 +0.0000000E+000 +2.9500000E+002  
-HO2+H<=>H2+O2                                                +1.1402000E+010 +1.0827000E+000 +5.5378000E+002  
-HO2+O<=>OH+O2                                                +3.2500000E+013 +0.0000000E+000 +0.0000000E+000  
-HO2+OH<=>H2O+O2                                              +2.4560000E+013 +0.0000000E+000 -4.9700000E+002  
-HO2+HO2<=>H2O2+O2                                            +1.0000000E+014 +0.0000000E+000 +1.1040883E+004  
-DUP 
-HO2+HO2<=>H2O2+O2                                            +1.9000000E+011 +0.0000000E+000 -1.4089248E+003  
-DUP 
-! H+O2(+M)<=>HO2(+M)                                           +4.6500000E+012 +4.4000000E-001 +0.0000000E+000
-! LOW /                                                        +1.7370000E+019 -1.2300000E+000 +0.0000000E+000 /
-! TROE /                                       +6.7000000E-001 +1.0000000E-030 +1.0000000E+030 +1.0000000E+030 /
-! H2 / 1.300 / CO / 1.900 / CO2 / 3.800 / HE / 0.640 / H2O / 10.000 / AR / 0.500 / CH4 / 2.000 / C2H6 / 3.000 / 
-CO+O(+M)<=>CO2(+M)                                           +1.3620000E+010 +0.0000000E+000 +2.3840000E+003
-LOW /                                                        +1.1730000E+024 -2.7900000E+000 +4.1910000E+003 /
-H2 / 2.000 / H2O / 12.000 / CO / 1.750 / CO2 / 3.600 / AR / 0.700 / HE / 0.700 / 
-CO+OH<=>CO2+H                                                +7.0150000E+004 +2.0530000E+000 -3.5570000E+002  
-DUP 
-CO+OH<=>CO2+H                                                +5.7570000E+012 -6.6400000E-001 +3.3180000E+002  
-DUP 
-CO+HO2<=>CO2+OH                                              +1.5700000E+005 +2.1800000E+000 +1.7940000E+004  
-CO+O2<=>CO2+O                                                +1.1190000E+012 +0.0000000E+000 +4.7700000E+004  
-!H+CO2<=>OCHO                                                 +7.5000000E+013 +0.0000000E+000 +2.9000000E+004  
-HOCO<=>CO+OH                                                 +6.3000000E+032 -5.9600000E+000 +3.2470000E+004  
-PLOG /                                       +1.0000000E-003 +1.5500000E-008 +2.9300000E+000 +8.7680000E+003 / 
-PLOG /                                       +3.0000000E-003 +1.7700000E+003 +3.4000000E-001 +1.8076000E+004 / 
-PLOG /                                       +2.9600000E-002 +2.0200000E+013 -1.8700000E+000 +2.2755000E+004 / 
-PLOG /                                       +9.8700000E-002 +1.6800000E+018 -3.0500000E+000 +2.4323000E+004 / 
-PLOG /                                       +2.9610000E-001 +2.5000000E+024 -4.6300000E+000 +2.7067000E+004 / 
-PLOG /                                       +9.8690000E-001 +4.5400000E+026 -5.1200000E+000 +2.7572000E+004 / 
-PLOG /                                       +2.9607000E+000 +7.1200000E+028 -5.6000000E+000 +2.8535000E+004 / 
-PLOG /                                       +9.8690000E+000 +5.4800000E+029 -5.7000000E+000 +2.8899000E+004 / 
-PLOG /                                       +2.9607000E+001 +9.8900000E+031 -6.1900000E+000 +3.0518000E+004 / 
-PLOG /                                       +9.8690000E+001 +5.7400000E+033 -6.5300000E+000 +3.2068000E+004 / 
-PLOG /                                       +2.9607000E+002 +2.6100000E+033 -6.2900000E+000 +3.2231000E+004 / 
-PLOG /                                       +9.8690000E+002 +6.3000000E+032 -5.9600000E+000 +3.2470000E+004 / 
-HOCO<=>CO2+H                                                 +1.8970000E+038 -8.0470000E+000 +3.4240000E+004  
-PLOG /                                       +1.0000000E-003 +4.7580000E+018 -3.8170000E+000 +1.7676000E+004 / 
-PLOG /                                       +3.0000000E-003 +2.2250000E+020 -4.1490000E+000 +1.9037000E+004 / 
-PLOG /                                       +9.9000000E-003 +7.5640000E+021 -4.4340000E+000 +2.0325000E+004 / 
-PLOG /                                       +2.9600000E-002 +9.1070000E+024 -5.1890000E+000 +2.2419000E+004 / 
-PLOG /                                       +9.8700000E-002 +3.1440000E+029 -6.3760000E+000 +2.5233000E+004 / 
-PLOG /                                       +2.9610000E-001 +1.1500000E+032 -7.0370000E+000 +2.6662000E+004 / 
-PLOG /                                       +9.8690000E-001 +1.0690000E+036 -8.1070000E+000 +2.9064000E+004 / 
-PLOG /                                       +2.9607000E+000 +2.4380000E+036 -8.1530000E+000 +2.9336000E+004 / 
-PLOG /                                       +9.8690000E+000 +6.6630000E+035 -7.9190000E+000 +2.9217000E+004 / 
-PLOG /                                       +2.9607000E+001 +1.7230000E+038 -8.5060000E+000 +3.1273000E+004 / 
-PLOG /                                       +9.8690000E+001 +3.0070000E+041 -9.2900000E+000 +3.3966000E+004 / 
-PLOG /                                       +2.9607000E+002 +6.7670000E+036 -7.8320000E+000 +3.1613000E+004 / 
-PLOG /                                       +9.8690000E+002 +1.8970000E+038 -8.0470000E+000 +3.4240000E+004 / 
-
-HCO+M<=>H+CO+M                                               +5.7000000E+011 +6.6000000E-001 +1.4870000E+004 
-H2 / 2.000 / H2O / 6.000 / CO / 1.500 / CO2 / 2.000 / CH4 / 2.000 / C2H6 / 3.000 / 
-HCO+O2<=>CO+HO2                                              +7.5800000E+012 +0.0000000E+000 +4.1000000E+002  
-HCO+O<=>CO+OH                                                +3.0200000E+013 +0.0000000E+000 +0.0000000E+000  
-HCO+H<=>CO+H2                                                +7.3400000E+013 +0.0000000E+000 +0.0000000E+000  
-HCO+OH<=>CO+H2O                                                                                           +2.6500000E+013 +0.0000000E+000 +0.0000000E+000  
-HCO+HCO<=>CO+CH2O                                            +1.8000000E+013 +0.0000000E+000 +0.0000000E+000  
-HCO+O<=>CO2+H                                                +3.0000000E+013 +0.0000000E+000 +0.0000000E+000  
-HCO+HO2=>CO2+H+OH                                            +3.0000000E+013 +0.0000000E+000 +0.0000000E+000  
-HCO+HCO=>H2+CO+CO                                            +3.0000000E+012 +0.0000000E+000 +0.0000000E+000 
-
-!!!!! H2/CO submech from Aramco 3 !!!!!!!
 
 
 !\RXN: \CH2CO+OH !\BOYANG
