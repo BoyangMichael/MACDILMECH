@@ -3,7 +3,7 @@ C H N O AR
 HE NE 
 END
 SPECIES
-CH2COOH 
+! CH2COOH 
 
 ! !\SUBMECH: \FALSE-SPECIES !\BOYANG
 !     iCO2 
@@ -333,21 +333,21 @@ REACTIONS MOLES CAL/MOLE
 !\RXN: \H+O2(+M)=HO2(+M) !\BOYANG 
     
 
-    !\CMNT: (Testing) Lei & Burke 2020
-    !\REF: Lei, L., Burke, M. (2020). Mixture rules and falloff are now major uncertainties in experimentally derived rate parameters for H + O2 (+M) ↔ HO2 (+M) Combustion and Flame  213(), 467-474. https://dx.doi.org/10.1016/j.combustflame.2019.11.041
-    H+O2(+M)=HO2(+M)    1.228E+12 0.58 -213.76
-        AR/1.00/
-        N2/1.53/
-        H2O/22.56/
-        CO2/5.42/ !\CMNT: Derived from LPL ratio CO2/AR at T = 1500 K !\REF: CHOUDHARY ET AL. COMBUST. FLAME 203 (2019) 265-278
-        HE/0.87/  !\CMNT: Scaled from !\REF: Shao et al. Proc. Combust. Inst. 37 (2019) 145-152 
-        O2/1.53/  !\CMNT: Scaled from !\REF: Shao et al. Proc. Combust. Inst. 37 (2019) 145-152 
-        H2/2.30/  !\CMNT: Scaled from !\REF: Shao et al. Proc. Combust. Inst. 37 (2019) 145-152 
-        CH4/5.36/ !\CMNT: Scaled from !\REF: Shao et al. Proc. Combust. Inst. 37 (2019) 145-152 
-        CO/2.91/  !\CMNT: Scaled from !\REF: FERNANDES ET AL.,PHYS. CHEM. CHEM. PHYS. 10(29) (2008) 4313–4321
-        C2H6/8.03/!\CMNT: Scaled from !\REF: FERNANDES ET AL.,PHYS. CHEM. CHEM. PHYS. 10(29) (2008) 4313–4321
-        LOW/4.570E+20 -1.67 871.35/
-        TROE/0.4148 1.0E-30 1.0E+30 1.0E+30/
+    ! !\CMNT: (Testing) Lei & Burke 2020
+    ! !\REF: Lei, L., Burke, M. (2020). Mixture rules and falloff are now major uncertainties in experimentally derived rate parameters for H + O2 (+M) ↔ HO2 (+M) Combustion and Flame  213(), 467-474. https://dx.doi.org/10.1016/j.combustflame.2019.11.041
+    ! H+O2(+M)=HO2(+M)    1.228E+12 0.58 -213.76
+    !     AR/1.00/
+    !     N2/1.53/
+    !     H2O/22.56/
+    !     CO2/5.42/ !\CMNT: Derived from LPL ratio CO2/AR at T = 1500 K !\REF: CHOUDHARY ET AL. COMBUST. FLAME 203 (2019) 265-278
+    !     HE/0.87/  !\CMNT: Scaled from !\REF: Shao et al. Proc. Combust. Inst. 37 (2019) 145-152 
+    !     O2/1.53/  !\CMNT: Scaled from !\REF: Shao et al. Proc. Combust. Inst. 37 (2019) 145-152 
+    !     H2/2.30/  !\CMNT: Scaled from !\REF: Shao et al. Proc. Combust. Inst. 37 (2019) 145-152 
+    !     CH4/5.36/ !\CMNT: Scaled from !\REF: Shao et al. Proc. Combust. Inst. 37 (2019) 145-152 
+    !     CO/2.91/  !\CMNT: Scaled from !\REF: FERNANDES ET AL.,PHYS. CHEM. CHEM. PHYS. 10(29) (2008) 4313–4321
+    !     C2H6/8.03/!\CMNT: Scaled from !\REF: FERNANDES ET AL.,PHYS. CHEM. CHEM. PHYS. 10(29) (2008) 4313–4321
+    !     LOW/4.570E+20 -1.67 871.35/
+    !     TROE/0.4148 1.0E-30 1.0E+30 1.0E+30/
 
 
     ! !\CMNT: (Testing) Yang et al. 2020 + ARAMCO3
@@ -376,32 +376,32 @@ REACTIONS MOLES CAL/MOLE
     !\REF: (LPL for N2 ) CHOUDHARY ET AL. COMBUST. FLAME 203 (2019) 265-278 !\CMNT: VALID TEMPERATURE = 1000-2000 K, UNCERTAINTY = 23%
     !\SOURCE: KONNOV2018 !\REF: (3RD-BODY EFF. for HE, O2, H2, CH4) MICHAEL ET AL. J. PHYS. CHEM. A 106 (2002) 5297-5313
     !\SOURCE: ARAMCO3 !\REF: (3RD-BODY EFF. for CO, C2H6) (POSSIBLY FROM) FERNANDES ET AL.,PHYS. CHEM. CHEM. PHYS. 10(29) (2008) 4313–4321
-    ! H+O2(+M)=HO2(+M)    4.660E12 0.44 0.0E0
-    !     AR/0.0/    !\CMNT: REPLACED BY REACTION
-    !     CO2/0.0/   !\CMNT: REPLACED BY REACTION
-    !     H2O/0.0/   !\CMNT: REPLACED BY REACTION
-    !     O2/1.0/ 
-    !     H2/1.5/ 
-    !     HE/0.57/ 
-    !     CH4/3.5/ 
-    !     CO/2.19/
-    !     C2H6/3.46/
-    !     LOW/2.25E+21 -1.95 0.0/
-    !     TROE/0.5 1E-30 1E30 1E30/
+    H+O2(+M)=HO2(+M)    4.660E12 0.44 0.0E0
+        AR/0.0/    !\CMNT: REPLACED BY REACTION
+        CO2/0.0/   !\CMNT: REPLACED BY REACTION
+        H2O/0.0/   !\CMNT: REPLACED BY REACTION
+        O2/1.0/ 
+        H2/1.5/ 
+        HE/0.57/ 
+        CH4/3.5/ 
+        CO/2.19/
+        C2H6/3.46/
+        LOW/2.25E+21 -1.95 0.0/
+        TROE/0.5 1E-30 1E30 1E30/
 
     !\CMNT: (BELOW) ----- AR -----
     !\BOYANG !\REF: (HPL) Troe. Proc. Combust. Inst. 28 (2000) 1463-1469
     !\REF: (LPL) CHOUDHARY ET AL. COMBUST. FLAME 203 (2019) 265-278 !\CMNT: VALID TEMPERATURE = 1000-2000 K, UNCERTAINTY = 9%
-    ! H+O2(+AR)=HO2(+AR)  4.660E12 0.44 0.0E0
-    !     LOW/2.66E+19 -1.36 0.0/
-    !     TROE/0.5 1E-30 1E30 1E30/   
+    H+O2(+AR)=HO2(+AR)  4.660E12 0.44 0.0E0
+        LOW/2.66E+19 -1.36 0.0/
+        TROE/0.5 1E-30 1E30 1E30/   
 
     !\CMNT: (BELOW) ----- CO2 -----
     !\BOYANG !\REF: (HPL) Troe. Proc. Combust. Inst. 28 (2000) 1463-1469
     !\REF: (LPL) CHOUDHARY ET AL. COMBUST. FLAME 203 (2019) 265-278 !\CMNT: VALID TEMPERATURE = 1000-2000 K, UNCERTAINTY = 28%
-    ! H+O2(+CO2)=HO2(+CO2)  4.660E12 0.44 0.0E0
-    !     LOW/2.23E+18 -0.79 0.0/
-    !     TROE/0.5 1E-30 1E30 1E30/  
+    H+O2(+CO2)=HO2(+CO2)  4.660E12 0.44 0.0E0
+        LOW/2.23E+18 -0.79 0.0/
+        TROE/0.5 1E-30 1E30 1E30/  
     !\BOYANG !\CMNT: FALSE REACTION FOR cCO2
     ! H+O2(+cCO2)=HO2(+cCO2)  4.660E12 0.44 0.0E0
     !     LOW/2.23E+18 -0.79 0.0/
@@ -410,9 +410,9 @@ REACTIONS MOLES CAL/MOLE
     !\CMNT: (BELOW) ----- H2O -----
     !\BOYANG !\REF: (HPL) Troe. Proc. Combust. Inst. 28 (2000) 1463-1469
     !\REF: (LPL) Shao et al. Proc. Combust. Inst. 37 (2019) 145-152 !\CMNT: VALID TEMPERATURE = 1000-1430 K, UNCERTAINTY = 19%
-    ! H+O2(+H2O)=HO2(+H2O)  4.660E12 0.44 0.0E0
-    !     LOW/2.037E+20 -1.2 0.0/
-    !     TROE/0.5 1E-30 1E30 1E30/   
+    H+O2(+H2O)=HO2(+H2O)  4.660E12 0.44 0.0E0
+        LOW/2.037E+20 -1.2 0.0/
+        TROE/0.5 1E-30 1E30 1E30/   
     !\BOYANG !\CMNT: FALSE REACTION FOR cH2O
     ! H+O2(+cH2O)=HO2(+cH2O)  4.660E12 0.44 0.0E0
     !     LOW/2.037E+20 -1.2 0.0/
@@ -1325,25 +1325,25 @@ OX+H2O=OH+OH      1.000E+14      0.0       -71.0
     !!\CMNT: fit btw. 300 and 2500 K with MAE of 3.0%, 9.8%
     !!\CMNT: fit btw. 300 and 2600 K with MAE of 3.3%, 9.9%
     !!\CMNT: fit btw. 300 and 3000 K with MAE of 4.2%, 10.3%
-    CH2CO+OH=>CH2COOH    4.22E11 0.17 4.744E2
-        PLOG/1.0E-4 4.32E-12 -4.31E0 -5.215E4/
-        PLOG/1.0E-4 1.55E39 -1.042E1 1.546E4/
-        PLOG/1.0E-3 2.17E30 -7.46E0 6.325E3/
-        PLOG/1.0E-3 1.1E26 -6.52E0 2.253E3/
-        PLOG/1.0E-2 3.6E40 -9.9E0 9.611E3/
-        PLOG/1.0E-2 3.69E33 -8.17E0 3.45E3/
-        PLOG/1.0E0 7.99E39 -8.61E0 1.269E4/
-        PLOG/1.0E0 7.01E27 -5.5E0 3.35E3/
-        PLOG/1.0E1 4.4E37 -7.57E0 1.467E4/
-        PLOG/1.0E1 1.34E22 -3.48E0 2.325E3/
-        PLOG/2.0E1 4.54E36 -7.19E0 1.514E4/
-        PLOG/2.0E1 3.63E20 -2.94E0 2.011E3/
-        PLOG/5.0E1 1.64E35 -6.66E0 1.572E4/
-        PLOG/5.0E1 6.51E18 -2.34E0 1.657E3/
-        PLOG/1.0E2 6.97E33 -6.19E0 1.597E4/
-        PLOG/1.0E2 2.2E17 -1.85E0 1.331E3/
-        PLOG/1.0E3 1.57E22 -2.71E0 1.017E4/
-        PLOG/1.0E3 9.78E15 -1.42E0 9.185E2/
+    ! CH2CO+OH=>CH2COOH    4.22E11 0.17 4.744E2
+    !     PLOG/1.0E-4 4.32E-12 -4.31E0 -5.215E4/
+    !     PLOG/1.0E-4 1.55E39 -1.042E1 1.546E4/
+    !     PLOG/1.0E-3 2.17E30 -7.46E0 6.325E3/
+    !     PLOG/1.0E-3 1.1E26 -6.52E0 2.253E3/
+    !     PLOG/1.0E-2 3.6E40 -9.9E0 9.611E3/
+    !     PLOG/1.0E-2 3.69E33 -8.17E0 3.45E3/
+    !     PLOG/1.0E0 7.99E39 -8.61E0 1.269E4/
+    !     PLOG/1.0E0 7.01E27 -5.5E0 3.35E3/
+    !     PLOG/1.0E1 4.4E37 -7.57E0 1.467E4/
+    !     PLOG/1.0E1 1.34E22 -3.48E0 2.325E3/
+    !     PLOG/2.0E1 4.54E36 -7.19E0 1.514E4/
+    !     PLOG/2.0E1 3.63E20 -2.94E0 2.011E3/
+    !     PLOG/5.0E1 1.64E35 -6.66E0 1.572E4/
+    !     PLOG/5.0E1 6.51E18 -2.34E0 1.657E3/
+    !     PLOG/1.0E2 6.97E33 -6.19E0 1.597E4/
+    !     PLOG/1.0E2 2.2E17 -1.85E0 1.331E3/
+    !     PLOG/1.0E3 1.57E22 -2.71E0 1.017E4/
+    !     PLOG/1.0E3 9.78E15 -1.42E0 9.185E2/
 
     !!\CMNT: fit btw. 400 and 1300 K with MAE of 8.3%, 30.9%
     !!\CMNT: fit btw. 500 and 1400 K with MAE of 16.7%, 39.4%
@@ -1354,25 +1354,25 @@ OX+H2O=OH+OH      1.000E+14      0.0       -71.0
     !!\CMNT: fit btw. 300 and 2500 K with MAE of 2.8%, 8.9%
     !!\CMNT: fit btw. 300 and 2600 K with MAE of 2.8%, 6.6%
     !!\CMNT: fit btw. 300 and 3000 K with MAE of 2.9%, 6.8%
-    CH2COOH=CH3+CO2    2.66E10 0.43 3.266E4
-        PLOG/1.0E-4 1.67E29 -6.49E0 3.328E4/
-        PLOG/1.0E-4 1.03E-23 4.43E0 -1.397E4/
-        PLOG/1.0E-3 4.4E12 -1.39E0 2.574E4/
-        PLOG/1.0E-3 2.48E12 -1.53E0 2.305E4/
-        PLOG/1.0E-2 -8.86E14 -9.06E0 -2.346E4/
-        PLOG/1.0E-2 1.45E3 1.6E0 2.045E4/
-        PLOG/1.0E0 2.32E-3 3.86E0 2.191E4/
-        PLOG/1.0E0 2.21E-31 -1.24E0 -3.636E4/
-        PLOG/1.0E1 1.47E-65 2.037E1 -9.836E3/
-        PLOG/1.0E1 4.2E23 -3.49E0 3.935E4/
-        PLOG/2.0E1 1.47E33 -6.1E0 4.741E4/
-        PLOG/2.0E1 5.22E15 -1.57E0 3.289E4/
-        PLOG/5.0E1 1.36E32 -5.74E0 4.774E4/
-        PLOG/5.0E1 2.77E14 -1.13E0 3.262E4/
-        PLOG/1.0E2 2.37E30 -5.2E0 4.715E4/
-        PLOG/1.0E2 6.78E13 -9.3E-1 3.248E4/
-        PLOG/1.0E3 3.02E23 -3.15E0 4.384E4/
-        PLOG/1.0E3 1.6E12 -3.9E-1 3.205E4/
+    ! CH2COOH=CH3+CO2    2.66E10 0.43 3.266E4
+    !     PLOG/1.0E-4 1.67E29 -6.49E0 3.328E4/
+    !     PLOG/1.0E-4 1.03E-23 4.43E0 -1.397E4/
+    !     PLOG/1.0E-3 4.4E12 -1.39E0 2.574E4/
+    !     PLOG/1.0E-3 2.48E12 -1.53E0 2.305E4/
+    !     PLOG/1.0E-2 -8.86E14 -9.06E0 -2.346E4/
+    !     PLOG/1.0E-2 1.45E3 1.6E0 2.045E4/
+    !     PLOG/1.0E0 2.32E-3 3.86E0 2.191E4/
+    !     PLOG/1.0E0 2.21E-31 -1.24E0 -3.636E4/
+    !     PLOG/1.0E1 1.47E-65 2.037E1 -9.836E3/
+    !     PLOG/1.0E1 4.2E23 -3.49E0 3.935E4/
+    !     PLOG/2.0E1 1.47E33 -6.1E0 4.741E4/
+    !     PLOG/2.0E1 5.22E15 -1.57E0 3.289E4/
+    !     PLOG/5.0E1 1.36E32 -5.74E0 4.774E4/
+    !     PLOG/5.0E1 2.77E14 -1.13E0 3.262E4/
+    !     PLOG/1.0E2 2.37E30 -5.2E0 4.715E4/
+    !     PLOG/1.0E2 6.78E13 -9.3E-1 3.248E4/
+    !     PLOG/1.0E3 3.02E23 -3.15E0 4.384E4/
+    !     PLOG/1.0E3 1.6E12 -3.9E-1 3.205E4/
 
     !!\CMNT: fit btw. 400 and 1300 K with MAE of 10.7%, 30.0%
     !!\CMNT: fit btw. 300 and 1400 K with MAE of 1.3%, 2.4%
@@ -1383,25 +1383,25 @@ OX+H2O=OH+OH      1.000E+14      0.0       -71.0
     !!\CMNT: fit btw. 300 and 2500 K with MAE of 2.7%, 9.1%
     !!\CMNT: fit btw. 300 and 2600 K with MAE of 2.8%, 10.0%
     !!\CMNT: fit btw. 300 and 3000 K with MAE of 3.0%, 10.1%
-    CH2COOH=>CH2CO+OH    9.09E20 -2.03 5.034E4
-        PLOG/1.0E-4 1.41E-4 -5.95E0 -2.914E3/
-        PLOG/1.0E-4 7.47E46 -1.208E1 6.491E4/
-        PLOG/1.0E-3 1.02E37 -8.84E0 5.482E4/
-        PLOG/1.0E-3 1.62E30 -7.25E0 5.004E4/
-        PLOG/1.0E-2 1.32E53 -1.312E1 6.079E4/
-        PLOG/1.0E-2 5.96E35 -8.05E0 5.136E4/
-        PLOG/1.0E0 2.89E51 -1.147E1 6.364E4/
-        PLOG/1.0E0 2.65E31 -5.84E0 5.156E4/
-        PLOG/1.0E1 6.2E45 -9.43E0 6.354E4/
-        PLOG/1.0E1 6.53E28 -4.89E0 5.12E4/
-        PLOG/2.0E1 2.08E44 -8.92E0 6.359E4/
-        PLOG/2.0E1 4.71E27 -4.49E0 5.098E4/
-        PLOG/5.0E1 1.36E42 -8.18E0 6.347E4/
-        PLOG/5.0E1 1.34E26 -3.95E0 5.068E4/
-        PLOG/1.0E2 1.77E40 -7.57E0 6.317E4/
-        PLOG/1.0E2 1.25E25 -3.6E0 5.046E4/
-        PLOG/1.0E3 7.57E32 -5.3E0 6.082E4/
-        PLOG/1.0E3 7.01E21 -2.5E0 4.973E4/
+    ! CH2COOH=>CH2CO+OH    9.09E20 -2.03 5.034E4
+    !     PLOG/1.0E-4 1.41E-4 -5.95E0 -2.914E3/
+    !     PLOG/1.0E-4 7.47E46 -1.208E1 6.491E4/
+    !     PLOG/1.0E-3 1.02E37 -8.84E0 5.482E4/
+    !     PLOG/1.0E-3 1.62E30 -7.25E0 5.004E4/
+    !     PLOG/1.0E-2 1.32E53 -1.312E1 6.079E4/
+    !     PLOG/1.0E-2 5.96E35 -8.05E0 5.136E4/
+    !     PLOG/1.0E0 2.89E51 -1.147E1 6.364E4/
+    !     PLOG/1.0E0 2.65E31 -5.84E0 5.156E4/
+    !     PLOG/1.0E1 6.2E45 -9.43E0 6.354E4/
+    !     PLOG/1.0E1 6.53E28 -4.89E0 5.12E4/
+    !     PLOG/2.0E1 2.08E44 -8.92E0 6.359E4/
+    !     PLOG/2.0E1 4.71E27 -4.49E0 5.098E4/
+    !     PLOG/5.0E1 1.36E42 -8.18E0 6.347E4/
+    !     PLOG/5.0E1 1.34E26 -3.95E0 5.068E4/
+    !     PLOG/1.0E2 1.77E40 -7.57E0 6.317E4/
+    !     PLOG/1.0E2 1.25E25 -3.6E0 5.046E4/
+    !     PLOG/1.0E3 7.57E32 -5.3E0 6.082E4/
+    !     PLOG/1.0E3 7.01E21 -2.5E0 4.973E4/
 
     !\ENDRXN: \CH2CO+OH
 
