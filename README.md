@@ -1,5 +1,5 @@
 # MACDILMECH
-Kinetic mechanisms for the combustion of toluene reference fuel with ethanol addition (TRFE). Funded by the ANR project MACDIL [ANR-15-CE22-0014](https://anr.fr/Projet-ANR-15-CE22-0014).
+Kinetic mechanisms for the combustion of toluene reference fuel with ethanol addition (TRFE). Funded by the ANR project MACDIL ([ANR-15-CE22-0014](https://anr.fr/Projet-ANR-15-CE22-0014)).
 
 
 ## Kinetic Details
@@ -22,7 +22,7 @@ This repository contains the following files in CHEMKIN format.
 | `MACDIL.therm`         | Thermodynamic database |
 | `MACDIL.tran`          | Transport database |
 | `MACDIL-detailed.chem` | The detailed mechanism (2339 species and 9440 reactions). |
-| `MACDIL-syngas.chem`   | A detailed mechanism for syngas (H2/CO) combustion. |
+| `MACDIL-syngas.chem`   | A detailed mechanism for syngas (H2/CO) combustion. It is a subset of `MACDIL-detailed.chem`. |
 
 
 
