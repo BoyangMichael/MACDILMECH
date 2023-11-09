@@ -1,11 +1,34 @@
 # MACDILMECH
-Kinetic mechanisms for the oxidation of toluene reference fuel with ethanol addition (TRFE). Funded by the ANR project MACDIL.
+Kinetic mechanisms for the combustion of toluene reference fuel with ethanol addition (TRFE). Funded by the ANR project MACDIL [ANR-15-CE22-0014](https://anr.fr/Projet-ANR-15-CE22-0014).
 
-## MACDIL-DTL
-The **detialed** mechanism, containing **2332** species and **9900** reactions (by Mar. 9th 2020).
 
-## MACDIL-RDC
-The **semi-detailed** mechanism suitable for 1D flame speed calculations, containing **1026** species and **5388** reactions (by Mar. 9th 2020).
+## Kinetic Details
+Details of the mechanism is described in the main body and supplementary materials of [the following journal article](https://doi.org/10.1016/j.fuel.2022.124682).
 
-## MACDIL-RDC+
-A **semi-detailed** mechanism (598 species, 3726 reactions), which is ***samller*** than MACDIL-RDC. It is reduced from MACDIL-DTL (commit: 4663e84) and the reduction details can be found [here](https://www.notion.so/fae97c256d3e49ea91030520b6b706af?v=da41e6ba28ff4bee81567792df43f874).
+```
+Boyang Xu, Pascal Dievart, Mickael Matrat, Julian Garrec, Laurent Catoire.
+An updated empirical correlation formalism for laminar flame speeds: Application to a TRFE gasoline surrogate in highly diluted conditions. 
+Fuel 324 (2022): 124682.
+https://doi.org/10.1016/j.fuel.2022.124682
+```
+
+
+## Files
+This repository contains the following files in CHEMKIN format.
+
+| File                   | Description   | 
+| ---------------------- | ------------- |
+| `MACDIL.chem`          | The MACDIL mechanism (593 species and 3698 reactions). It is reduced from the detailed model `MACDIL-detailed.chem`. Reduction procedure described in [this paper](https://doi.org/10.1016/j.fuel.2022.124682). |
+| `MACDIL.therm`         | Thermodynamic database |
+| `MACDIL.tran`          | Transport database |
+| `MACDIL-detailed.chem` | The detailed mechanism (2339 species and 9440 reactions). |
+| `MACDIL-syngas.chem`   | A detailed mechanism for syngas (H2/CO) combustion. |
+
+
+
+## How to cite
+Please cite the following article, whose bibtex entry is provided [here](citation.bib).
+
+```
+Boyang Xu, Pascal Dievart, Mickael Matrat, Julian Garrec, Laurent Catoire. An updated empirical correlation formalism for laminar flame speeds: Application to a TRFE gasoline surrogate in highly diluted conditions. Fuel 324 (2022): 124682. https://doi.org/10.1016/j.fuel.2022.124682
+```
